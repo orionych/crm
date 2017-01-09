@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-use App\User;
+#use App\User;
 /*
 	$usertmp=DB::table('users')->find(1);
 	$user=Auth::loginUsingId($usertmp->id);

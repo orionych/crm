@@ -81,9 +81,7 @@
                 <div class="title m-b-md">
                     Laravel
                 </div>
-                @can('admin_user',$user)
-                I'm Administrator
-                @endcan
+
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
