@@ -11,8 +11,9 @@
 |
 */
 use App\User;
-
+/*
 	$usertmp=DB::table('users')->find(1);
 	$user=Auth::loginUsingId($usertmp->id);
+	*/
 	print_r($_SERVER);
 	Route::get('/', 'UsersController@index');
