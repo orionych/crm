@@ -17,3 +17,6 @@
 	*/
 	#print_r($_SERVER);
 	Route::get('/', function() {return view('welcome');});
+	Route::get('/someUrl', function() {return 'here';});
+
+
