@@ -11,7 +11,6 @@
         <link href="/css/app.css" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
-        <script src="/js/app.js"></script>
         <style>
             html, body {
                 background-color: #fff;
@@ -76,7 +75,7 @@
                         <a href="{{ url('/register') }}">Register</a>
                     @endif
                 </div>
-            @endif
+            @endif 
 
             <div class="content">
                 <div class="title m-b-md">
@@ -92,5 +91,16 @@
                 </div>
             </div>
         </div>
+
+        <script src="/js/app.js"></script>
+        <script type="text/javascript"> 
+              this.$http.get('/someUrl').then((response) => {
+                alert('here');
+    // success callback
+  }, (response) => {
+    // error callback
+  });
+        </script>
+
     </body>
 </html>
