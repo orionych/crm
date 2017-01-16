@@ -15,7 +15,7 @@ class User extends Authenticatable
     {
         return $this->belongsToMany('App\Permissions');
     }
-    function getPermission()
+    public function getPermission()
     {
     	return $this->permissions;
     }
