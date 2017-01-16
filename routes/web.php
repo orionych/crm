@@ -18,7 +18,8 @@ use App\User;
 	#print_r($_SERVER);
 	Route::get('/', function() {
 		$users=User::all();
-		print_r($users);
+		foreach ($users as $user)
+			{echo $user->username;}
 		return view('welcome');});
 	Route::get('/someUrl', function() {return 'Super CRM system '.csrf_token().' ';});
 	//Route::get('/someUrl', function() {return Response::error('404');});
