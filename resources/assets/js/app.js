@@ -6,15 +6,24 @@
  */
 
 require('./bootstrap');
+
+window.Vue = require('vue');
+require('vue-resource');
+//... some vue component imports ...
+
 // var Vue=require('vue');
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-
+new Vue({
+    el: '#app',
+    data: {enabled:true}
+});
+// Vue.http.headers.common['X-CSRF-TOKEN'] = document.querySelector('#csrf_token').getAttribute('content');
 Vue.component('firm', require('./components/Firm.vue'));
 
-const app = new Vue({
-    el: 'body'
-});
+
+
+ 

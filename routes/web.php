@@ -16,7 +16,11 @@
 	$user=Auth::loginUsingId($usertmp->id);
 	*/
 	#print_r($_SERVER);
-	Route::get('/', function() {return view('welcome');});
-	Route::get('/someUrl', function() {return 'here';});
+	Route::get('/', function() {
+		$users=DB::connection('oldcrm')->select('SELECT * FROM arsenal_users');
+		print_r($users);
+		return view('welcome');});
+	Route::get('/someUrl', function() {return 'Super CRM system '.csrf_token().' ';});
+	//Route::get('/someUrl', function() {return Response::error('404');});
 
 
