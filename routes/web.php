@@ -1,5 +1,7 @@
 <?php
 
+use App\User;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -10,14 +12,13 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-#use App\User;
-/*
+
 	$usertmp=DB::table('users')->find(1);
 	$user=Auth::loginUsingId($usertmp->id);
 	*/
 	#print_r($_SERVER);
 	Route::get('/', function() {
-		$users=DB::connection('oldcrm')->select('SELECT * FROM arsenal_users');
+		$users=User::all();
 		print_r($users);
 		return view('welcome');});
 	Route::get('/someUrl', function() {return 'Super CRM system '.csrf_token().' ';});
