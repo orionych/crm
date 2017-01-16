@@ -15,9 +15,9 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('username');
-            $table->string('name');
-            $table->string('nickname');
+            $table->string('username')->default('');
+            $table->string('name')->default('');
+            $table->string('nickname')->default('');
             $table->integer('enabled')->index()->default(1);
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
