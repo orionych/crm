@@ -1,17 +1,20 @@
- <?php
+<?php
 
 use Illuminate\Database\Seeder;
 
-class UserTableSeeder extends Seeder
+class OldUsersSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      *
      * @return void
      */
-    public function run()
+  public function run()
     {
      $userData =OldUser::all();
+     print_r($userData);
+     echo 'here';
+     dd();
     DB::statement("SET FOREIGN_KEY_CHECKS=0");
     DB::table('users')->truncate();
     DB::statement("SET FOREIGN_KEY_CHECKS=1");
