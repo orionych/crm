@@ -19,7 +19,7 @@ use App\User;
 	Route::get('/', function() {
 		$users=User::all();
 		foreach ($users as $user)
-			{echo $user->permissions->where('name','user_admin')->exists();}
+			{echo $user->permissions->where('name','user_admin');}
 		return view('welcome');});
 	Route::get('/someUrl', function() {return 'Super CRM system '.csrf_token().' ';});
 	//Route::get('/someUrl', function() {return Response::error('404');});
