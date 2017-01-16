@@ -7,9 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class User extends Authenticatable
 {
+    // function isAdmin()
+    // {
+    // 	return $this->can('user_admin');
+    // }
     function isAdmin()
     {
-    	return $this->can('user_admin');
+    	return in_array('user_admin',$this->permissions()->pluck('name')->all());
     }
     public function permissions()
     {
