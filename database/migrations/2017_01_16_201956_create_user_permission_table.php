@@ -13,7 +13,7 @@ class CreateUserPermissionTable extends Migration
      */
     public function up()
     {
-         Schema::create('user_permission', function (Blueprint $table) {
+         Schema::create('permission_user', function (Blueprint $table) {
             $table->integer('user_id')->index();
             $table->integer('permission_id')->index();
         });
@@ -26,6 +26,6 @@ class CreateUserPermissionTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_permission');
+        Schema::dropIfExists('permission_user');
     }
 }
