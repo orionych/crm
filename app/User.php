@@ -17,6 +17,6 @@ class User extends Authenticatable
     }
     public function getPermission()
     {
-    	return $this->permissions;
+    	return $this->permissions();
     }
 }
