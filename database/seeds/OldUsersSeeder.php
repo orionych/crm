@@ -23,6 +23,7 @@ class OldUsersSeeder extends Seeder
                     'id'              => $userSingle->id,
                     'enabled'		=> $userSingle->enabled,
                     'username'          => $userSingle->username,
+                    'email'		=> $userSingle->email,
                     'nickname'	=> '',
                     // 'password' => $userSingle->user_hashed_password,
                     // 'email'          => $userSingle->user_email,
