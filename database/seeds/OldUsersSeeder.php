@@ -22,7 +22,7 @@ class OldUsersSeeder extends Seeder
     foreach ($userData as $userSingle) {
          User::create([
                     'id'              => $userSingle->id,
-                    'enabled'		=> $userSingle->enabled;
+                    'enabled'		=> $userSingle->enabled,
                     'username'          => $userSingle->username,
                     // 'password' => $userSingle->user_hashed_password,
                     // 'email'          => $userSingle->user_email,
