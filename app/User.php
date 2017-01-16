@@ -11,4 +11,8 @@ class User extends Authenticatable
     {
     	return $this->can('user_admin');
     }
+    public function permissions()
+    {
+        return $this->belongsToMany('App\Permissions');
+    }
 }
