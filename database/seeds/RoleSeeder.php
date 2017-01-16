@@ -12,6 +12,7 @@ class RoleSeeder extends Seeder
      */
     public function run()
     {
-       Permission::create(['name'=>'user_admin']);
+       $permission=Permission::create(['name'=>'user_admin']);
+       $permission->users()->attach(1);
     }
 }
