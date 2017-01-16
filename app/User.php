@@ -13,7 +13,7 @@ class User extends Authenticatable
     // }
     function isAdmin()
     {
-    	return $this->permissions()->where('name','user_admin')->first();
+    	return (bool) $this->permissions()->where('name','user_admin')->first();
     }
     public function permissions()
     {
