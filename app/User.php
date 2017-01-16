@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class User extends Authenticatable
 {
-	public $table = "users";
     function isAdmin()
     {
     	return $this->can('user_admin');
