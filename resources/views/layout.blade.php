@@ -618,6 +618,8 @@
                   </div><!-- /col-lg-9 END SECTION MIDDLE -->
                   
   
+          </section>
+      </section>
 
       <!--main content end-->
       <!--footer start-->
