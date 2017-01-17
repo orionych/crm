@@ -20,8 +20,8 @@ class FirmsSeeder extends Seeder
     	Eloquent::unguard();
     	foreach ($firms as $firm)
     	{
-    		Firm::create(
-    			
+    		Firm::create([]
+
 
 
 
