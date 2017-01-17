@@ -7,17 +7,21 @@ use Illuminate\Database\Eloquent\Model;
 
 class User extends Authenticatable
 {
+    public $officialname;
     // function isAdmin()
     // {
     // 	return $this->can('user_admin');
     // }
-    function isAdmin()
+    public function isAdmin()
     {
     	return (bool) $this->permissions()->where('name','user_admin')->first();
     }
     public function permissions()
     {
         return $this->belongsToMany('App\Permission');
+    }
+    public function getNameAttribute {
+                
     }
     public function getPermission()
     {
