@@ -48,7 +48,6 @@ class FirmsSeeder extends Seeder
     			'geoy'		=> iconv("KOI8-R","UTF-8",$firm->geoy),
     			'closed'	=> iconv("KOI8-R","UTF-8",$firm->firmclosed),
     			'note'	=> iconv("KOI8-R","UTF-8",$firm->note)
-
     			]);
 
 
