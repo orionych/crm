@@ -9,6 +9,7 @@
 
         <!-- Fonts -->
         <link href="/css/app.css" rel="stylesheet" type="text/css">
+        
     </head>
     <body >
     <div id='app'>
