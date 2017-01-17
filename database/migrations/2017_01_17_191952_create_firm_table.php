@@ -17,7 +17,8 @@ class CreateFirmTable extends Migration
             $table->string('name')->default();
             $table->string('fullname')->default();            
             $table->integer('stars')->default(0);    
-            $table->integer('stars')->default(0);
+            $table->integer('fizlico')->default(0);
+            $table->integer('city_id')->default(0);
 
         });
     }
