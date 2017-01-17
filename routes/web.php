@@ -17,7 +17,8 @@ use App\User;
 	// $user=Auth::loginUsingId($usertmp->id);
 	#print_r($_SERVER);
 	Route::get('/', function() {
-		$users=User::all();
+		$users=User::all(); 
+		print_r($users);
 		foreach ($users as $user)
 			{if ($user->isAdmin()) echo $user->username.' '.$user->isAdmin().'<br />';}
 		return view('welcome');});
