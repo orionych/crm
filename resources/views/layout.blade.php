@@ -8,6 +8,7 @@
         <title>CRM система. ООО "Лидер"</title>
    
         <!-- Styles -->
+        <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
         <link href="/css/app.css" rel="stylesheet" type="text/css">
         <link href="/css/dashio.css" rel="stylesheet" type="text/css">
         <link href="/css/dashio-responsive.css" rel="stylesheet">
