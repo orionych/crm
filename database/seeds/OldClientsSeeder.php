@@ -17,6 +17,9 @@ class OldClientsSeeder extends Seeder
 	DB::table('clients')->truncate();
    	DB::statement("SET FOREIGN_KEY_CHECKS=1");
     	Eloquent::unguard();    
-    	
+    	foreach ($clients as $client)
+    	{
+    		
+    	}
     }
 }
