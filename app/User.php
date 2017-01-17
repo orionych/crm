@@ -23,4 +23,8 @@ class User extends Authenticatable
     {
     	return $this->permissions();
     }
+    public function getAvatar()
+    {
+        
+    }
 }
