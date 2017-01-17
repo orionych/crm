@@ -13,7 +13,7 @@ class CreateFirmTable extends Migration
      */
     public function up()
     {
-        Schema::table('firms', function (Blueprint $table) {
+        Schema::create('firms', function (Blueprint $table) {
             $table->string('name')->default();
             $table->string('fullname')->default();
             $table->string('okved')->default();
