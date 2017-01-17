@@ -11,6 +11,7 @@
         <link href="/css/app.css" rel="stylesheet" type="text/css">
         <link href="/css/dashio.css" rel="stylesheet" type="text/css">
         <link href="/css/dashio-responsive.css" rel="stylesheet">
+        <link href="/css/font_awesome.css" rel="stylesheet">
 
     </head>
     <body >
