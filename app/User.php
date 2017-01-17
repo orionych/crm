@@ -21,7 +21,7 @@ class User extends Authenticatable
         return $this->belongsToMany('App\Permission');
     }
     public function getNameAttribute($name) {
-        $this->officialname=explode(" ",$name)
+        $this->officialname=array_shift(explode(" ",$name));
         return $name;
     }
     public function getPermission()
