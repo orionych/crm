@@ -492,57 +492,7 @@
                         </div><!-- /col-md-4 -->
                     </div><!-- /row -->
                     
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                            <div class="product-panel-2 pn">
-                                <div class="badge badge-hot">HOT</div>
-                                <img src="assets/img/product.jpg" width="200" alt="">
-                                <h5 class="mt">Flat Pack Heritage</h5>
-                                <h6>TOTAL SALES: 1388</h6>
-                                <button class="btn btn-small btn-theme04">FULL REPORT</button>
-                            </div>
-                        </div><! --/col-md-4 -->
-                        
-                        <! -- PROFILE 02 PANEL -->
-                        <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                            <div class="content-panel pn">
-                                <div id="profile-02">
-                                    <div class="user">
-                                        <img src="assets/img/friends/fr-06.jpg" class="img-circle" width="80">
-                                        <h4>DJ SHERMAN</h4>
-                                    </div>
-                                </div>
-                                <div class="pr2-social centered">
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-dribbble"></i></a>
-                                </div>
-                            </div><! --/panel -->
-                        </div><!--/ col-md-4 -->
-                        
-                        <div class="col-md-4 col-sm-4 mb">
-                            <div class="green-panel pn">
-                                <div class="green-header">
-                                    <h5>DISK SPACE</h5>
-                                </div>
-                                <canvas id="serverstatus03" height="120" width="120"></canvas>
-                                <script>
-                                    var doughnutData = [
-                                            {
-                                                value: 60,
-                                                color:"#2b2b2b"
-                                            },
-                                            {
-                                                value : 40,
-                                                color : "#fffffd"
-                                            }
-                                        ];
-                                        var myDoughnut = new Chart(document.getElementById("serverstatus03").getContext("2d")).Doughnut(doughnutData);
-                                </script>
-                                <h3>60% USED</h3>
-                            </div>
-                        </div><! --/col-md-4 -->
-                    </div><!-- /row --> 
+                 
                     
                   </div><!-- /col-lg-9 END SECTION MIDDLE -->
                   
