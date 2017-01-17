@@ -100,6 +100,14 @@
                         </ul>
                     </li>
                     <!-- settings end -->
+                    <!-- basket -->
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                            <i class="fa fa-tasks"></i>
+                            <span class="badge bg-theme">4</span>
+                        </a>
+                    </li>
+                    <!-- basket end -->
                     <!-- inbox dropdown start-->
                     <li id="header_inbox_bar" class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
