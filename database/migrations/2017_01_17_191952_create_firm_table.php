@@ -15,7 +15,8 @@ class CreateFirmTable extends Migration
     {
         Schema::table('firms', function (Blueprint $table) {
             $table->string('name')->default();
-            $table->string('fullname')->default();            
+            $table->string('fullname')->default();
+            $table->integer('power')->default(0);            
             $table->integer('stars')->default(0);    
             $table->integer('fizlico')->default(0);
             $table->integer('city_id')->default(0);
