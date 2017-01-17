@@ -1,5 +1,6 @@
 <?php
 
+use App\Client;
 use App\OldClient;
 use Illuminate\Database\Seeder;
 
@@ -19,7 +20,11 @@ class OldClientsSeeder extends Seeder
     	Eloquent::unguard();    
     	foreach ($clients as $client)
     	{
-    		
+    		Client::create([
+    			'id'=>$client->id,
+    			'name'
+
+    			]);
     	}
     }
 }
