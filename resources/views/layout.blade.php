@@ -7,9 +7,10 @@
 
         <title>CRM система. ООО "Лидер"</title>
 
-        <!-- Fonts -->
+        <!-- Styles -->
         <link href="/css/app.css" rel="stylesheet" type="text/css">
         <link href="/css/dashio.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/dashio-responsive.css" rel="stylesheet">
 
     </head>
     <body >
