@@ -21,6 +21,7 @@ class FirmsSeeder extends Seeder
     	foreach ($firms as $firm)
     	{
     		Firm::create([
+    			''
 
 
 
