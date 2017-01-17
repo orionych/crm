@@ -1,5 +1,6 @@
 <?php
 
+use App\RequestType;
 use App\OldRequestType;
 use Illuminate\Database\Seeder;
 
