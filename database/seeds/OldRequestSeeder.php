@@ -22,7 +22,6 @@ class OldRequestSeeder extends Seeder
     	foreach ($requests as $request)
     	{
     	$datetime=Carbon::createFromTimestamp(strtotime($request->calltime)+$request->calltimeshift);
-	lf ($datetime=='1970-01-01 00:00:00') $datetime=null;
     	Request::create([
     		'id'	=>$request->id,
     		'request_type_id'	=>intval($request->typeid),
