@@ -396,12 +396,6 @@
                             </div><! -- /darkblue panel -->
                         </div>
                         
-                        
-
-                    </div><!-- /row -->
-                    
-                    
-                   
                     </div>                        
                 
                     
