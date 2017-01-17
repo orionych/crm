@@ -238,8 +238,8 @@
               <ul class="sidebar-menu" id="nav-accordion">
               
               
-                  <p class="centered"><a href="#"><img src="assets/img/ui-sam.jpg" class="img-circle" width="80"></a></p>
-                  <h5 class="centered">Sam Soffes</h5>
+                  <p class="centered"><a href="#"></a></p>
+                  <h5 class="centered"></h5>
                     
                   <li class="mt">
                       <a class="active" href="index.html">
