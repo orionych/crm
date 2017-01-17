@@ -239,7 +239,7 @@
               
 
                   <p class="centered">{{ Auth::user()->getAvatar() }}</p>
-                  <h5 class="centered">{{ Auth::user()->name }}</h5>
+                  <h5 class="centered">{{ Auth::user()->officialname }}</h5>
                     
                   <li class="mt">
                       <a class="active" href="index.html">
