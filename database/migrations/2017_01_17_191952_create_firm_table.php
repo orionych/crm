@@ -39,7 +39,7 @@ class CreateFirmTable extends Migration
             $table->double('geox',17,4)->default(0);
             $table->double('geoy',17,4)->default(0);
             $table->boolean('closed')->default(false);
-            $table->text('note')->default();
+            $table->text('note');
 
         });
     }
