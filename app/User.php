@@ -25,6 +25,6 @@ class User extends Authenticatable
     }
     public function getAvatar()
     {
-        
+        echo "<div class='circle'>АВ</div>";
     }
 }
