@@ -24,7 +24,7 @@ class OldRequestSeeder extends Seeder
     		'id'	=>$request->id,
     		'request_type_id'	=>$request->typeid,
     		'client_id'	=> $request->clientid,
-    		'cal_at'	=> Carbon::createFromTimestamp(strtotime($request->time)+$request->calltimeshift),
+    		'call_at'	=> Carbon::createFromTimestamp(strtotime($request->time)+$request->calltimeshift),
 
     		]);
     	}   
