@@ -396,57 +396,12 @@
                             </div><! -- /darkblue panel -->
                         </div>
                         
-                        <div class="col-md-6 col-sm-6 mb">
-                            <!-- REVENUE PANEL -->
-                            <div class="green-panel pn">
-                                <div class="green-header">
-                                    <h5>REVENUE</h5>
-                                </div>
-                                <div class="chart mt">
-                                    <div class="sparkline" data-type="line" data-resize="true" data-height="75" data-width="90%" data-line-width="1" data-line-color="#fff" data-spot-color="#fff" data-fill-color="" data-highlight-line-color="#fff" data-spot-radius="4" data-data="[200,135,667,333,526,996,564,123,890,464,655]"></div>
-                                </div>
-                                <p class="mt"><b>$ 17,980</b><br/>Month Income</p>
-                            </div>
-                        </div><!-- /col-md-4 -->
+                        
 
                     </div><!-- /row -->
                     
                     
-                    <div class="row">
-                        <!-- WEATHER PANEL -->
-                        <div class="col-md-6 mb">
-                            <div class="weather pn">
-                                <i class="fa fa-cloud fa-4x"></i>
-                                <h2>11º C</h2>
-                                <h4>BUDAPEST</h4>
-                            </div>
-                        </div><!-- /col-md-4-->
-                        
-                        <!-- DIRECT MESSAGE PANEL -->
-                        <div class="col-md-8 mb">
-                            <div class="message-p pn">
-                                <div class="message-header">
-                                    <h5>DIRECT MESSAGE</h5>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-3 centered hidden-sm hidden-xs">
-                                        <img src="assets/img/ui-danro.jpg" class="img-circle" width="65">
-                                    </div>
-                                    <div class="col-md-9">
-                                        <p><name>Dan Rogers</name> sent you a message.</p>
-                                        <p class="small">3 hours ago</p>
-                                        <p class="message">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                    
-                                        <form class="form-inline" role="form">
-                                          <div class="form-group">
-                                            <input type="text" class="form-control" id="exampleInputText" placeholder="Reply Dan">
-                                          </div>
-                                          <button type="submit" class="btn btn-default">Send</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div><!-- /Message Panel-->
-                        </div><!-- /col-md-8  -->
+                   
                     </div>                        
                 
                     
