@@ -10,7 +10,7 @@
         <!-- Styles -->
         <link href="/css/app.css" rel="stylesheet" type="text/css">
         <link href="/css/dashio.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/dashio-responsive.css" rel="stylesheet">
+        <link href="/css/dashio-responsive.css" rel="stylesheet">
 
     </head>
     <body >
