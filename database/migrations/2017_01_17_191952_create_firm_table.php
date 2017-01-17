@@ -32,6 +32,10 @@ class CreateFirmTable extends Migration
             $table->string('director-r')->default();
             $table->string('director-position')->default();
             $table->string('osnovanie')->default();
+            $table->string('bik')->default();
+            $table->string('rasschet')->default();
+            $table->string('korschet')->default();
+            $table->string('bank')->default();
 
         });
     }
