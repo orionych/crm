@@ -21,7 +21,8 @@ class FirmsSeeder extends Seeder
     	foreach ($firms as $firm)
     	{
     		Firm::create([
-    			'id'=>$firm->id,
+    			'id'		=>$firm->id,
+    			'name'		=> iconv("KOI8-R","UTF-8",$firm->name),
     			
     			]);
 
