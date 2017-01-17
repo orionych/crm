@@ -40,7 +40,9 @@ class CreateFirmTable extends Migration
             $table->double('geox',17,4)->default(0);
             $table->double('geoy',17,4)->default(0);
             $table->boolean('closed')->default(false);
-            $table->text('note');
+            $table->text('note');            
+            $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
     }
 
