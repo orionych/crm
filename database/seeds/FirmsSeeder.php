@@ -13,6 +13,7 @@ class FirmsSeeder extends Seeder
     public function run()
     {
         $firms=OldFirms::all();
-        dd($firms->toArray());
+
+        
     }
 }
