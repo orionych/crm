@@ -239,7 +239,7 @@
               
 
                   <p class="centered"><img src='http://placehold.it/48x48/ffffff/000000?text={{ Auth::user()->getAvatar() }}&fontsize=23' class='img-circle' /></p>
-                  <h5 class="centered">{{ Auth::user()->getOfficalName() }}</h5>
+                  <span class="centered">{{ Auth::user()->getOfficalName() }}</span>
                     
                   <li class="mt">
                       <a class="active" href="index.html">
