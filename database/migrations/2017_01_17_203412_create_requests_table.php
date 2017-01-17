@@ -21,7 +21,7 @@ class CreateRequestsTable extends Migration
             $table->integer('status')->default(1);
             $table->boolean('important')->default(false);
             $table->integer('user_id')->default(0);
-            $table->timestamp('call_at')->
+            $table->timestamp('call_at')->default('NULL');
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
