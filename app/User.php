@@ -29,7 +29,7 @@ class User extends Authenticatable
     }
     function getOfficalName()
     {
-            return preg_replace('/(\w+) (\w)\w+ (\w)\w+/iu', '$1 $2. $3.', $this->name)
+            return preg_replace('/(\w+) (\w)\w+ (\w)\w+/iu', '$1 $2. $3.', $this->name);
     }
     public function getAvatar()
     {
