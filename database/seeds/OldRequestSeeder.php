@@ -1,5 +1,7 @@
 <?php
 
+use App\Request;
+use App\OldRequest;
 use Illuminate\Database\Seeder;
 
 class OldRequestSeeder extends Seeder
@@ -16,6 +18,11 @@ class OldRequestSeeder extends Seeder
 	DB::table('requests')->truncate();
    	DB::statement("SET FOREIGN_KEY_CHECKS=1");
     	Eloquent::unguard(); 
-    	   
+    	foreach ($requests as $request)
+    	{
+    	Request::create([
+    		
+    		]);
+    	}   
     }
 }
