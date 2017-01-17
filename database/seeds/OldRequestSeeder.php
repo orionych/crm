@@ -21,7 +21,7 @@ class OldRequestSeeder extends Seeder
     	foreach ($requests as $request)
     	{
     	Request::create([
-    		'id'	=>$request->id;
+    		'id'	=>$request->id,
     		]);
     	}   
     }
