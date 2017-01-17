@@ -20,8 +20,9 @@ class User extends Authenticatable
     {
         return $this->belongsToMany('App\Permission');
     }
-    public function getNameAttribute {
-                
+    public function getNameAttribute($name) {
+        $this->officialname=
+        return $name;
     }
     public function getPermission()
     {
