@@ -237,9 +237,9 @@
               <!-- sidebar menu start-->
               <ul class="sidebar-menu" id="nav-accordion">
               
-              
+
                   <p class="centered"><a href="#"></a></p>
-                  <h5 class="centered"></h5>
+                  <h5 class="centered">{{ Auth::user()->name }}</h5>
                     
                   <li class="mt">
                       <a class="active" href="index.html">
