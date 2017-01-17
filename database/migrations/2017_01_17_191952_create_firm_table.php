@@ -25,6 +25,11 @@ class CreateFirmTable extends Migration
             $table->string('inn')->default();        
             $table->string('kpp')->default();
             $table->string('ogrn')->default();
+            $table->string('telephone')->default();
+            $table->string('uraddress')->default();
+            $table->string('faktaddress')->default();
+            $table->string('director')->default();
+            $table->string('director-r')->default();
 
         });
     }
