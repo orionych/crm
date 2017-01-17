@@ -21,7 +21,8 @@ class OldRequestSeeder extends Seeder
     	Eloquent::unguard(); 
     	foreach ($requests as $request)
     	{
-    		
+    	$datetime=Carbon::createFromTimestamp(strtotime($request->calltime)+$request->calltimeshift));
+	lf ($datetime=='1970-01-01 00:00:00') $datetime=null;
     	Request::create([
     		'id'	=>$request->id,
     		'request_type_id'	=>intval($request->typeid),
@@ -30,7 +31,7 @@ class OldRequestSeeder extends Seeder
     		'status'		=> $request->enabled,
     		'important'	=> $request->important,
     		'user_id'	=> $request->userid,
-    		'call_at'	=> ((is_null($request->calltime)||($request->calltime==''))?null:Carbon::createFromTimestamp(strtotime($request->calltime)+$request->calltimeshift)),
+    		'call_at'	=> $datetime,
     		'created_at'	=> Carbon::createFromTimestamp($request->time)
     		]);
     	}   
