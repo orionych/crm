@@ -22,6 +22,7 @@ class OldRequestSeeder extends Seeder
     	{
     	Request::create([
     		'id'	=>$request->id,
+    		
     		]);
     	}   
     }
