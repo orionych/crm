@@ -20,7 +20,10 @@ class OldRequestTypesSeeder extends Seeder
     	Eloquent::unguard(); 
     	foreach ($requeststypes as $requesttype)
     	{
-    		RequestType::
+    		RequestType::create([
+    			'id'	=>$requesttype->id,
+    			'name'	=>iconv('KOI8-R','UTF-8',$requeststypes->name)
+    			]);
     	}
     }
 }
