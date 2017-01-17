@@ -29,7 +29,7 @@ class OldRequestSeeder extends Seeder
     		'status'		=> $request->enabled,
     		'important'	=> $request->important,
     		'user_id'	=> $request->userid,
-    		'call_at'	=> Carbon::createFromTimestamp(strtotime($request->calltime)+$request->calltimeshift),
+    		'call_at'	=> ($request->calltime=='NULL'?'NULL':Carbon::createFromTimestamp(strtotime($request->calltime)+$request->calltimeshift)),
     		'created_at'	=> Carbon::createFromTimestamp($request->time)
     		]);
     	}   
