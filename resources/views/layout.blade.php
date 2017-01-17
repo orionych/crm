@@ -419,7 +419,7 @@
       <!--footer start-->
       <footer class="site-footer">
           <div class="text-center">
-              2017 - Leader LTD CRM System
+              {{ date("Y") }} - Leader LTD CRM System
               <a href="index.html#" class="go-top">
                   <i class="fa fa-angle-up"></i>
               </a>
