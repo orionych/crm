@@ -28,7 +28,7 @@ class FirmsSeeder extends Seeder
     			'power'		=> iconv("KOI8-R","UTF-8",$firm->power),
     			'stars'		=> iconv("KOI8-R","UTF-8",$firm->stars),
     			'fizlico'		=> iconv("KOI8-R","UTF-8",$firm->fizlico),
-    			'city_id'	=> iconv("KOI8-R","UTF-8",$firm->cityid),
+    			'city_id'	=> intval($firm->cityid),
     			'holding_id'	=> iconv("KOI8-R","UTF-8",$firm->holdingid),
     			'inn'	=> iconv("KOI8-R","UTF-8",$firm->inn),
     			'kpp'	=> iconv("KOI8-R","UTF-8",$firm->kpp),
