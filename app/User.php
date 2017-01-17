@@ -27,6 +27,10 @@ class User extends Authenticatable
     {
     	return $this->permissions();
     }
+    function getOfficalName()
+    {
+            return preg_replace('/(\w+) (\w)\w+ (\w)\w+/iu', '$1 $2. $3.', $this->name)
+    }
     public function getAvatar()
     {
         echo "<img src='http://placehold.it/48x48/ffffff/000000?text=".preg_replace('/(\w)\w+ (\w)\w+ (\w)\w+/iu', '$1$2$3', $this->name)."&fontsize=23' class='img-circle' />";
