@@ -22,7 +22,7 @@ class OldClientsSeeder extends Seeder
     	{
     		Client::create([
     			'id'=>$client->id,
-    			'name'
+    			'name'		=> iconv("KOI8-R","UTF-8",$firm->name),
 
     			]);
     	}
