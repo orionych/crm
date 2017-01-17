@@ -359,7 +359,7 @@
               <div class="row">
                   <div class="col-lg-12 main-chart">
                       
-                      <div class="row">
+                      <div class="row mt">
                       <!-- SERVER STATUS PANELS -->
                         <div class="col-md-6 col-sm-6 mb">
                             <div class="grey-panel pn donut-chart">
