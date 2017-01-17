@@ -51,8 +51,6 @@ class CreateFirmTable extends Migration
      */
     public function down()
     {
-        Schema::table('firms', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('firms');
     }
 }
