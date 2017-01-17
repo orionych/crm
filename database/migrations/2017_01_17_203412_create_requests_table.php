@@ -15,7 +15,7 @@ class CreateRequestsTable extends Migration
     {
         Schema::create('requests', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('type_id')->default(0);
+            $table->integer('request_type_id')->default(0);
             $table->integer('client_id')->default(0);
             $table->text('text');
             $table->integer('status')->default(1);
