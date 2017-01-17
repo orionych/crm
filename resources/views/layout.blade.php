@@ -358,8 +358,6 @@
 
               <div class="row">
                   <div class="col-lg-12 main-chart">
-                  
-              
                       
                       <div class="row mt">
                       <!-- SERVER STATUS PANELS -->
