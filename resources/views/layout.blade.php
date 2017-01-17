@@ -378,25 +378,12 @@
                         </div><!-- /col-md-4-->
                         
 
-                        <div class="col-md-4 col-sm-4 mb">
+                        <div class="col-md-6 col-sm-6 mb">
                             <div class="darkblue-panel pn">
                                 <div class="darkblue-header">
                                     <h5>DROPBOX STATICS</h5>
                                 </div>
-                                <canvas id="serverstatus02" height="120" width="120"></canvas>
-                                <script>
-                                    var doughnutData = [
-                                            {
-                                                value: 60,
-                                                color:"#1c9ca7"
-                                            },
-                                            {
-                                                value : 40,
-                                                color : "#f68275"
-                                            }
-                                        ];
-                                        var myDoughnut = new Chart(document.getElementById("serverstatus02").getContext("2d")).Doughnut(doughnutData);
-                                </script>
+                               
                                 <p>April 17, 2014</p>
                                 <footer>
                                     <div class="pull-left">
