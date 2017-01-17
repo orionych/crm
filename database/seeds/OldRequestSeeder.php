@@ -21,6 +21,7 @@ class OldRequestSeeder extends Seeder
     	Eloquent::unguard(); 
     	foreach ($requests as $request)
     	{
+    		
     	Request::create([
     		'id'	=>$request->id,
     		'request_type_id'	=>intval($request->typeid),
