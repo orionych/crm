@@ -238,7 +238,7 @@
               <ul class="sidebar-menu" id="nav-accordion">
               
 
-                  <p class="centered">{{ Auth::user()->getAvatar() }}</p>
+                  <p class="centered"><img src='http://placehold.it/48x48/ffffff/000000?text={{ Auth::user()->getAvatar() }}&fontsize=23' class='img-circle' /></p>
                   <h5 class="centered">{{ Auth::user()->getOfficalName() }}</h5>
                     
                   <li class="mt">
