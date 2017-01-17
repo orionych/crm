@@ -359,7 +359,7 @@
               <div class="row">
                   <div class="col-lg-12 main-chart">
                   
-                      <!--CUSTOM CHART START -->
+                 <!--      <!--CUSTOM CHART START -->
                       <div class="border-head">
                           <h3>USER VISITS</h3>
                       </div>
@@ -401,7 +401,7 @@
                               <div class="value tooltips" data-original-title="7.500" data-toggle="tooltip" data-placement="top">75%</div>
                           </div>
                       </div>
-                      <!--custom chart end-->
+                      <!--custom chart end--> -->
                       
                       <div class="row mt">
                       <!-- SERVER STATUS PANELS -->
