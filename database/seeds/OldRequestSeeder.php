@@ -22,6 +22,9 @@ class OldRequestSeeder extends Seeder
     	{
     	Request::create([
     		'id'	=>$request->id,
+    		'request_type_id'	=>$request->typeid,
+    		'client_id'	=> $request->clientid,
+    		'created_at'	=> $request->time,
     		
     		]);
     	}   
