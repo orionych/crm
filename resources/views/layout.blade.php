@@ -394,7 +394,7 @@
                                     </div>
                                 </footer>
                             </div><! -- /darkblue panel -->
-                        </div><!-- /col-md-4 -->
+                        </div>
                         
                         <div class="col-md-4 col-sm-4 mb">
                             <!-- REVENUE PANEL -->
