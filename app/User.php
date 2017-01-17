@@ -29,6 +29,6 @@ class User extends Authenticatable
     }
     public function getAvatar()
     {
-        echo "<img src='http://placehold.it/40x40' class='img-circle' />";
+        echo "<img src='http://placehold.it/64x64/ffffff/000000?text=AB' class='img-circle' />";
     }
 }
