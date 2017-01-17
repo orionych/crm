@@ -23,7 +23,7 @@ class OldRequestSeeder extends Seeder
     	{
     	Request::create([
     		'id'	=>$request->id,
-    		'request_type_id'	=>$request->typeid,
+    		'request_type_id'	=>intval($request->typeid),
     		'client_id'	=> $request->clientid,
     		'text'		=> iconv("KOI8-R","UTF-8",$request->request),
     		'status'		=> $request->enabled,
