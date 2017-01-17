@@ -6,13 +6,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
         <title>CRM система. ООО "Лидер"</title>
-
+   
         <!-- Styles -->
         <link href="/css/app.css" rel="stylesheet" type="text/css">
         <link href="/css/dashio.css" rel="stylesheet" type="text/css">
         <link href="/css/dashio-responsive.css" rel="stylesheet">
         <link href="/css/font-awesome.css" rel="stylesheet">
-
+  
     </head>
     <body >
     
@@ -26,8 +26,8 @@
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
               </div>
             <!--logo start-->
-            <a href="index.html" class="logo"><b>DASH<span>IO</span></b></a>
-            <!--logo end-->
+            <a href="index.html" class="logo"><b>LEAD<span>ER</span></b></a>
+            <!--logo end-->  
             <div class="nav notify-row" id="top_menu">
                 <!--  notification start -->
                 <ul class="nav top-menu">
