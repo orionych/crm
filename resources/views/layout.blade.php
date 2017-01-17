@@ -357,7 +357,7 @@
           <section class="wrapper">
 
               <div class="row">
-                  <div class="col-lg-9 main-chart">
+                  <div class="col-lg-12 main-chart">
                   
                       <!--CUSTOM CHART START -->
                       <div class="border-head">
