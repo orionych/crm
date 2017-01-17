@@ -19,7 +19,7 @@ class OldRequestTypesSeeder extends Seeder
     	Eloquent::unguard(); 
     	foreach ($requeststypes as $requesttype)
     	{
-    		
+    		RequestType::
     	}
     }
 }
