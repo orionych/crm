@@ -11,10 +11,11 @@ class OldRequestSeeder extends Seeder
      */
     public function run()
     {
-	$clients=OldRequest::all();
+	$requests=OldRequest::all();
 	DB::statement("SET FOREIGN_KEY_CHECKS=0");
-	DB::table('clients')->truncate();
+	DB::table('requests')->truncate();
    	DB::statement("SET FOREIGN_KEY_CHECKS=1");
-    	Eloquent::unguard();    
+    	Eloquent::unguard(); 
+    	   
     }
 }
