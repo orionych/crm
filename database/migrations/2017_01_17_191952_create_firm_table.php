@@ -30,6 +30,7 @@ class CreateFirmTable extends Migration
             $table->string('faktaddress')->default();
             $table->string('director')->default();
             $table->string('director-r')->default();
+            $table->string('director-r')->default();
 
         });
     }
