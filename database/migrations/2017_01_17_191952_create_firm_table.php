@@ -21,6 +21,7 @@ class CreateFirmTable extends Migration
             $table->integer('fizlico')->default(0);
             $table->integer('city_id')->default(0);
             $table->integer('holding_id')->default(0);
+            
 
         });
     }
