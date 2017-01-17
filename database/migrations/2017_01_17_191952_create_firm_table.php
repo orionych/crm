@@ -36,6 +36,7 @@ class CreateFirmTable extends Migration
             $table->string('rasschet')->default();
             $table->string('korschet')->default();
             $table->string('bank')->default();
+            $table->string('geox')->default();
 
         });
     }
