@@ -11,7 +11,7 @@ class FirmsSeeder extends Seeder
      */
     public function run()
     {
-        $firms=DB::connection('oldcrm')->table('crm_firms')->all();
+        $firms=DB::connection('oldcrm')->table('crm_firms');
         dd($firms->toArray());
     }
 }
