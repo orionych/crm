@@ -12,11 +12,17 @@ class FirmsSeeder extends Seeder
      */
     public function run()
     {
-        $firms=OldFirms::all();
-        DB::statement("SET FOREIGN_KEY_CHECKS=0");
-	    DB::table('users')->truncate();
-	    DB::statement("SET FOREIGN_KEY_CHECKS=1");
-	    Eloquent::unguard();
-        
+        	$firms=OldFirms::all();
+	DB::statement("SET FOREIGN_KEY_CHECKS=0");
+	DB::table('firms')->truncate();
+   	DB::statement("SET FOREIGN_KEY_CHECKS=1");
+    	Eloquent::unguard();
+    	foreach ($firms as $firm)
+    	{
+    		
+
+    		
+    	}
+
     }
 }
