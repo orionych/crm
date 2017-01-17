@@ -17,10 +17,6 @@ use App\User;
 	// $user=Auth::loginUsingId($usertmp->id);
 	#print_r($_SERVER);
 	Route::get('/', function() {
-		$users=User::all(); 
-		$users;
-		foreach ($users as $user)
-			{if ($user->isAdmin()) echo $user->username.' '.$user->isAdmin().'<br />';}
 		return view('welcome');});
 	Route::get('/someUrl', function() {return 'Super CRM system '.csrf_token().' ';});
 	//Route::get('/someUrl', function() {return Response::error('404');});
