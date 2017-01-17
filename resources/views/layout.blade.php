@@ -396,7 +396,7 @@
                             </div><! -- /darkblue panel -->
                         </div>
                         
-                        <div class="col-md-4 col-sm-4 mb">
+                        <div class="col-md-6 col-sm-6 mb">
                             <!-- REVENUE PANEL -->
                             <div class="green-panel pn">
                                 <div class="green-header">
@@ -414,7 +414,7 @@
                     
                     <div class="row">
                         <!-- WEATHER PANEL -->
-                        <div class="col-md-4 mb">
+                        <div class="col-md-6 mb">
                             <div class="weather pn">
                                 <i class="fa fa-cloud fa-4x"></i>
                                 <h2>11º C</h2>
