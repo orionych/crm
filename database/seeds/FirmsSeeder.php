@@ -25,7 +25,7 @@ class FirmsSeeder extends Seeder
 
 
 
-    			)	
+    			])	
 
 
     	}
