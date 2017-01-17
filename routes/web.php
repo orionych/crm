@@ -18,7 +18,6 @@ use App\User;
 	#print_r($_SERVER);
 	Route::get('/', function() {
 		$users=User::all(); 
-		$Users=2;
 		foreach ($users as $user)
 			{if ($user->isAdmin()) echo $user->username.' '.$user->isAdmin().'<br />';}
 		return view('welcome');});
