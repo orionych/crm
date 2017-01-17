@@ -25,7 +25,7 @@ class OldRequestSeeder extends Seeder
     		'id'	=>$request->id,
     		'request_type_id'	=>$request->typeid,
     		'client_id'	=> $request->clientid,
-    		'text'		=> $request->request,
+    		'text'		=> iconv("KOI8-R","UTF-8",$request->request),
     		'status'		=> $request->enabled,
     		'important'	=> $request->important,
     		'user_id'	=> $request->userid,
