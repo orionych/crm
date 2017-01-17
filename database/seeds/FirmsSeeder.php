@@ -22,7 +22,7 @@ class FirmsSeeder extends Seeder
     	{
     		Firm::create([
     			'id'=>'id'
-    			])	
+    			]);
 
 
     	}
