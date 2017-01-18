@@ -18,8 +18,8 @@ class CreatePricesTable extends Migration
             $table->string('name')->default();
             $table->string('stockname')->default();
             $table->text('text');
-            $table->integer('measure_id')->default(1);
-            $table->integer('currency_id')->default(1);
+            $table->integer('okei_id')->default(1);
+            $table->integer('okv_id')->default(1);
 
 
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
