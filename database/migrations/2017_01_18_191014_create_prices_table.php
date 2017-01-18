@@ -16,6 +16,7 @@ class CreatePricesTable extends Migration
         Schema::create('prices', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('product_id');
+            
             $table->double('price',15,2);
             $table->integer('okei_id')->default(643);
             $table->timestamps();
