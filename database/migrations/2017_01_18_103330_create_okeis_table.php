@@ -14,7 +14,7 @@ class CreateOkeisTable extends Migration
     public function up()
     {
         Schema::create('okeis', function (Blueprint $table) {
-            $table->primary(array('id'));
+            $table->integer('id')->primary();
             $table->string('name')->dafault();
             $table->string('shortname')->default();
             $table->string('html')->default();
