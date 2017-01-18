@@ -18,7 +18,7 @@ class CreatePricesTable extends Migration
             $table->integer('product_id')->default(0);
             $table->integer('price_type_id')->default(0);
             $table->double('price',15,2);
-            $table->integer('okei_id')->default(643);
+            $table->integer('okv_id')->default(643);
             $table->timestamps();
         });
     }
