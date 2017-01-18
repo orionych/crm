@@ -22,7 +22,7 @@ class CreatePricesTable extends Migration
             $table->integer('request_type_id')->default(0);
             $table->double('discount',5,2)->default(0);
             $table->text('text');
-            $table->integer('okei_id')->default(1);
+            $table->integer('okei_id')->default(796);
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
