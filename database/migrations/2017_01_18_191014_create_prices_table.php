@@ -17,7 +17,7 @@ class CreatePricesTable extends Migration
             $table->increments('id');
             $table->integer('product_id');
             $table->double('price',15,2);
-            $table->in
+            $table->integer('okei_id')->default(643);
             $table->timestamps();
         });
     }
