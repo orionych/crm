@@ -18,6 +18,8 @@ class CreatePricesTable extends Migration
             $table->increments('id');
             $table->string('name')->default();
             $table->string('stockname')->default();
+            $table->integer('producer_id')->default(0);
+            $table->double('discount',5,2)->default(0);
             $table->text('text');
             $table->integer('okei_id')->default(1);
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
