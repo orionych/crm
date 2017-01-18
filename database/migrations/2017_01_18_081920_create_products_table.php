@@ -29,10 +29,8 @@ class CreatePricesTable extends Migration
             $table->double('dimz',6,3)->default(0);
             $table->double('weight',8,2)->default(0);
             $table->double('places',8,2)->default(0);
-
             $table->boolean('option')->default(false);
             $table->boolean('disabled');
-
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
