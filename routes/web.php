@@ -14,7 +14,7 @@ use App\User;
 */
 
 	// $usertmp=DB::table('users')->find(1);
-	$user=Auth::loginUsingId(1);
+	//$user=Auth::loginUsingId(1);
 	#print_r($_SERVER);
 	Route::get('/', function() {
 		return view('welcome');});
