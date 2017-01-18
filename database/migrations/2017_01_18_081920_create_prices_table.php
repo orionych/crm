@@ -15,7 +15,15 @@ class CreatePricesTable extends Migration
     {
         Schema::create('prices', function (Blueprint $table) {
             $table->increments('id');
-            $table
+            $table->string('name')->default();
+            $table->string('stockname')->default();
+            $table->text('text');
+            $table->double('price',11,2)->default(0);
+            $table->integer('currency_id')->default(1);
+            $table->double('producer_price',11,2)->default(0);
+            $table->integer('producer_price_currency_id')->default(1);
+
+
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
