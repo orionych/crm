@@ -18,7 +18,7 @@ class CreateOkvsTable extends Migration
             $table->string('name')->default();
             $table->string('html')->default();
         });
-        $
+        DB::table('okvs')->insert('')
     }
 
     /**
