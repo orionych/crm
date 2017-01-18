@@ -15,8 +15,8 @@ class CreateTnvedsTable extends Migration
     {
         Schema::create('tnveds', function (Blueprint $table) {
             $table->primary('id');
-            $table->string('name');
-            
+            $table->string('name')->default();
+            $table->text('text');
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
