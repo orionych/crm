@@ -30,7 +30,7 @@ class CreateEquipmentsTable extends Migration
             $table->double('weight',8,2)->default(0);
             $table->double('places',8,2)->default(0);
             $table->boolean('option')->default(false);
-            $table->boolean('disabled');
+            $table->boolean('disabled')->default(false);
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
