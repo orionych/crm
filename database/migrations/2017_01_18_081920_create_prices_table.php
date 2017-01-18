@@ -18,6 +18,7 @@ class CreatePricesTable extends Migration
             $table->string('name')->default();
             $table->string('stockname')->default();
             $table->text('text');
+            $table->integer('measure_id')->default(1);
             $table->double('price',11,2)->default(0);
             $table->integer('currency_id')->default(1);
             $table->double('producer_price',11,2)->default(0);
