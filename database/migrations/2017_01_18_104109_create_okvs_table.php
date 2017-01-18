@@ -17,10 +17,11 @@ class CreateOkvsTable extends Migration
             $table->primary('id');
             $table->string('name')->default();
             $table->string('code')->default();
+            $table->string('internationalname')->default();
             $table->string('html')->default();
         });
-        DB::table('okvs')->insert(array(643,'Рубль','RUB','&#8381;'));
-        DB::table('okvs')->insert(array(978,'Евро','EUR','&euro;'));
+        DB::table('okvs')->insert(array(643,'Рубль','RUB','rouble','&#8381;'));
+        DB::table('okvs')->insert(array(978,'Евро','EUR','euro','&euro;'));
     }
 
     /**
