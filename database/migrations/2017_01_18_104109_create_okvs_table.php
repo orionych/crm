@@ -17,8 +17,8 @@ class CreateOkvsTable extends Migration
             $table->primary('id');
             $table->string('name')->default();
             $table->string('html')->default();
-
         });
+        
     }
 
     /**
