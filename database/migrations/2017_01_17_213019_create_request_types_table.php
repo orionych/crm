@@ -17,7 +17,7 @@ class CreateRequestTypesTable extends Migration
             $table->increments('id');
             $table->string('name')->default();
             $table->integer('tnved')->default(0);
-            
+            $table->double('tax',5,2)->default(0);
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
