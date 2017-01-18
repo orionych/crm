@@ -18,7 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('username')->default();
             $table->string('name')->default();
             $table->string('nickname')->default();
-            $table->integer('enabled')->index()->default(1);
+            $table->integer('enabled')->index()->default(0);
             $table->string('email')->default();
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
