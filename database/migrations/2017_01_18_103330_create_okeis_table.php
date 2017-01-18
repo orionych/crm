@@ -19,7 +19,7 @@ class CreateOkeisTable extends Migration
             $table->string('shortname')->default();
             $table->string('html')->default();
         });
-        DB::table('okeis')->insert(array(796,'Штук','шт.','шт.'),array(796,'Штук','шт.','шт.'),array(18,'Погонный метр','пог. м.','пог. м.'))
+        DB::table('okeis')->insert(array(796,'Штук','шт.','шт.'),array(796,'Штук','шт.','шт.'),array(18,'Погонный метр','пог. м.','пог. м.'),array(839,'Комплект','компл.','компл.'));
     }
 
     /**
