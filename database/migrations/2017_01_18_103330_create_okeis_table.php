@@ -19,6 +19,7 @@ class CreateOkeisTable extends Migration
             $table->string('shortname')->default();
             $table->string('html')->default();
         });
+        DB::table('okeis')->insert(array())
     }
 
     /**
