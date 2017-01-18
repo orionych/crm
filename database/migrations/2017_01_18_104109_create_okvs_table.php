@@ -14,7 +14,7 @@ class CreateOkvsTable extends Migration
     public function up()
     {
         Schema::create('okvs', function (Blueprint $table) {
-            $table->primary(array('id');
+            $table->primary(array('id'));
             $table->string('name')->default();
             $table->string('code')->default();
             $table->string('internationalname')->default();
