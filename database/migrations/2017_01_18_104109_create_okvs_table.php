@@ -16,9 +16,11 @@ class CreateOkvsTable extends Migration
         Schema::create('okvs', function (Blueprint $table) {
             $table->primary('id');
             $table->string('name')->default();
+            $table->string('code')->default();
             $table->string('html')->default();
         });
-        DB::table('okvs')->insert('')
+        DB::table('okvs')->insert(array(643,'Рубль','RUB','&#8381;'));
+        DB::table('okvs')->insert(array(978,'Евро','EUR','&euro;'));
     }
 
     /**
