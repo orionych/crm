@@ -13,16 +13,17 @@ class CreatePricesTable extends Migration
      */
     public function up()
     {
-        Schema::create('products', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name')->default();
-            $table->string('stockname')->default();
-            $table->text('text');
-            $table->integer('okei_id')->default(1);
-            $table->integer('okv_id')->default(1);
-            $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
-            $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
-        });
+        
+        // Schema::create('products', function (Blueprint $table) {
+        //     $table->increments('id');
+        //     $table->string('name')->default();
+        //     $table->string('stockname')->default();
+        //     $table->text('text');
+        //     $table->integer('okei_id')->default(1);
+        //     $table->integer('okv_id')->default(1);
+        //     $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+        //     $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
+        // });
     }
 
     /**
@@ -32,6 +33,6 @@ class CreatePricesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('products');
-    }
+    //     Schema::dropIfExists('products');
+    // }
 }
