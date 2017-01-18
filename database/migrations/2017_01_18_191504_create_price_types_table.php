@@ -16,7 +16,7 @@ class CreatePriceTypesTable extends Migration
         Schema::create('price_types', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->default();
-            $table->st
+            $table->string('html')
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
