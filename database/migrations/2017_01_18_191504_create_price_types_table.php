@@ -20,7 +20,7 @@ class CreatePriceTypesTable extends Migration
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
-        DB::table('price_types')->insert(array('name'=>'Стоимость для нас',));
+        DB::table('price_types')->insert(array('name'=>'Стоимость для нас',ht));
         DB::table('price_types')->insert(array('name'=>'Стоимость по бухгалтерии'));
         DB::table('price_types')->insert(array('name'=>'Стоимость производителя'));
         DB::table('price_types')->insert(array('name'=>'Стоимость для ОЕМ компаний'));
