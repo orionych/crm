@@ -21,7 +21,7 @@ class CreateOkvsTable extends Migration
             $table->string('html')->default();
         });
         DB::table('okvs')->insert(array('id'=>643,'name'=>'Рубль','code'=>'RUB','internationalname'=>'rouble','html'=>'&#8381;'));
-        DB::table('okvs')->insert(array('id'=>'978','name'=>'Евро','code'=>'EUR','internationalname'=>'euro','html'=>'&euro;'));
+        DB::table('okvs')->insert(array('id'=>978,'name'=>'Евро','code'=>'EUR','internationalname'=>'euro','html'=>'&euro;'));
     }
 
     /**
