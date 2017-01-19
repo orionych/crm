@@ -12,7 +12,7 @@ class RequestTypesSeeder extends Seeder
      */
     public function run()
     {
-	$requeststypes=OldRequestType::all();
+	$requeststypes=DB::connection('oldcrm')->table('crm_requests_types')->get();
 	DB::statement("SET FOREIGN_KEY_CHECKS=0");
 	DB::table('request_types')->truncate();
    	DB::statement("SET FOREIGN_KEY_CHECKS=1");
