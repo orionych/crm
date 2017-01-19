@@ -4,7 +4,7 @@ use App\Client;
 use App\OldClient;
 use Illuminate\Database\Seeder;
 
-class OldClientsSeeder extends Seeder
+class ClientsSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,7 +13,7 @@ class OldClientsSeeder extends Seeder
      */
     public function run()
     {
-        	$clients=OldClient::all();
+        	$clients=DB::connection('oldcrm')->table('crm_clients')->get();
 	DB::statement("SET FOREIGN_KEY_CHECKS=0");
 	DB::table('clients')->truncate();
    	DB::statement("SET FOREIGN_KEY_CHECKS=1");
