@@ -15,7 +15,7 @@ class SectorSeeder extends Seeder
         $arrays=explode("\n",$contents);
         foreach ($arrays as $sector)
         Sector::create(['
-        	
+        	'id'
         	']);
     }
 }
