@@ -13,7 +13,7 @@ class SectorSeeder extends Seeder
     {
         $contents=trim(File::get(base_path().'/database/seeds/okved2.csv'));
         $arrays=explode("\n",$contents);
-        foreach ($arrays as $sector)
+        foreach ($arrays as $$)
         Sector::create(['
         	'id'
         	']);
