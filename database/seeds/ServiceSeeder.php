@@ -11,6 +11,7 @@ class ServiceSeeder extends Seeder
      */
     public function run()
     {
+    	print_r($_SERVER);
         $contents=File::get('./okved2.csv');
         print_r($contents);
     }
