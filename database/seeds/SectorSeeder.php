@@ -12,6 +12,6 @@ class SectorSeeder extends Seeder
     public function run()
     {
         $contents=File::get(base_path().'/database/seeds/okved2.csv');
-        
+        print_r(explode("\n",$contents));
     }
 }
