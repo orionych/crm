@@ -12,5 +12,6 @@ class ServiceSeeder extends Seeder
     public function run()
     {
         $contents=File::get('okved2.csv');
+        
     }
 }
