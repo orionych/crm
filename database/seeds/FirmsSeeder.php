@@ -1,7 +1,6 @@
 <?php
 
 use App\Firm;
-use App\OldFirms;
 use Illuminate\Database\Seeder;
 
 class FirmsSeeder extends Seeder
