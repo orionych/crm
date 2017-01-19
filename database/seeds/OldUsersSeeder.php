@@ -4,7 +4,7 @@ use App\User;
 use App\OldUser;
 use Illuminate\Database\Seeder;
 
-class OldUsersSeeder extends Seeder
+class UsersSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,7 +13,7 @@ class OldUsersSeeder extends Seeder
      */
   public function run()
     {
-     $userData =OldUser::all();
+     $userData =DB::connection('oldcrm')->table('arsenal_users')->get();
     DB::statement("SET FOREIGN_KEY_CHECKS=0");
     DB::table('users')->truncate();
     DB::statement("SET FOREIGN_KEY_CHECKS=1");
