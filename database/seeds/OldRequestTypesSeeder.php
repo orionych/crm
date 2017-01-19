@@ -1,10 +1,9 @@
 <?php
 
 use App\RequestType;
-use App\OldRequestType;
 use Illuminate\Database\Seeder;
 
-class OldRequestTypesSeeder extends Seeder
+class RequestTypesSeeder extends Seeder
 {
     /**
      * Run the database seeds.
