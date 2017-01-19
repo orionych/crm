@@ -19,7 +19,7 @@ class SectorSeeder extends Seeder
         	$sector=explode(',',$array);
         Sector::create([
         	'id'=>$sector[0],
-        	'name'=>$sector[1]
+        	'name'=>str_replace('"','',$sector[1])
         	]);
     	}
     }
