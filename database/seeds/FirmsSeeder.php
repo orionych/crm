@@ -12,7 +12,7 @@ class FirmsSeeder extends Seeder
      */
     public function run()
     {
-        	$firms=OldFirms::all();
+        	$firms=DB::connection('oldcrm')->table('crm_firms')->get();
 	DB::statement("SET FOREIGN_KEY_CHECKS=0");
 	DB::table('firms')->truncate();
    	DB::statement("SET FOREIGN_KEY_CHECKS=1");
