@@ -14,11 +14,12 @@ class SectorSeeder extends Seeder
         $contents=trim(File::get(base_path().'/database/seeds/okved2.csv'));
         $arrays=explode("\n",$contents);
         foreach ($arrays as $array)
-        {
-        	$sector=
-        Sector::create(['
-        	'id'
-        	']);
+	{
+        	$sector=explode(',',$array);
+        Sector::create([
+        	'id'=>$sector[0],
+        	'name'=>$sector[1]
+        	]);
     	}
     }
 }
