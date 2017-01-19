@@ -2,7 +2,6 @@
 
 use App\Request;
 use Carbon\Carbon;
-use App\OldRequest;
 use Illuminate\Database\Seeder;
 
 class RequestSeeder extends Seeder
