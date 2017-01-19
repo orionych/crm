@@ -27,7 +27,7 @@ class OldRequestSeeder extends Seeder
 	if ($created=='1970-01-01 00:00:00') {$created=null;}
     	Request::create([
     		'id'	=>$request->id,
-    		'request_type_id'	=>intval($request->typeid),
+    		'product_id'	=>intval($request->typeid),
     		'client_id'	=> intval($request->clientid),
     		'text'		=> iconv("KOI8-R","UTF-8",$request->request),
     		'status'		=> $request->enabled,
