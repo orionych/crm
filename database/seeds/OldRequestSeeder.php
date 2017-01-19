@@ -14,7 +14,7 @@ class OldRequestSeeder extends Seeder
      */
     public function run()
     {
-	$requests=OldRequest::all();
+	$requests=DB::connection('oldcrm')->table('crm_requests)->get();
 	DB::statement("SET FOREIGN_KEY_CHECKS=0");
 	DB::table('requests')->truncate();
    	DB::statement("SET FOREIGN_KEY_CHECKS=1");
