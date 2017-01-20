@@ -23,7 +23,7 @@ class CreateSpecificationsTable extends Migration
             $table->string('payment')->default();
             $table->integer('week')->default(0);
             $table->integer('shift')->default(0);
-            $table->boolean('payer_id')->default(false);
+            $table->boolean('payer')->default(false);
 
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
