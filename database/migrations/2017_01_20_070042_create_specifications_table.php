@@ -21,8 +21,9 @@ class CreateSpecificationsTable extends Migration
             $table->text('text');
            // $table->integer('payment_id')->index()->default(0);
             $table->string('payment')->default();
-            $table->integer('delivery')->default(0);
+            $table->integer('week')->default(0);
             $table->integer('shift')->default(0);
+            $table->
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
