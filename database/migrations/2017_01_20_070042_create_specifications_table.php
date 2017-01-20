@@ -15,7 +15,7 @@ class CreateSpecificationsTable extends Migration
     {
         Schema::create('specifications', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('contarct_id')->index()->default(0);
+            $table->integer('contract_id')->index()->default(0);
             $table->integer('offer_id')->index()->default(0);
             $table->integer('number')->default(0);
             $table->text('text');
