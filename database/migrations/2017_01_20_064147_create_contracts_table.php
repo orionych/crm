@@ -15,7 +15,11 @@ class CreateContractsTable extends Migration
     {
         Schema::create('contracts', function (Blueprint $table) {
             $table->increments('id');
-            $table->
+            $table->integer('number')->unsigned();
+            $table->boolean('notnative')->default(false);
+            $table->integer('firm_id')->default(0);
+            $table->text('description');
+            $table->boolean('closed')->default(false);
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
