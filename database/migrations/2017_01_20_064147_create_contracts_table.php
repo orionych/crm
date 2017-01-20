@@ -17,6 +17,7 @@ class CreateContractsTable extends Migration
             $table->increments('id');
             $table->integer('number')->unsigned();
             $table->boolean('notnative')->default(false);
+            $table->string('name')->default();
             $table->integer('firm_id')->default(0);
             $table->text('description');
             $table->boolean('closed')->default(false);
