@@ -20,6 +20,7 @@ class CreateContractsTable extends Migration
             $table->string('name')->default();
             $table->integer('firm_id')->default(0);
             $table->text('description');
+            $table->boolean('template')->default(false);
             $table->boolean('closed')->default(false);
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
