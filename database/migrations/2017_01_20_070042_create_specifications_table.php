@@ -21,7 +21,7 @@ class CreateSpecificationsTable extends Migration
             $table->text('text');
            // $table->integer('payment_id')->index()->default(0);
             $table->string('payment')->default();
-            $table->integer('week')->default(0);
+            $table->integer('time')->default(0);
             $table->integer('shift')->default(0);
             $table->boolean('payer')->default(false);
             $table->integer('okv_id')->default(643);
