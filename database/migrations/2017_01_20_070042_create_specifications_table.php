@@ -26,7 +26,6 @@ class CreateSpecificationsTable extends Migration
             $table->boolean('payer')->default(false);
             $table->integer('okv_id')->default(643);
             $table->boolean('vat')->default(true);
-
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
