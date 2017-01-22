@@ -16,5 +16,6 @@ class EquipmentSeeder extends Seeder
 	DB::table('equipments')->truncate();
    	DB::statement("SET FOREIGN_KEY_CHECKS=1");   	
     	Eloquent::unguard(); 
+    	foreach 
     }
 }
