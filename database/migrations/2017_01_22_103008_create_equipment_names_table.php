@@ -15,7 +15,7 @@ class CreateEquipmentNamesTable extends Migration
     {
         Schema::create('equipment_name_types', function (Blueprint $table) {
             $table->increments('id');
-            $
+            $t
             $table->integer('equipment_name_type_id')->default(0);
             $table->string('name')->default();
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
