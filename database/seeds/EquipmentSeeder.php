@@ -77,9 +77,9 @@ class EquipmentSeeder extends Seeder
     		{
     			Price::create([
     			'equipment_id'		=>	$equipment->id,
-    			'price_type_id'		=>	3,
-    			'price'			=>	$eq->recommendedpriceoem,
-    			'okv_id'		=>	$okvs[$eq->recommendedpriceoemcurrency]
+    			'price_type_id'		=>	4,
+    			'price'			=>	$eq->recommendedprice,
+    			'okv_id'		=>	$okvs[$eq->recommendedpricecurrency]
     			]);
     		}
 
