@@ -20,11 +20,11 @@ class CreatePriceTypesTable extends Migration
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
-        DB::table('price_types')->insert(array('name'=>'Стоимость для нас','html'=>'!'));
-        DB::table('price_types')->insert(array('name'=>'Стоимость производителя','html'=>'произв.'));
-        DB::table('price_types')->insert(array('name'=>'Стоимость для ОЕМ компаний','html'=>'OEM'));
-        DB::table('price_types')->insert(array('name'=>'Рекомендуемая стоимость продажи','html'=>'$'));
-        DB::table('price_types')->insert(array('name'=>'Стоимость по бухгалтерии','html'=>'бух.'));
+        DB::table('price_types')->insert(array('name'=>'Закупка для нас','html'=>'!'));
+        DB::table('price_types')->insert(array('name'=>'Закупка у производителя','html'=>'произв.'));
+        DB::table('price_types')->insert(array('name'=>'Цена для ОЕМ компаний','html'=>'OEM'));
+        DB::table('price_types')->insert(array('name'=>'Цена для EU','html'=>'$'));
+        DB::table('price_types')->insert(array('name'=>'Себестоимость по бухгалтерии','html'=>'бух.'));
     }
 
     /**
