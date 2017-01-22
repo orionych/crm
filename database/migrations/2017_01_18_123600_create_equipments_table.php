@@ -23,12 +23,6 @@ class CreateEquipmentsTable extends Migration
             $table->double('discount',5,2)->default(0);
             $table->text('text');
             $table->integer('okei_id')->default(796);
-            $table->double('bordersize')->default(0);
-            $table->double('dimx',6,3)->default(0);
-            $table->double('dimy',6,3)->default(0);
-            $table->double('dimz',6,3)->default(0);
-            $table->double('weight',8,2)->default(0);
-            $table->double('places',8,2)->default(0);
             $table->boolean('option')->default(false);
             $table->boolean('disabled')->default(false);
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
