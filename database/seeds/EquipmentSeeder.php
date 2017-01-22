@@ -18,7 +18,9 @@ class EquipmentSeeder extends Seeder
     	Eloquent::unguard(); 
     	foreach ($equipments as $eq)
     	{
-    		$eq=
+    		$eq=Equipment::create([
+    			
+    			])
     	}
     }
 }
