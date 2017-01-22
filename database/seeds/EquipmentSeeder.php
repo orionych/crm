@@ -45,12 +45,14 @@ class EquipmentSeeder extends Seeder
     			'name'				=> 	$eq->stockcode
     			]);
     			}
+    		$okvs=array(643,978);
     		if (floatval($eq->price)!=0.00)
     		{
     			Price::create([
     			'equipment_id'		=>	$equipment->id,
     			'price_type_id'		=>	1,
-    			
+    			'price'			=>	$eq->price,
+    			'okv_id'		=>	$okvs[$eq->currency]
     			]);
     		}
 
