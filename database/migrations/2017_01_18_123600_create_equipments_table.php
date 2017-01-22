@@ -16,8 +16,6 @@ class CreateEquipmentsTable extends Migration
 
         Schema::create('equipments', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name')->default();
-            $table->string('stockname')->default();
             $table->integer('firm_id')->index()->default(0);
             $table->integer('product_id')->index()->default(0);
             $table->double('discount',6,2)->default(0);
