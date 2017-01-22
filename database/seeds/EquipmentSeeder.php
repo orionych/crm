@@ -91,7 +91,7 @@ class EquipmentSeeder extends Seeder
     				'dimy'		=>	$eq->dimz,
     				'dimh'		=>	$eq->dimy,
     				'places'	=>	$eq->places,
-    				'weight'	=>	
+    				'weight'	=>	$eq->weight
     				]);
     		}
 
