@@ -20,7 +20,8 @@ class ProductSeeder extends Seeder
     	{
     		RequestType::create([
     			'id'	=>$requesttype->id,
-    			'name'	=>iconv('KOI8-R','UTF-8',$requesttype->name)
+    			'name'	=>iconv('KOI8-R','UTF-8',$requesttype->name),
+    			'tax'=>0
     			]);
     	}
     }
