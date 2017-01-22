@@ -73,7 +73,7 @@ class EquipmentSeeder extends Seeder
     			'okv_id'		=>	$okvs[$eq->recommendedpriceoemcurrency]
     			]);
     		}
-    		if (floatval($eq->recommendedpriceoem)!=0.00)
+    		if (floatval($eq->recommendedprice)!=0.00)
     		{
     			Price::create([
     			'equipment_id'		=>	$equipment->id,
