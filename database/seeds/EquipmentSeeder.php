@@ -84,7 +84,10 @@ class EquipmentSeeder extends Seeder
     		}
     		if (intval($eq->optionprice)!=1)
     		{
-    			Dimension::
+    			Dimension::create([
+    				'equipment_id'	=>	$equipment->id,
+    				'okei_id'	
+    				]);
     		}
 
     		
