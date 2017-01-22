@@ -37,7 +37,7 @@ class EquipmentSeeder extends Seeder
     			EquipmentName::create([
     			'equipment_id'			=>	$equipment->id,
     			'equipment_name_type_id'	=>	1,
-    			'name'				=> 	$eq->code
+    			'name'				=> 	iconv('KOI8-R','UTF-8',$eq->code)
     			]);
     			}
       		if (trim($eq->stockcode)!='')
@@ -45,7 +45,7 @@ class EquipmentSeeder extends Seeder
     			EquipmentName::create([
     			'equipment_id'			=>	$equipment->id,
     			'equipment_name_type_id'	=>	2,
-    			'name'				=> 	$eq->stockcode
+    			'name'				=> 	iconv('KOI8-R','UTF-8',$eq->stockcode)
     			]);
     			}
     		$okvs=array(643,978);
