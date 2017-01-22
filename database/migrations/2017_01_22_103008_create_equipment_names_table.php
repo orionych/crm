@@ -21,6 +21,7 @@ class CreateEquipmentNamesTable extends Migration
         });
         DB::table('equipment_names')->insert(array('name'=>'Код оборудования'));
         DB::table('equipment_names')->insert(array('name'=>'Обезличенный код'));
+        DB::table('equipment_names')->insert(array('name'=>'Id по бухгалтерии'));
     }
 
     /**
