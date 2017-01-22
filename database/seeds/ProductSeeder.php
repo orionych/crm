@@ -1,5 +1,6 @@
 <?php
 
+use App\Product;
 use Illuminate\Database\Seeder;
 
 class ProductSeeder extends Seeder
@@ -18,7 +19,7 @@ class ProductSeeder extends Seeder
     	Eloquent::unguard(); 
     	foreach ($products as $requesttype)
     	{
-    		RequestType::create([
+    		Product::create([
     			'id'	=>$requesttype->id,
     			'name'	=>iconv('KOI8-R','UTF-8',$requesttype->name),
     			'tax'=>0
