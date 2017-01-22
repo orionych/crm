@@ -21,6 +21,7 @@ class EquipmentSeeder extends Seeder
     		$eq=Equipment::create([
     			'id'	=>	$eq->id,
     			'text'	=>	iconv('KOI8-R','UTF-8',$eq->description),
+    			'discount' 	=>	$eq->discount,
     			
     			]);
     	}
