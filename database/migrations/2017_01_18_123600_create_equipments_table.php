@@ -18,7 +18,7 @@ class CreateEquipmentsTable extends Migration
             $table->increments('id');
             $table->string('name')->default();
             $table->string('stockname')->default();
-            $table->integer('firm_id')->default(0);
+            $table->integer('firm_id')->index()->default(0);
             $table->integer('product_id')->default(0);
             $table->double('discount',5,2)->default(0);
             $table->text('text');
