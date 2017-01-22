@@ -20,7 +20,7 @@ class EquipmentSeeder extends Seeder
     	Eloquent::unguard(); 
     	foreach ($equipments as $eq)
     	{
-    		$eq=Equipment::create([
+    		$equipment=Equipment::create([
     			'id'	=>	$eq->id,
     			'text'	=>	iconv('KOI8-R','UTF-8',$eq->description),
     			'discount' 	=>	$eq->discount,
@@ -29,7 +29,12 @@ class EquipmentSeeder extends Seeder
     			'option'		=>	$eq->optionprice,
     			'disabled'	=>	$eq->disabledsearch
     			]);
-    		
+    		$name=EquipmentName::create([
+    			'equipment_id'			=>	$equipment->id,
+    			'equipment_name_type_id'	=>	1,
+    			'name'				=> 	$eq->name
+    			]);
+
     	}
     }
 }
