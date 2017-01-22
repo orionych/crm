@@ -49,6 +49,7 @@ class EquipmentSeeder extends Seeder
     		{
     			Price::create([
     			'equipment_id'		=>	$equipment->id,
+    			'price_type_id'		=>	1,
     			
     			]);
     		}
