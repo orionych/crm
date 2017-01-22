@@ -82,7 +82,7 @@ class EquipmentSeeder extends Seeder
     			'okv_id'		=>	$okvs[$eq->recommendedpricecurrency]
     			]);
     		}
-
+    		
     		
 
     	}
