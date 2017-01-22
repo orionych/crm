@@ -37,12 +37,12 @@ class EquipmentSeeder extends Seeder
     			'name'				=> 	$eq->code
     			]);
     			}
-      		if (trim($eq->code)!='')
+      		if (trim($eq->stockcode)!='')
     			{
     		$name=EquipmentName::create([
     			'equipment_id'			=>	$equipment->id,
-    			'equipment_name_type_id'	=>	1,
-    			'name'				=> 	$eq->code
+    			'equipment_name_type_id'	=>	2,
+    			'name'				=> 	$eq->stockcode
     			]);
     			}
 
