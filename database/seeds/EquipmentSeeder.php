@@ -88,7 +88,10 @@ class EquipmentSeeder extends Seeder
     				'equipment_id'	=>	$equipment->id,
     				'okei_id'	=>	$okei[$eq->measure],
     				'dimx'		=>	$eq->dimx,
-    				
+    				'dimy'		=>	$eq->dimz,
+    				'dimh'		=>	$eq->dimy,
+    				'places'	=>	$eq->places,
+    				'weight'	=>	
     				]);
     		}
 
