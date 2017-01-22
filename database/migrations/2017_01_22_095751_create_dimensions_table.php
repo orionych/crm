@@ -15,7 +15,8 @@ class CreateDimensionsTable extends Migration
     {
         Schema::create('dimensions', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('equipment_id')->index();
+            $table->integer('equipment_id')->index();            
+            $table->integer('okei_id')->default(796);
             $table->double('dimx',8,3)->default(0);
             $table->double('dimy',8,3)->default(0);
             $table->double('dimh',8,3)->default(0);
