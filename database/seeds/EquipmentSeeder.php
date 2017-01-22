@@ -45,6 +45,10 @@ class EquipmentSeeder extends Seeder
     			'name'				=> 	$eq->stockcode
     			]);
     			}
+    		if (floatval($eq->price)!=0.00)
+    		{
+    			
+    		}
 
     	}
     }
