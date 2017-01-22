@@ -85,18 +85,18 @@ class EquipmentSeeder extends Seeder
     			'okv_id'		=>	$okvs[$eq->recommendedpricecurrency]
     			]);
     		}
-    		// if (intval($eq->optionprice)!=1)
-    		// {
-    		// 	Dimension::create([
-    		// 		'equipment_id'	=>	$equipment->id,
-    		// 		'okei_id'	=>	$okei[$eq->measure],
-    		// 		'dimx'		=>	$eq->dimx,
-    		// 		'dimy'		=>	$eq->dimz,
-    		// 		'dimh'		=>	$eq->dimy,
-    		// 		'places'	=>	$eq->places,
-    		// 		'weight'	=>	$eq->weight
-    		// 		]);
-    		// }
+    		if (intval($eq->optionprice)!=1)
+    		{
+    			Dimension::create([
+    				'equipment_id'	=>	$equipment->id,
+    				'okei_id'	=>	$okei[$eq->measure],
+    				'dimx'		=>	$eq->dimx,
+    				'dimy'		=>	$eq->dimz,
+    				'dimh'		=>	$eq->dimy,
+    				'places'	=>	$eq->places,
+    				'weight'	=>	$eq->weight
+    				]);
+    		}
 
     		
 
