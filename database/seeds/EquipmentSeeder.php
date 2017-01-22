@@ -47,7 +47,10 @@ class EquipmentSeeder extends Seeder
     			}
     		if (floatval($eq->price)!=0.00)
     		{
-
+    			Price::create([
+    			'equipment_id'		=>	$equipment->id,
+    			
+    			]);
     		}
 
     	}
