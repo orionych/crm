@@ -13,16 +13,7 @@ class CreateEquipmentNamesTable extends Migration
      */
     public function up()
     {
-        Schema::create('equipment_names', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name')->default();
-            $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
-            $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
-        });
-        DB::table('equipment_names')->insert(array('name'=>'Код оборудования'));
-        DB::table('equipment_names')->insert(array('name'=>'Обезличенный код'));
-        DB::table('equipment_names')->insert(array('name'=>'Id по бухгалтерии'));
-        DB::table('equipment_names')->insert(array('name'=>'Код для клиента'));
+
     }
 
     /**
