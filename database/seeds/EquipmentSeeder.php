@@ -29,6 +29,7 @@ class EquipmentSeeder extends Seeder
     			'option'		=>	$eq->optionprice,
     			'disabled'	=>	$eq->disabledsearch
     			]);
+    		
     		$name=EquipmentName::create([
     			'equipment_id'			=>	$equipment->id,
     			'equipment_name_type_id'	=>	1,
