@@ -82,7 +82,11 @@ class EquipmentSeeder extends Seeder
     			'okv_id'		=>	$okvs[$eq->recommendedpricecurrency]
     			]);
     		}
-    		
+    		if (intval($eq->optionprice)!=1)
+    		{
+    			Dimension::
+    		}
+
     		
 
     	}
