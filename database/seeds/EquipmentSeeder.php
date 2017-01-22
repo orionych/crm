@@ -1,5 +1,6 @@
 <?php
 
+use App\Equipment;
 use Illuminate\Database\Seeder;
 
 class EquipmentSeeder extends Seeder
@@ -28,6 +29,7 @@ class EquipmentSeeder extends Seeder
     			'option'		=>	$eq->optionprice,
     			'disabled'	=>	$eq->disabledsearch
     			]);
+    		
     	}
     }
 }
