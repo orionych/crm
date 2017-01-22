@@ -22,7 +22,6 @@ class CreateEquipmentsTable extends Migration
             $table->integer('product_id')->index()->default(0);
             $table->double('discount',6,2)->default(0);
             $table->text('text');
-            $table->integer('okei_id')->default(796);
             $table->boolean('option')->default(false);
             $table->boolean('disabled')->default(false);
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
