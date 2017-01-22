@@ -31,7 +31,7 @@ class EquipmentSeeder extends Seeder
     			]);
     		if (trim($eq->code)!='')
     			{
-    		$name=EquipmentName::create([
+    			EquipmentName::create([
     			'equipment_id'			=>	$equipment->id,
     			'equipment_name_type_id'	=>	1,
     			'name'				=> 	$eq->code
@@ -39,7 +39,7 @@ class EquipmentSeeder extends Seeder
     			}
       		if (trim($eq->stockcode)!='')
     			{
-    		$name=EquipmentName::create([
+    			EquipmentName::create([
     			'equipment_id'			=>	$equipment->id,
     			'equipment_name_type_id'	=>	2,
     			'name'				=> 	$eq->stockcode
@@ -47,7 +47,7 @@ class EquipmentSeeder extends Seeder
     			}
     		if (floatval($eq->price)!=0.00)
     		{
-    			
+
     		}
 
     	}
