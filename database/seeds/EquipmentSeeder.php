@@ -87,6 +87,7 @@ class EquipmentSeeder extends Seeder
     			Dimension::create([
     				'equipment_id'	=>	$equipment->id,
     				'okei_id'	=>	$okei[$eq->measure],
+    				'dimx'		=>	$eq->dimx,
     				
     				]);
     		}
