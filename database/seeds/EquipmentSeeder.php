@@ -11,6 +11,7 @@ class EquipmentSeeder extends Seeder
      */
     public function run()
     {
+    	$okei=array(796,18,839);
 	$equipments=DB::connection('oldcrm')->table('crm_price')->get();
 	DB::statement("SET FOREIGN_KEY_CHECKS=0");
 	DB::table('equipments')->truncate();
@@ -22,7 +23,7 @@ class EquipmentSeeder extends Seeder
     			'id'	=>	$eq->id,
     			'text'	=>	iconv('KOI8-R','UTF-8',$eq->description),
     			'discount' 	=>	$eq->discount,
-    			
+
     			]);
     	}
     }
