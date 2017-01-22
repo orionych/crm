@@ -13,7 +13,7 @@ class CreateEquipmentNamesTable extends Migration
      */
     public function up()
     {
-        Schema::create('equipment_name_types', function (Blueprint $table) {
+        Schema::create('equipment_names', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('equipment_id')->index()->default(0);
             $table->integer('equipment_name_type_id')->index()->default(0);
