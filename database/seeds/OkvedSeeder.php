@@ -18,7 +18,8 @@ class OkvedSeeder extends Seeder
 	{
         	$sector=explode(',',$array);
             $okveds=explode('.',$sector[0]);
-            print_r(okveds);
+            $okveds[]=0;
+            $okveds[]=0;
             Okved::create([
         	'sector'=>intval($okveds[0]),
             'subsector'=>intval(substr($okveds[1]."0",0,2)),
