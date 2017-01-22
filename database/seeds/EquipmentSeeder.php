@@ -29,12 +29,14 @@ class EquipmentSeeder extends Seeder
     			'option'		=>	$eq->optionprice,
     			'disabled'	=>	$eq->disabledsearch
     			]);
-    		
+    		if (trim($eq->code)!='')
+    			{
     		$name=EquipmentName::create([
     			'equipment_id'			=>	$equipment->id,
     			'equipment_name_type_id'	=>	1,
-    			'name'				=> 	$eq->name
+    			'name'				=> 	$eq->code
     			]);
+    			}
 
     	}
     }
