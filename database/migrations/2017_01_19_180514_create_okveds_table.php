@@ -15,7 +15,8 @@ class CreateOkvedsTable extends Migration
     {
         Schema::create('okveds', function (Blueprint $table) {
             $table->integer('sector');
-            $table->integer('sector');
+            $table->integer('subsector');
+            $table->integer('suffix');
             $table->string('name')->default();
             $table->boolean('enabled')->default(false);
         });
