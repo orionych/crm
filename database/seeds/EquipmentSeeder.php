@@ -19,6 +19,7 @@ class EquipmentSeeder extends Seeder
     	foreach ($equipments as $eq)
     	{
     		$eq=Equipment::create([
+    			'id'	=>	$eq->id,
     			
     			])
     	}
