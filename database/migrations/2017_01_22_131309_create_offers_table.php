@@ -17,6 +17,7 @@ class CreateOffersTable extends Migration
             $table->increments('id');
             $table->integer('request_id')->index()->default(0);
             $table->integer('number')->index();
+            $table->integer('version')->default(1);
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
