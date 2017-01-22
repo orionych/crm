@@ -23,7 +23,8 @@ class EquipmentSeeder extends Seeder
     			'id'	=>	$eq->id,
     			'text'	=>	iconv('KOI8-R','UTF-8',$eq->description),
     			'discount' 	=>	$eq->discount,
-
+    			'product_id'	=>	0,
+    			'okei_id'	=>	$okei[$eq->measure],
     			]);
     	}
     }
