@@ -17,6 +17,7 @@ class CreatePriceTypesTable extends Migration
             $table->increments('id');
             $table->string('name')->default();
             $table->string('html')->default();
+            $table->boolean('readonly')->deafult(false);
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
@@ -24,7 +25,7 @@ class CreatePriceTypesTable extends Migration
         DB::table('price_types')->insert(array('name'=>'Закупка у производителя','html'=>'произв.'));
         DB::table('price_types')->insert(array('name'=>'Цена для ОЕМ компаний','html'=>'OEM'));
         DB::table('price_types')->insert(array('name'=>'Цена для EU','html'=>'$'));
-        DB::table('price_types')->insert(array('name'=>'Себестоимость по бухгалтерии','html'=>'бух.'));
+        DB::table('price_types')->insert(array('name'=>'Себестоимость по бухгалтерии','html'=>'бух.','readonly'=>false));
     }
 
     /**
