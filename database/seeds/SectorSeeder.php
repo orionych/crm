@@ -1,9 +1,9 @@
 <?php
 
-use App\Sector;
+use App\Okved;
 use Illuminate\Database\Seeder;
 
-class SectorSeeder extends Seeder
+class OkvedSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -17,7 +17,7 @@ class SectorSeeder extends Seeder
         foreach ($arrays as $array)
 	{
         	$sector=explode(',',$array);
-        Sector::create([
+        Okved::create([
         	'id'=>$sector[0],
         	'name'=>str_replace('"','',$sector[1])
         	]);
