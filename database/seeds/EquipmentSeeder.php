@@ -1,6 +1,9 @@
 <?php
 
+use App\Price;
+use App\Dimension;
 use App\Equipment;
+use App\EquipmentName;
 use Illuminate\Database\Seeder;
 
 class EquipmentSeeder extends Seeder
