@@ -17,7 +17,7 @@ class CreateDimensionsTable extends Migration
             $table->increments('id');
             $table->double('dimx',6,3)->default(0);
             $table->double('dimy',6,3)->default(0);
-            $table->double('dimz',6,3)->default(0);
+            $table->double('dimh',6,3)->default(0);
             $table->double('weight',8,2)->default(0);
             $table->double('places',8,2)->default(0);
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
