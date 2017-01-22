@@ -15,13 +15,11 @@ class CreateEquipmentNamesTable extends Migration
     {
         Schema::create('equipment_names', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('equipment_id')->index()->default(0);
-            $table->string('label')->default();
             $table->string('name')->default();
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
-        DB::table('equipment_names')->insert('equip');
+        DB::table('equipment_names')->insert(array('name'=>'Название наше'));
     }
 
     /**
