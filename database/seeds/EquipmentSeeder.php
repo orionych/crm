@@ -49,42 +49,42 @@ class EquipmentSeeder extends Seeder
     			]);
     			}
     		$okvs=array(643,978);
-    		if (floatval($eq->price)!=0.00)
-    		{
-    			Price::create([
-    			'equipment_id'		=>	$equipment->id,
-    			'price_type_id'		=>	1,
-    			'price'			=>	$eq->price,
-    			'okv_id'		=>	$okvs[$eq->currency]
-    			]);
-    		}
-    		if (floatval($eq->producerprice)!=0.00)
-    		{
-    			Price::create([
-    			'equipment_id'		=>	$equipment->id,
-    			'price_type_id'		=>	2,
-    			'price'			=>	$eq->producerprice,
-    			'okv_id'		=>	$okvs[$eq->producerpricecurrency]
-    			]);
-    		}
-    		if (floatval($eq->recommendedpriceoem)!=0.00)
-    		{
-    			Price::create([
-    			'equipment_id'		=>	$equipment->id,
-    			'price_type_id'		=>	3,
-    			'price'			=>	$eq->recommendedpriceoem,
-    			'okv_id'		=>	$okvs[$eq->recommendedpriceoemcurrency]
-    			]);
-    		}
-    		if (floatval($eq->recommendedprice)!=0.00)
-    		{
-    			Price::create([
-    			'equipment_id'		=>	$equipment->id,
-    			'price_type_id'		=>	4,
-    			'price'			=>	$eq->recommendedprice,
-    			'okv_id'		=>	$okvs[$eq->recommendedpricecurrency]
-    			]);
-    		}
+    		// if (floatval($eq->price)!=0.00)
+    		// {
+    		// 	Price::create([
+    		// 	'equipment_id'		=>	$equipment->id,
+    		// 	'price_type_id'		=>	1,
+    		// 	'price'			=>	$eq->price,
+    		// 	'okv_id'		=>	$okvs[$eq->currency]
+    		// 	]);
+    		// }
+    		// if (floatval($eq->producerprice)!=0.00)
+    		// {
+    		// 	Price::create([
+    		// 	'equipment_id'		=>	$equipment->id,
+    		// 	'price_type_id'		=>	2,
+    		// 	'price'			=>	$eq->producerprice,
+    		// 	'okv_id'		=>	$okvs[$eq->producerpricecurrency]
+    		// 	]);
+    		// }
+    		// if (floatval($eq->recommendedpriceoem)!=0.00)
+    		// {
+    		// 	Price::create([
+    		// 	'equipment_id'		=>	$equipment->id,
+    		// 	'price_type_id'		=>	3,
+    		// 	'price'			=>	$eq->recommendedpriceoem,
+    		// 	'okv_id'		=>	$okvs[$eq->recommendedpriceoemcurrency]
+    		// 	]);
+    		// }
+    		// if (floatval($eq->recommendedprice)!=0.00)
+    		// {
+    		// 	Price::create([
+    		// 	'equipment_id'		=>	$equipment->id,
+    		// 	'price_type_id'		=>	4,
+    		// 	'price'			=>	$eq->recommendedprice,
+    		// 	'okv_id'		=>	$okvs[$eq->recommendedpricecurrency]
+    		// 	]);
+    		// }
     		if (intval($eq->optionprice)!=1)
     		{
     			Dimension::create([
