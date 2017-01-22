@@ -14,11 +14,12 @@ class CreateOkvedsTable extends Migration
     public function up()
     {
         Schema::create('okveds', function (Blueprint $table) {
-            $table->integer('sector');
+            $table->integer('sector')->index();
             $table->integer('subsector');
             $table->integer('suffix');
             $table->string('name')->default();
             $table->boolean('enabled')->default(false);
+            $table->index(array('sector','subsector','suffix'));
         });
     }
 
