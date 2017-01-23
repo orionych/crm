@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class OfferVersion extends Model
 {
-	public function prices() {
-		return $this->belongsToMany('App\Price');		
+	public function equipments() {
+		return $this->belongsToMany('App\Equipment');		
 	}
 }
