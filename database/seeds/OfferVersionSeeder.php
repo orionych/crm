@@ -35,7 +35,7 @@ class OfferVersionSeeder extends Seeder
     			'okv_id'	=>Okv::oldId($offer->currency),
     			'vat'		=>($offer->nds==1?18:0),
     			'time'		=>$offer->delivery,
-    			'timeplus'	=>$offer->deliveryshift,
+    			'time_plus'	=>$offer->deliveryshift,
     			'ourpayment'	=>($offer->deliverypayerid==2?false:true),
     			'created_at'	=>Carbon::createFromTimestamp(strtotime($offer->datetime))
     			]);
