@@ -19,7 +19,7 @@ class CreateOfferVersionsTable extends Migration
             $table->integer('version')->index()->default(0);
             $table->string('name')->default();
             $table->integer('okv_id');
-            $table->double('nds',4,2)->default(18);
+            $table->double('vat',4,2)->default(18);
             $table->integer('time')->default(0);
             $table->integer('time_plus')->default(1);
             $table->integer('delivery_id')->default(0);
