@@ -31,7 +31,7 @@ class OfferVersionSeeder extends Seeder
     			'version'	=>1,
     			'name'		=>iconv('KOI8-R','UTF-8',$offer->name),
     			'okv_id'	=>Okv::oldId($offer->currency),
-    			'vat'
+    			'vat'		=>
     			]);
     	}
     }
