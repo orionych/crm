@@ -26,7 +26,7 @@ class OfferVersionSeeder extends Seeder
     			'number'	=>$offer->realid,
     			'created_at'	=> Carbon::createFromTimestamp(strtotime($offer->datetime))
     			]);
-    		OfferVersion::create([
+    		$v=OfferVersion::create([
     			'offer_id'	=>$offer->id,
     			'version'	=>1,
     			'name'		=>iconv('KOI8-R','UTF-8',$offer->name),
