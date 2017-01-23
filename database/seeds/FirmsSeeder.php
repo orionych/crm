@@ -19,6 +19,7 @@ class FirmsSeeder extends Seeder
     	Eloquent::unguard();   
     	foreach ($firms as $firm)
     	{
+            try {
     		Firm::create([
     			'id'		=>$firm->id,
     			'name'		=> iconv("KOI8-R","UTF-8",$firm->name),
@@ -48,6 +49,7 @@ class FirmsSeeder extends Seeder
     			'closed'	=> iconv("KOI8-R","UTF-8",$firm->firmclosed),
     			'note'	=> iconv("KOI8-R","UTF-8//IGNORE",$firm->firmnote)
     			]);
+        } catch (Exception $e) {echo 'error';}
 
 
     	}
