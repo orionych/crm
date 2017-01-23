@@ -21,7 +21,7 @@ class OfferVersionPriceSeeder extends Seeder
     	{
     		$o=OfferVersion::where('offer_id',$offer->offerid)->first();
     		
-    		if (is_object($o)) $o->prices()->attach($offer->priceid,['count'=>$offer->countitem,'price'=>$offer->price,'time'=>$offer->individualtime]);
+    		if (is_object($o)) $o->equipments()->attach($offer->priceid,['count'=>$offer->countitem,'price'=>$offer->price,'time'=>$offer->individualtime]);
 
     	}
     }
