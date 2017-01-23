@@ -34,7 +34,7 @@ class OfferVersionSeeder extends Seeder
     			'vat'		=>($offer->nds==1?18:0),
     			'time'		=>$offer->delivery,
     			'timeplus'	=>$offer->deliveryshift,
-    			''
+    			'delivery_id'	=>
     			]);
     	}
     }
