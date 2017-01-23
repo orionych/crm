@@ -18,6 +18,7 @@ class OfferVersionSeeder extends Seeder
 	$offers=DB::connection('oldcrm')->table('crm_clients_commercial_offer')->get();
 	DB::statement("SET FOREIGN_KEY_CHECKS=0");
 	DB::table('offers')->truncate();
+	DB::table('offer_versions')->truncate();
    	DB::statement("SET FOREIGN_KEY_CHECKS=1");   	
     	Eloquent::unguard(); 
     	foreach ($offers as $offer)
