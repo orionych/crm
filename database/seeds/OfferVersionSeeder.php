@@ -20,7 +20,7 @@ class OfferVersionSeeder extends Seeder
     	foreach ($offers as $offer)
     	{
     		Offer::create([
-    			
+    			'id'-
     			]);
     	}
     }
