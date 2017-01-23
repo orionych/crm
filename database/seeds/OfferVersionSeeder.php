@@ -1,5 +1,6 @@
 <?php
 
+use App\Okv;
 use App\Offer;
 use Carbon\Carbon;
 use App\OfferVersion;
