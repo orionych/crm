@@ -24,7 +24,6 @@ class CreateOfferVersionsTable extends Migration
             $table->integer('time_plus')->default(1);
             $table->integer('delivery_id')->default(0);
             $table->boolean('outpayment')->default(false);
-
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
