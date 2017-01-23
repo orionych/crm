@@ -23,7 +23,7 @@ class FirmsSeeder extends Seeder
     			'id'		=>$firm->id,
     			'name'		=> iconv("KOI8-R","UTF-8",$firm->name),
     			'fullname'	=> iconv("KOI8-R","UTF-8",$firm->fullname),
-    			'okved_id'	=> iconv("KOI8-R","UTF-8",$firm->okved),
+    			'okved_id'	=> substr(iconv("KOI8-R","UTF-8",$firm->okved),0,10),
     			'power'		=> iconv("KOI8-R","UTF-8",$firm->power),
     			'stars'		=> iconv("KOI8-R","UTF-8",$firm->stars),
     			'fizlico'		=> iconv("KOI8-R","UTF-8",$firm->fizlico),
