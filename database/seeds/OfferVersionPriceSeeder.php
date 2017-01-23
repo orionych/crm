@@ -16,5 +16,9 @@ class OfferVersionPriceSeeder extends Seeder
 	DB::table('offers')->truncate();
    	DB::statement("SET FOREIGN_KEY_CHECKS=1");   	
     	Eloquent::unguard(); 
+    	foreach ($offers as $offer)
+    	{
+    		
+    	}
     }
 }
