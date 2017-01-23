@@ -20,9 +20,9 @@ class CreateOfferVersionsTable extends Migration
             $table->string('name')->default();
             $table->integer('okv_id');
             $table->double('nds',4,2)->default(18);
-            $table->integer('delivery')->default(0);
             $table->integer('deliveryshift')->default(0);
-            
+            $table->integer('delivery_id')->default(0);
+            $
 
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
