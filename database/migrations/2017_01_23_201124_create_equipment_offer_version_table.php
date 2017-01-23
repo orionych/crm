@@ -19,8 +19,7 @@ class CreateEquipmentOfferVersionTable extends Migration
             $table->integer('offer_version_id')->index();
             $table->double('count',14,4)->default(0);
             $table->double('price',14,4)->default(0);
-            $table->integer('time')->default(0);
-            
+            $table->integer('time')->default(0);            
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
