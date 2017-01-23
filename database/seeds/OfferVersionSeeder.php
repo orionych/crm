@@ -19,7 +19,7 @@ class OfferVersionSeeder extends Seeder
     	Eloquent::unguard(); 
     	foreach ($offers as $offer)
     	{
-    		Offer::create([
+    		$Offer::create([
     			'id'		=>$offer->id,
     			'request_id'	=>$offer->requestid,
     			'number'	=>$offer->realid,
