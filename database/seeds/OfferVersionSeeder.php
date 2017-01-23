@@ -19,12 +19,13 @@ class OfferVersionSeeder extends Seeder
     	Eloquent::unguard(); 
     	foreach ($offers as $offer)
     	{
-    		$Offer::create([
+    		$o=Offer::create([
     			'id'		=>$offer->id,
     			'request_id'	=>$offer->requestid,
     			'number'	=>$offer->realid,
     			'created_at'	=> Carbon::createFromTimestamp(strtotime($offer->datetime))
     			]);
+    		
     	}
     }
 }
