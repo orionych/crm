@@ -23,7 +23,7 @@ class OfferVersionSeeder extends Seeder
     			'id'		=>$offer->id,
     			'request_id'	=>$offer->requestid,
     			'number'	=>$offer->realid,
-    			'created_at'	=>
+    			'created_at'	=> Carbon::createFromTimestamp(strtotime($offer->datetime))
     			]);
     	}
     }
