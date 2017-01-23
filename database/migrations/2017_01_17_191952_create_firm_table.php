@@ -19,7 +19,7 @@ class CreateFirmTable extends Migration
             $table->string('fullname')->default();
             $table->boolean('competitor')->default(false);
             $table->boolean('supplier')->default(false);
-            $table->string('okved_i',10)->index()->default();
+            $table->string('okved_id',10)->index()->default();
             $table->integer('power')->default(0);            
             $table->integer('stars')->default(0);    
             $table->integer('fizlico')->default(0);
