@@ -8,8 +8,8 @@ class Okved extends Model
 {
 	public $timestamps = false;
 	public $incrementing = false;
-	public function comments()
+	public function firms()
 	{
-	        return $this->hasMany('App\Comment');
+	        return $this->hasMany('App\Firm');
 	}
 }
