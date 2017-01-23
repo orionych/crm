@@ -21,6 +21,7 @@ class OkvedSeeder extends Seeder
             $okveds[]=0;
             $okveds[]=0;
             Okved::create([
+            'id'=>$sector[0],
         	'sector'=>intval($okveds[0]),
             'subsector'=>intval($okveds[1]),
             'suffix'=>intval($okveds[2]),
