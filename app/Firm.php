@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Firm extends Model
 {
-    public function okved() {
+    public function okveds() {
     	return $this->belongsTo('App\Okved');
     }
 }
