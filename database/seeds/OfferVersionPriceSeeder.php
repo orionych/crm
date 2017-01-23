@@ -20,8 +20,9 @@ class OfferVersionPriceSeeder extends Seeder
     	foreach ($offers as $offer)
     	{
     		$o=OfferVersion::where('offer_id',$offer->id)->first();
-    		print_r($o);
+    		try{
     		$o->prices()->attach($offer->priceid,['count'=>$offer->countitem,'price'=>$offer->price,'time'=>$offer->individualtime]);
+    		} catch(Exception $e) {print_r($o);}
     	}
     }
 }
