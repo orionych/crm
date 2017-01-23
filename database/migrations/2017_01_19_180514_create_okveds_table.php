@@ -14,6 +14,7 @@ class CreateOkvedsTable extends Migration
     public function up()
     {
         Schema::create('okveds', function (Blueprint $table) {
+            $table->increments('id');
             $table->integer('sector')->index()->default(0);
             $table->integer('subsector')->default(0);
             $table->integer('suffix')->default(0);
