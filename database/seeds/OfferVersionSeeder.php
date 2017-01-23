@@ -18,7 +18,7 @@ class OfferVersionSeeder extends Seeder
     	Eloquent::unguard(); 
     	foreach ($offers as $offer)
     	{
-    		
+    		Offer::
     	}
     }
 }
