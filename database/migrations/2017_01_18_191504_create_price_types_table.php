@@ -17,6 +17,7 @@ class CreatePriceTypesTable extends Migration
             $table->increments('id');
             $table->string('name')->default();
             $table->string('html')->default();
+            $table->
             $table->boolean('readonly')->default(false);
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
