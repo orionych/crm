@@ -17,7 +17,7 @@ class CreateOfferVersionPrice extends Migration
             $table->increments('id');
             $table->integer('price_id')->index()->default(0);
             $table->integer('offer_version_id')->index()->default(1);
-            $table->intege('count')
+            $table->double('count',10,2)->;
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
