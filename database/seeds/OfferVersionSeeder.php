@@ -37,7 +37,7 @@ class OfferVersionSeeder extends Seeder
     			'time'		=>$offer->delivery,
     			'time_plus'	=>$offer->deliveryshift,
     			'ourpayment'	=>($offer->deliverypayerid==2?false:true),
-    			'created_at'	=>$offer->datetime
+    			'created_at'	=>$offer->datetime))
     			]);
     	}
     }
