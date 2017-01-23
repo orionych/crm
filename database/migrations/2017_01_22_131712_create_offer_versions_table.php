@@ -21,7 +21,7 @@ class CreateOfferVersionsTable extends Migration
             $table->integer('okv_id');
             $table->double('vat',4,2)->default(18);
             $table->integer('time')->default(0);
-            $table->integer('timeplus')->default(1);
+            $table->integer('time_plus')->default(1);
             $table->integer('delivery_id')->default(0);
             $table->boolean('ourpayment')->default(false);
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
