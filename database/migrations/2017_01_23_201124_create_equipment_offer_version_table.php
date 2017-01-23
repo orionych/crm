@@ -15,8 +15,8 @@ class CreateEquipmentOfferVersionTable extends Migration
     {
         Schema::create('equipment_offer_version', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('equipment_id');
-            $table->integer('offer_version_id')->index();
+            $table->integer('equipment_id')->index()->default(0);
+            $table->integer('offer_version_id')->index()->default(0);
             $table->double('count',14,4)->default(0);
             $table->double('price',14,4)->default(0);
             $table->integer('time')->default(0);            
