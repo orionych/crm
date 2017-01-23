@@ -30,7 +30,8 @@ class OfferVersionSeeder extends Seeder
     			'offer_id'	=>$offer->id,
     			'version'	=>1,
     			'name'		=>iconv('KOI8-R','UTF-8',$offer->name),
-    			'okv_id'	=>Okv::
+    			'okv_id'	=>Okv::oldId($offer->currency),
+    			
     			]);
     	}
     }
