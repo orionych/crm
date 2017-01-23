@@ -20,8 +20,10 @@ class OfferVersionSeeder extends Seeder
     	foreach ($offers as $offer)
     	{
     		Offer::create([
-    			'id'=>$offer->id,
-    			''
+    			'id'		=>$offer->id,
+    			'request_id'	=>$offer->requestid,
+    			'number'	=>$offer->realid,
+    			'created_at'	=>
     			]);
     	}
     }
