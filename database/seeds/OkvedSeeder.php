@@ -21,7 +21,7 @@ class OkvedSeeder extends Seeder
             $okveds[]=0;
             $okveds[]=0;
             if (intval($okveds[0])==0) {continue;}
-            Okved::update([
+            Okved::create([
             'id'=>$sector[0],
         	'sector'=>intval($okveds[0]),
             'subsector'=>intval($okveds[1]),
