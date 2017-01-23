@@ -29,7 +29,10 @@ class OkvedSeeder extends Seeder
             'suffix'=>intval($okveds[2]),
         	'name'=>str_replace('"','',$sector[1])
         	]);
-            }   
+            }   catch(PDOException $e)
+        {
+        echo "error";                           // catch this error
+        }
     	}
     }
 }
