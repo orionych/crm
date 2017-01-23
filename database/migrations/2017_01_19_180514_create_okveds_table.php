@@ -20,7 +20,7 @@ class CreateOkvedsTable extends Migration
             $table->integer('suffix')->default(0);
             $table->string('name')->default();
             $table->boolean('enabled')->default(false);
-            $table->primary(['sector','subsector','suffix'],'id');
+            $table->primary(['sector','subsector','suffix']);
         });
     }
 
