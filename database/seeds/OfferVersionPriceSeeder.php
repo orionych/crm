@@ -19,9 +19,9 @@ class OfferVersionPriceSeeder extends Seeder
     	Eloquent::unguard(); 
     	foreach ($offers as $offer)
     	{
-    		$o=OfferVersion::find('offer_id',$offer->id)->first();
+    		$o=OfferVersion::find('offer_id',$offer->id);
     		print_r($o);
-    		$o->prices()->attach([$offer->priceid,['count'=>$offer->countitem,'price'=>$offer->price,'time'=>$offer->individualtime]]);
+    	
     	}
     }
 }
