@@ -1,5 +1,6 @@
 <?php
 
+use App\OfferVersion;
 use Illuminate\Database\Seeder;
 
 class OfferVersionPriceSeeder extends Seeder
@@ -18,7 +19,9 @@ class OfferVersionPriceSeeder extends Seeder
     	Eloquent::unguard(); 
     	foreach ($offers as $offer)
     	{
-    		
+    		$o=OfferVersion::find('offer_id',$offer->id);
+    		$o->prices()->attach([$offer->priceid,[]])
+
     	}
     }
 }
