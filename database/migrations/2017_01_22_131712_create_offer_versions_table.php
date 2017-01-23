@@ -21,6 +21,7 @@ class CreateOfferVersionsTable extends Migration
             $table->integer('okv_id');
             $table->double('nds',4,2)->default(18);
             $table->integer('deliveryshift')->default(0);
+            
             $table->integer('delivery_id')->default(0);
             $
 
