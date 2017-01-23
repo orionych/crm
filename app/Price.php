@@ -9,4 +9,5 @@ class Price extends Model
 	public function offer_versions() {
 		return $this->belongsToMany('App\OfferVersion');		
 	}
+
 }
