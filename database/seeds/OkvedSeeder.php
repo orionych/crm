@@ -20,6 +20,7 @@ class OkvedSeeder extends Seeder
             $okveds=explode('.',$sector[0]);
             $okveds[]=0;
             $okveds[]=0;
+            if (intval($okveds[0])==0) {continue;}
             Okved::create([
             'id'=>$sector[0],
         	'sector'=>intval($okveds[0]),
