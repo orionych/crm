@@ -1,5 +1,6 @@
 <?php
 
+use App\Offer;
 use Illuminate\Database\Seeder;
 
 class OfferVersionSeeder extends Seeder
