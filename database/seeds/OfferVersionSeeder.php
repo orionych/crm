@@ -1,6 +1,7 @@
 <?php
 
 use App\Offer;
+use Carbon\Carbon;
 use App\OfferVersion;
 use Illuminate\Database\Seeder;
 
