@@ -29,7 +29,7 @@ class OfferVersionSeeder extends Seeder
     			'created_at'	=> ($offer->datetime!='0000-00-00'?Carbon::createFromFormat('Y-m-d',$offer->datetime)->toDateTimeString():Carbon::now()->toDateTimeString())
     			]);
     		$v=OfferVersion::create([
-    			'offer_id'	=>$offer->id,
+    			'offer_id'	=>$o->id,
     			'version'	=>1,
     			'name'		=>iconv('KOI8-R','UTF-8',$offer->name),
     			'okv_id'	=>Okv::oldId($offer->currency),
