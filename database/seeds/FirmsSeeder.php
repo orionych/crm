@@ -78,8 +78,6 @@ class FirmsSeeder extends Seeder
                 'closed'    => iconv("KOI8-R","UTF-8",$firm->firmclosed),
                 'note'  => iconv("KOI8-R","UTF-8//IGNORE",$firm->firmnote)
                 ]);}
-
-
     	}
 
     }
