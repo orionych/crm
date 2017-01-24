@@ -1,5 +1,6 @@
 <?php
 
+use App\Okv;
 use App\Okei;
 use App\Price;
 use App\Dimension;
@@ -32,7 +33,7 @@ class EquipmentSeeder extends Seeder
     			'firm_id'	=>	0,
     			'option'		=>	$eq->optionprice,
     			'disabled'	=>	$eq->disabledsearch
-    			]);
+    			]);  
     		if (trim($eq->code)!='')
     			{
     			EquipmentName::create([
@@ -55,7 +56,7 @@ class EquipmentSeeder extends Seeder
     			'equipment_id'		=>	$equipment->id,
     			'price_type_id'		=>	1,
     			'price'			=>	$eq->price,
-    			'okv_id'		=>	$okvs[$eq->currency]
+    			'okv_id'		=>	Okv::oldId($eq->currency)
     			]);
     		}
     		if (floatval($eq->producerprice)!=0.00)
@@ -64,7 +65,7 @@ class EquipmentSeeder extends Seeder
     			'equipment_id'		=>	$equipment->id,
     			'price_type_id'		=>	2,
     			'price'			=>	$eq->producerprice,
-    			'okv_id'		=>	$okvs[$eq->producerpricecurrency]
+    			'okv_id'		=>	Okv::oldId($eq->producerpricecurrency)
     			]);
     		}
     		if (floatval($eq->recommendedpriceoem)!=0.00)
@@ -73,7 +74,7 @@ class EquipmentSeeder extends Seeder
     			'equipment_id'		=>	$equipment->id,
     			'price_type_id'		=>	3,
     			'price'			=>	$eq->recommendedpriceoem,
-    			'okv_id'		=>	$okvs[$eq->recommendedpriceoemcurrency]
+    			'okv_id'		=>	Okv::oldId($eq->recommendedpriceoemcurrency)
     			]);
     		}
     		if (floatval($eq->recommendedprice)!=0.00)
@@ -82,7 +83,7 @@ class EquipmentSeeder extends Seeder
     			'equipment_id'		=>	$equipment->id,
     			'price_type_id'		=>	4,
     			'price'			=>	$eq->recommendedprice,
-    			'okv_id'		=>	$okvs[$eq->recommendedpricecurrency]
+    			'okv_id'		=>	Okv::oldId($eq->recommendedpricecurrency)
     			]);
     		}
     		if (intval($eq->optionprice)!=1)
