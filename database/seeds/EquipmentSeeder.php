@@ -49,7 +49,6 @@ class EquipmentSeeder extends Seeder
     			'name'				=> 	iconv('KOI8-R','UTF-8',$eq->stockcode)
     			]);
     			}
-    		$okvs=array(0,643,978);
     		if (floatval($eq->price)!=0.00)
     		{
     			Price::create([
