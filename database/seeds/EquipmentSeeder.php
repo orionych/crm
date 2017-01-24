@@ -1,5 +1,6 @@
 <?php
 
+use App\Okei;
 use App\Price;
 use App\Dimension;
 use App\Equipment;
@@ -89,7 +90,7 @@ class EquipmentSeeder extends Seeder
     		{
     			Dimension::create([
     				'equipment_id'	=>	$equipment->id,
-    				'okei_id'	=>	$okei[$eq->measure],
+    				'okei_id'	=>	Okei::oldArray($eq->measure),
     				'dimx'		=>	$eq->dimx,
     				'dimy'		=>	$eq->dimz,
     				'dimh'		=>	$eq->dimy,
