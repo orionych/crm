@@ -41,7 +41,7 @@
 	left:0px;
 	}
 	/* Transition */
-	.fade-enter, .fade-leave-to
+	.fade-enter, .fade-leave-active, .fade-leave-to
 	/* .fade-leave-active for <2.1.8 */ {
 	  opacity: 0;
 	  transform: translateY(30px);
