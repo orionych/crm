@@ -1,7 +1,7 @@
 <template>
     <div>
     	<label>
-    		<span v-show='name.length>0'>{{ placeholder }}</span>
+    		<span >{{ placeholder }}</span>
     	</label>
     	<input type='text' v-model='name' value='' :placeholder='placeholder' />
     </div>
@@ -13,6 +13,7 @@
         mounted() {
             console.log('input mounted');
         },
+        props: ['placeholder']
     }
 </script>
 
