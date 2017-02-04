@@ -57,23 +57,29 @@
 	@keyframes bounce-in {
 	  0% {
 	    transform: scale(0);
+	  transform: translateY(25px);
 	  }
 	  50% {
 	    transform: scale(1.5);
+	  transform: translateY(25px);
 	  }
 	  100% {
 	    transform: scale(1);
+	  transform: translateY(25px);
 	  }
 	}
 	@keyframes bounce-out {
 	  0% {
 	    transform: scale(1);
+	  transform: translateY(25px);
 	  }
 	  50% {
 	    transform: scale(1.5);
+	  transform: translateY(25px);
 	  }
 	  100% {
 	    transform: scale(0);
+	  transform: translateY(25px);
 	  }
 	}
 </style>
