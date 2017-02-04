@@ -34,6 +34,7 @@
 	}
 	label input {
 	position:absolute;
+	z-index:0;
 	width:100%;
 	border:none;
 	top:20px;
