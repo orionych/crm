@@ -13,10 +13,7 @@
         mounted() {
             console.log('input mounted');
         },
-        props: ['placeholder','name'],
-        data: function() {
-        return {value:''}
-        }
+        props: ['placeholder','name']
     }
 </script>
 
