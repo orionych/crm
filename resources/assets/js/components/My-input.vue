@@ -10,7 +10,7 @@
 <script>
     export default {
         mounted() {
-            alert(placeholder);
+            console.log('input mounted');
         },
         props: ['placeholder']
     }
