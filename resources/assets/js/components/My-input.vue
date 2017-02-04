@@ -47,7 +47,6 @@
 	}
 	.fade-leave-active,.fade-enter-active {
 	  position: absolute;
-	  transform: scale(1.5);
 	}
 
 
