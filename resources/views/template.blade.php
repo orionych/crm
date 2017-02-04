@@ -21,7 +21,7 @@
         <div style='display:none;width:100vw;min-height:100vh;position:absolute;top:0px;left:0px;background-color:#333'>
             Hello world
         </div>
-        <div style='display:none;width:100vw;min-height:100vh;position:absolute;top:0px;left:0px;display:block;background-color:#ababab'>
+        <div style='display:none;width:100vw;min-height:100vh;position:absolute;top:0px;left:0px;background-color:#ababab'>
             Hello world2
         </div>
         
