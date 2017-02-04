@@ -43,5 +43,8 @@
 	  opacity: 0;
 	  transform: translateY(40px);
 	}
+	.fade-enter-active, .fade-leave-active {
+	  transition: all 1s;
+	}
 
 </style>
