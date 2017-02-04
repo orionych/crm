@@ -18,7 +18,7 @@
 <style>
 	label {
 	display:block;
-	font-size:10pt;
+	font-size:8pt;
 	position:relative;
 	height:50px;
 	border:1px solid #f00;
