@@ -38,10 +38,12 @@
 	left:0px;
 	}
 	/* Transition */
-	.fade-enter-active, .fade-leave-active {
-	  transition: all 1s;
-	}
-	.fade-enter, .fade-leave-to {
-	  transform: translateY(30px);
-	}
+.fade-complete-enter, .fade-complete-leave-to
+/* .fade-complete-leave-active for <2.1.8 */ {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.fade-complete-leave-active {
+  position: absolute;
+}
 </style>
