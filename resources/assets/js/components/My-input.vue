@@ -21,11 +21,13 @@
 	label {
 	display:block;
 	position:relative;
-	top:0px;
-	left:0px;
+	height:50px;
 	border:1px solid #f00;
 	}
 	label input {
-	position:
+	position:absolute;
+	top:60px;
+	left:0px;
+	
 	}
 </style>
