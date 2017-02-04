@@ -18,6 +18,7 @@
 	    toggle: function () {
 	      this.$emit('input', value);
 	    }
+	    }
     }
 </script>
 
