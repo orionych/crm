@@ -41,7 +41,7 @@
 	/* Transition */
 .fade-enter, .fade-leave-to {
   opacity: 0;
-  transform: translateY(70px);
+  transform: translateY(40px);
 }
 .fade-leave-active {
   position: absolute;
