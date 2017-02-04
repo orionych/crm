@@ -33,7 +33,7 @@ const Bar = { template: '<div>bar</div>' }
 // Вложенные пути будут рассмотрены далее.
 const routes = [
   { path: '/foo', component: Foo },
-  { path: '/basket', component: Basket },
+  { path: '/basket', component: basket },
   { path: '/bar', component: Bar }
 ]
 
