@@ -7,7 +7,7 @@
                     <div class="panel-body">
                          <div class="row">
                             <div class='col-lg-6'>
-                            <input type='text' placeholder='Название' name='name' />
+                            <my-input :placeholder='Название' :name='name'></my-input>
                             </div>
                          </div>
                     </div>
