@@ -23,7 +23,7 @@ Vue.use(VueRouter);
  Vue.component('basket',require('./components/Basket.vue'));
 
 
-const Foo = { template: '<div>foo</div>' }
+const Foo = { template: '<div>foo<basket></basket></div>' }
 const Bar = { template: '<div>bar</div>' }
 
 // 2. Определение путей
