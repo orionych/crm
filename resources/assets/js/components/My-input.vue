@@ -28,7 +28,7 @@
 	border:1px solid #f00;
 	}
 	label span {
-	transition: all 5s;
+	transition: all 0.5s;
 	z-index:1;
 	font-size:8pt;
 	}
