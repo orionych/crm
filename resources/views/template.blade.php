@@ -22,7 +22,7 @@
         <div style='width:100%;height:100%;background-color:#333'>
             Hello world
         </div>
-        <div style='width:100%;height:100%;background-color:#777'>
+        <div style='width:100%;height:100%;background-color:#ababab'>
             Hello world
         </div>
     </body>
