@@ -18,10 +18,12 @@
 <style>
 	label {
 	display:block;
-	font-size:8pt;
 	position:relative;
 	height:50px;
 	border:1px solid #f00;
+	}
+	label span {
+	font-size:8pt;
 	}
 	label input {
 	position:absolute;
