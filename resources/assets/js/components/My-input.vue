@@ -1,6 +1,6 @@
 <template>
     	<label>
-    	<span >{{ placeholder }}</span>    	
+    	<span >{{ placeholder }} {{ value }}</span>    	
     	<input type='text' :name="name" :value="value" :placeholder='placeholder' />
     	</label>
 </template>
