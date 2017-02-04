@@ -43,7 +43,7 @@
 	/* Transition */
 	.fade-enter,  .fade-leave-to
 	{
-	  transform: translateY(30px);
+	  transform: translateY(25px);
 	}
 	.fade-leave-active,.fade-enter-active {
 	  position: absolute;
