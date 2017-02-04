@@ -12,8 +12,12 @@
         <link href="/css/dashio.css" rel="stylesheet" type="text/css">
         <link href="/css/dashio-responsive.css" rel="stylesheet">
         <link href="/css/font-awesome.css" rel="stylesheet">
-  	
-
+  	<div>
+       hello world 
+    </div>
+    <div>
+        tab
+    </div>
     </head>
     <body>
     </body>
