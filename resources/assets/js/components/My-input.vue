@@ -45,7 +45,6 @@
   transform: translateY(30px);
 }
 .fade-leave-active {
-  opacity: 0;
-  transform: translateY(30px);
+  position: absolute;
 }
 </style>
