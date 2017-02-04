@@ -18,7 +18,7 @@ require('vue-resource');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */ 
 new Vue({
- 	el: '#el',
+ 	el: '#app',
  	data: {show:true}
  });
 
