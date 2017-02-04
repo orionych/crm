@@ -18,7 +18,11 @@
 </script>
 
 <style>
-	.div {
+	label {
+	display:block;
+	position:absolute;
+	top:0px;
+	left:0px;
 	border:1px solid #f00;
 	}
 </style>
