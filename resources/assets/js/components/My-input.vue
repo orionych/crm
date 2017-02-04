@@ -28,7 +28,6 @@
 	border:1px solid #f00;
 	}
 	label span {
-	transition: all 0.5s;
 	z-index:1;
 	font-size:8pt;
 	}
@@ -46,9 +45,7 @@
 	  opacity: 0;
 	  transform: translateY(30px);
 	}
-	.fade-enter-to
-	{
-	}
+
 	.fade-leave-active,.fade-enter-active {
 	  position: absolute;
 	}
