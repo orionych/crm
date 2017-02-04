@@ -43,7 +43,6 @@
 	/* Transition */
 	.fade-enter,  .fade-leave-to
 	{
-	  opacity: 0;
 	  transform: translateY(30px);
 	}
 	.fade-leave-active,.fade-enter-active {
