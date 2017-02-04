@@ -15,3 +15,9 @@
         props: ['placeholder']
     }
 </script>
+
+<style>
+	.div {
+	border:1px solid #f00;
+	}
+</style>
