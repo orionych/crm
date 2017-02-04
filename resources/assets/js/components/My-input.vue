@@ -20,12 +20,12 @@
 <style>
 	label {
 	display:block;
-	position:absolute;
+	position:relative;
 	top:0px;
 	left:0px;
 	border:1px solid #f00;
 	}
 	label input {
-	po
+	position:
 	}
 </style>
