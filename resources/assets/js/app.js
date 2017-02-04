@@ -20,7 +20,7 @@ Vue.use(VueRouter);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */ 
  Vue.component('firm',require('./components/Firm.vue'));
- Basket=Vue.component('basket',require('./components/Basket.vue'));
+Vue.component('basket',require('./components/Basket.vue'));
 
 
 const Foo = { template: '<div>foo<basket>1</basket></div>' }
