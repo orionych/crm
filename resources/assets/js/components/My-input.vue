@@ -46,6 +46,10 @@
 	  opacity: 0;
 	  transform: translateY(30px);
 	}
+	.fade-enter-to
+	{
+		transform: translateY(-30px);
+	}
 	.fade-leave-active {
 	  position: absolute;
 	}
