@@ -26,6 +26,7 @@
 	position:relative;
 	height:35px;
 	border:1px solid #f00;
+	margin-bottom:5px;
 	}
 	label span {
 	transition: all 0.25s;
