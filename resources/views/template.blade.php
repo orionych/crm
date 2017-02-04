@@ -21,6 +21,7 @@
             <!-- входной параметр `to` определяет путь для перехода -->
             <!-- <router-link> по умолчанию преобразуется в тег `<a>` -->
             <router-link to="/foo">Go to Foo</router-link>
+            <router-link to="/basket">Go to Basket</router-link>
             <router-link to="/bar">Go to Bar</router-link>
         </p>
         <!-- отображение компонента, для которого совпал путь -->
