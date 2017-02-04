@@ -17,6 +17,9 @@
     <body>
         <div>
             Main screen
+            <button>Change screen</button>
+        </div>
+        <div>
             
         </div>
     </body>
