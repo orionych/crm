@@ -3,7 +3,7 @@
     	<label>
     		<span >{{ placeholder }}</span>
     	</label>
-    	<input type='text' v-model='name' value='' :placeholder='placeholder' />
+    	<input type='text' value='' :placeholder='placeholder' />
     </div>
 </template>
 
