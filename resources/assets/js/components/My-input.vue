@@ -39,9 +39,10 @@
 	}
 	/* Transition */
 	.fade-enter-active, .fade-leave-active {
-	  transition: opacity .5s
+	  transition: all 1s;
 	}
-	.fade-enter, .fade-leave-to {
-	  opacity: 0
+	.fade-enter, .fade-leave-to /* .fade-leave-active for <2.1.8 */ {
+	  opacity: 0;
+	  transform: translateY(30px);
 	}
 </style>
