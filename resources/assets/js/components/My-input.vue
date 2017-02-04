@@ -1,9 +1,9 @@
 <template>
     <div>
     	<label>
-    		<span v-show='placeholder.length'>{{ placeholder }}</span>
+    		<span v-show='name.length>0'>{{ placeholder }}</span>
     	</label>
-    	<input type='text' name='name' value='' :placeholder='placeholder' />
+    	<input type='text' v-model='name' value='' :placeholder='placeholder' />
     </div>
 </template>
 
