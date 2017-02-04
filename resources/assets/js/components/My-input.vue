@@ -1,7 +1,7 @@
 <template>
     <div>
     	<label>
-    		<input type='text' name='name' value='' placeholder='' />
+    		<input type='text' name='name' value='' placeholder='{{ placeholder }}' />
     	</label>
     </div>
 </template>
