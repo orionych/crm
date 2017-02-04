@@ -14,7 +14,7 @@
    <link href="/css/font-awesome.css" rel="stylesheet">
 </head>
     <body>
-        <div id='dashboard' v-if='enabled' style='width:100%;min-height:100%;position:absolute;top:0px;left:0px;background-color:#aaa'>
+        <div id='dashboard' v-show='enabled' style='width:100%;min-height:100%;position:absolute;top:0px;left:0px;background-color:#aaa'>
             Main screen
             <button>Change screen</button>
         </div>
@@ -24,7 +24,7 @@
         <div style='display:none;width:100vw;min-height:100vh;position:absolute;top:0px;left:0px;background-color:#ababab'>
             Hello world2
         </div>
-        
+
     <script type='text/javascript' src='/js/app.js'></script>
     </body>
 </html>
