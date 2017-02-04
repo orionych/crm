@@ -18,7 +18,7 @@
             Main screen
             <button @click='show=!show'>Change screen</button>
         </div>
-        <div id='basket' v-show='show'style='display:none;width:100vw;min-height:100vh;position:absolute;top:0px;left:0px;background-color:#333'>
+        <div id='basket' v-show='show' style='display:none;width:100vw;min-height:100vh;position:absolute;top:0px;left:0px;background-color:#333'>
             Hello world
         </div>
         <div style='display:none;width:100vw;min-height:100vh;position:absolute;top:0px;left:0px;background-color:#ababab'>
