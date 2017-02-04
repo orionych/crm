@@ -39,8 +39,7 @@
 	left:0px;
 	}
 	/* Transition */
-.fade-enter, .fade-leave-to
-/* .fade-leave-active for <2.1.8 */ {
+.fade-enter, .fade-leave-to {
   opacity: 0;
   transform: translateY(30px);
 }
