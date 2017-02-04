@@ -13,7 +13,12 @@
         mounted() {
             console.log('input mounted');
         },
-        props: ['placeholder','name','value']
+        props: ['placeholder','name','value'],
+        methods: {
+	    toggle: function () {
+	    	// v-model expectes an event of this form in order to react
+	      this.$emit('input', { target: { value: this.enabled } });
+	    }
     }
 </script>
 
