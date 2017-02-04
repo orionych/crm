@@ -7,7 +7,7 @@
                     <div class="panel-body">
                          <div class="row">
                             <div class='col-lg-6'>
-                            <input type='text' value='Название' name='name' />
+                            <input type='text' p='Название' name='name' />
                             </div>
                          </div>
                     </div>
