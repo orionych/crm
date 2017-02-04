@@ -16,7 +16,7 @@
     <body>
         <div id='dashboard' v-show='enabled' style='width:100%;min-height:100%;position:absolute;top:0px;left:0px;background-color:#aaa'>
             Main screen
-            <button>Change screen</button>
+            <button @click='enabled=!enabled'>Change screen</button>
         </div>
         <div style='display:none;width:100vw;min-height:100vh;position:absolute;top:0px;left:0px;background-color:#333'>
             Hello world
