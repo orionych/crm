@@ -24,7 +24,7 @@
 	label {
 	display:block;
 	position:relative;
-	height:35px;
+	height:40px;
 	border:1px solid #f00;
 	margin-bottom:5px;
 	}
