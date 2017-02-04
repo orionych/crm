@@ -1,9 +1,8 @@
  <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <meta charset="utf-8">
-        <meta name="csrf-token" id="csrf_token" content="{{ csrf_token() }}" >
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="csrf-token" id="csrf_token" content="{{ csrf_token() }}" >
 
         <title>CRM система. ООО "Лидер"</title>
    
@@ -13,7 +12,8 @@
         <link href="/css/dashio.css" rel="stylesheet" type="text/css">
         <link href="/css/dashio-responsive.css" rel="stylesheet">
         <link href="/css/font-awesome.css" rel="stylesheet">
-  
+  	
+
     </head>
     <body>
     	<div 
