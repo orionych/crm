@@ -1,6 +1,6 @@
 <template>
     	<label>
-    	<transition name="fade">
+    	<transition name="fade" mode="out-in">
     	<span v-show=value.length >{{ placeholder }} </span>    	
     	</transition>
     	<input type='text' :name="name" v-model="value" :placeholder='placeholder' />
