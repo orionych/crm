@@ -12,7 +12,6 @@
    <link href="/css/dashio.css" rel="stylesheet" type="text/css">
    <link href="/css/dashio-responsive.css" rel="stylesheet">
    <link href="/css/font-awesome.css" rel="stylesheet">
-    <script type='text/javascript' src='/js/app.js'></script>
 </head>
     <body>
         <div id='dashboard' v-show='enabled' style='width:100%;min-height:100%;position:absolute;top:0px;left:0px;background-color:#aaa'>
@@ -25,6 +24,7 @@
         <div style='display:none;width:100vw;min-height:100vh;position:absolute;top:0px;left:0px;background-color:#ababab'>
             Hello world2
         </div>
-
+    
+    <script type='text/javascript' src='/js/app.js'></script>
     </body>
 </html>
