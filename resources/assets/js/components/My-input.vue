@@ -16,7 +16,6 @@
         props: ['placeholder','name','value'],
         methods: {
 	    toggle: function () {
-	    	// v-model expectes an event of this form in order to react
 	      this.$emit('input', value);
 	    }
     }
