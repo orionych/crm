@@ -1,7 +1,7 @@
 <template>
     	<label>
     	<span >{{ placeholder }} {{ value }}</span>    	
-    	<input type='text' :name="name" :value="value" :placeholder='placeholder' />
+    	<input type='text' :name="name" :value="my-value" :placeholder='placeholder' />
     	</label>
 </template>
 
@@ -11,7 +11,7 @@
         mounted() {
             console.log('input mounted');
         },
-        props: ['placeholder','name','value'],
+        props: ['placeholder','name','my-value'],
         data: function() {
         return {value:''}
         }
