@@ -10,7 +10,7 @@
 <script>
     export default {
         mounted() {
-            console.log('Component mounted.')
+            alert(placeholder);
         },
         props: ['placeholder']
     }
