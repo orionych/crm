@@ -25,5 +25,7 @@
 	left:0px;
 	border:1px solid #f00;
 	}
-	inp
+	label input {
+	
+	}
 </style>
