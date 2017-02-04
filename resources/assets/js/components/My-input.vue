@@ -12,8 +12,7 @@
     export default {
         mounted() {
             console.log('input mounted');
-        },
-        props: ['placeholder']
+        }
     }
 </script>
 
