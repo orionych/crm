@@ -28,6 +28,7 @@
 	border:1px solid #f00;
 	}
 	label span {
+	transition: all 1s;
 	font-size:8pt;
 	}
 	label input {
