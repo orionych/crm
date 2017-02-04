@@ -20,7 +20,7 @@ Vue.use(VueRouter);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */ 
  Vue.component('firm',require('./components/Firm.vue'));
- Vue.component('basket',require('./components/Basket.vue'));
+ Basket=Vue.component('basket',require('./components/Basket.vue'));
 
 
 const Foo = { template: '<div>foo<basket>1</basket></div>' }
@@ -33,6 +33,7 @@ const Bar = { template: '<div>bar</div>' }
 // Вложенные пути будут рассмотрены далее.
 const routes = [
   { path: '/foo', component: Foo },
+  { path: '/basket', component: Basket },
   { path: '/bar', component: Bar }
 ]
 
