@@ -1,6 +1,6 @@
 <template>
     	<label>
-    	<span v-show=value.length>0 >{{ placeholder }}</span>    	
+    	<span >0 >{{ placeholder }}</span>    	
     	<input type='text' :name="name" :placeholder='placeholder' />
     	</label>
 </template>
