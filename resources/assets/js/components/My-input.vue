@@ -48,7 +48,6 @@
 	}
 	.fade-enter-to
 	{
-		transform: translateY(-30px);
 	}
 	.fade-leave-active,.fade-enter-active {
 	  position: absolute;
