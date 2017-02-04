@@ -5,7 +5,11 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">Корзина заказа</div>
                     <div class="panel-body">
-                        
+                         <div class="row">
+                            <div class='col-lg-6'>
+                            <input type='text' name='Название' />
+                            </div>
+                         </div>
                     </div>
                 </div>
             </div>
