@@ -7,7 +7,7 @@
                     <div class="panel-body">
                          <div class="row">
                             <div class='col-lg-6'>
-                            <my-input placeholder='Название2' name='name'></my-input>
+                            <my-input placeholder='Название2' name='nameof'></my-input>
                             </div>
                          </div>
                     </div>
