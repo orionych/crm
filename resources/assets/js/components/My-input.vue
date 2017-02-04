@@ -1,10 +1,8 @@
 <template>
-    <div>
     	<label>
     	<span v-show=name.length>{{ placeholder }}</span>    	
     	<input type='text' :name="name" value='' :placeholder='placeholder' />
     	</label>
-    </div>
 </template>
 
 
@@ -20,6 +18,7 @@
 <style>
 	label {
 	display:block;
+	font-size:10pt;
 	position:relative;
 	height:50px;
 	border:1px solid #f00;
