@@ -20,6 +20,7 @@ Vue.use(VueRouter);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */ 
  Vue.component('firm',require('./components/Firm.vue'));
+ Vue.component('firm',require('./components/Firm.vue'));
 
 
 const Foo = { template: '<div>foo</div>' }
