@@ -19,7 +19,7 @@ require('vue-resource');
  */ 
 new Vue({
     el: '#dashboard',
-    data: {enabled:true}
+    data: {enabled:false}
 });
 Vue.http.headers.common['X-CSRF-TOKEN'] = document.querySelector('#csrf_token').getAttribute('content');
 Vue.component('firm', require('./components/Firm.vue'));
