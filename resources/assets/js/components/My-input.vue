@@ -43,12 +43,12 @@
 	/* Transition */
 	.fade-enter,  .fade-leave-to
 	{
-	  transform: translateY(25px);
+	  transform: translateY(20px);
 	}
 	.fade-leave-active,.fade-enter-active {
 	  position: absolute;
 	}
-	
+
 
 
 </style>
