@@ -43,6 +43,6 @@
 	  opacity: 0;
 	  transform: translateY(40px);
 	}
-
+	
 
 </style>
