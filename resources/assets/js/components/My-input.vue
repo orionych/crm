@@ -24,12 +24,12 @@
 	label {
 	display:block;
 	position:relative;
-	z-index:1;
 	height:50px;
 	border:1px solid #f00;
 	}
 	label span {
 	transition: all 1s;
+	z-index:1;
 	font-size:8pt;
 	}
 	label input {
