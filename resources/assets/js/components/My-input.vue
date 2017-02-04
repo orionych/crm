@@ -48,6 +48,11 @@
 	.fade-leave-active,.fade-enter-active {
 	  position: absolute;
 	}
-
+	.fade-leave-active {
+	animation: bounce-out .5s;
+	}
+	.fade-enter-active {
+	 animation: bounce-in .5s;
+	}
 
 </style>
