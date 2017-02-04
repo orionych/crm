@@ -15,14 +15,14 @@
     <script type='text/javascript' src='/js/app.js'></script>
 </head>
     <body>
-        <div style='width:100%;min-height:100%;background-color:#aaa'>
+        <div style='width:100%;min-height:100%;position:absolute;top:0px;left:0px;background-color:#aaa'>
             Main screen
             <button>Change screen</button>
         </div>
-        <div style='width:100vw;min-height:100vh;background-color:#333'>
+        <div style='width:100vw;min-height:100vh;position:absolute;top:0px;left:0px;background-color:#333'>
             Hello world
         </div>
-        <div style='width:100vw;min-height:100vh;display:block;background-color:#ababab'>
+        <div style='width:100vw;min-height:100vh;position:absolute;top:0px;left:0px;display:block;background-color:#ababab'>
             Hello world2
         </div>
     </body>
