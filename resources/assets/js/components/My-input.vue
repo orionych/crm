@@ -24,7 +24,7 @@
 	label {
 	display:block;
 	position:relative;
-	height:50px;
+	height:35px;
 	border:1px solid #f00;
 	}
 	label span {
