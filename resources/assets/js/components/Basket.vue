@@ -3,10 +3,9 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Example Basket Component</div>
-
+                    <div class="panel-heading">Корзина заказа</div>
                     <div class="panel-body">
-                        I'm an example Basket component!
+                        
                     </div>
                 </div>
             </div>
