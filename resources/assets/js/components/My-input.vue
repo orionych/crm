@@ -26,6 +26,7 @@
 	}
 	label input {
 	position:absolute;
+	width:100%;
 	border:none;
 	top:20px;
 	left:0px;
