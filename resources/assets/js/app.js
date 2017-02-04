@@ -18,7 +18,7 @@ require('vue-resource');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */ 
 new Vue({
-    el: '#app',
+    el: '#dashboard',
     data: {enabled:true}
 });
 Vue.http.headers.common['X-CSRF-TOKEN'] = document.querySelector('#csrf_token').getAttribute('content');
