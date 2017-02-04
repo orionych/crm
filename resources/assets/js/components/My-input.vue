@@ -40,6 +40,12 @@
 	top:20px;
 	left:0px;
 	}
+	input:focus,
+	select:focus,
+	textarea:focus,
+	button:focus {
+	    outline: none;
+	}
 	/* Transition */
 	.fade-enter,  .fade-leave-to
 	{
