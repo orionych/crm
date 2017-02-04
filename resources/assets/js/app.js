@@ -21,6 +21,7 @@ Vue.use(VueRouter);
  */ 
  Vue.component('firm',require('./components/Firm.vue'));
 Basket=Vue.component('basket',require('./components/Basket.vue'));
+Vue.component('my-input',require('./components/My-input.vue'));
 
 
 const Foo = { template: '<div>foo<basket>1</basket></div>' }
