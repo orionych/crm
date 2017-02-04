@@ -14,17 +14,19 @@
    <link href="/css/font-awesome.css" rel="stylesheet">
 </head>
     <body>
-        <div id='dashboard' v-show='show' style='width:100%;min-height:100%;position:absolute;top:0px;left:0px;background-color:#aaa'>
-            Main screen
-            <button @click='show=!show'>Change screen</button>
-        </div>
-        <div id='basket' v-show='show' style='display:none;width:100vw;min-height:100vh;position:absolute;top:0px;left:0px;background-color:#333'>
-            Hello world
-            <button @click='show=!show'>Change screen</button>
-        </div>
-        <div style='display:none;width:100vw;min-height:100vh;position:absolute;top:0px;left:0px;background-color:#ababab'>
-            Hello world2
-        </div>
+       <div id="app">
+          <h1>Hello App!</h1>
+          <p>
+            <!-- используйте компонент router-link для создания ссылок -->
+            <!-- входной параметр `to` определяет путь для перехода -->
+            <!-- <router-link> по умолчанию преобразуется в тег `<a>` -->
+            <router-link to="/foo">Go to Foo</router-link>
+            <router-link to="/bar">Go to Bar</router-link>
+        </p>
+        <!-- отображение компонента, для которого совпал путь -->
+        <router-view></router-view>
+    </div>
+</div>
     
     <script type='text/javascript' src='/js/app.js'></script>
     </body>
