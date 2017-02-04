@@ -1,9 +1,9 @@
 <template>
     <div>
     	<label>
-    		<span >{{ placeholder }}</span>
-    	</label>
+    	<span >{{ placeholder }}</span>    	
     	<input type='text' value='' :placeholder='placeholder' />
+    	</label>
     </div>
 </template>
 
