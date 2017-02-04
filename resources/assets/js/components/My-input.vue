@@ -37,7 +37,7 @@
 	z-index:0;
 	width:100%;
 	border:none;
-	top:20px;
+	top:15px;
 	left:0px;
 	}
 	input:focus,
