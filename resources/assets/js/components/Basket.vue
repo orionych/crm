@@ -16,6 +16,9 @@
 
 <script>
     export default {
+            ready() {
+            console.log('Component ready.')
+        },
         mounted() {
             console.log('Component basket mounted.')
         }
