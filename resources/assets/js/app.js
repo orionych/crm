@@ -19,6 +19,9 @@ Vue.use(VueRouter);
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */ 
+ Vue.component('firm',require('./components/Firm.vue'));
+
+
 const Foo = { template: '<div>foo</div>' }
 const Bar = { template: '<div>bar</div>' }
 
