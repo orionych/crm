@@ -15,7 +15,7 @@
         },
         props: ['placeholder','name','my-value'],
         data: function() {
-        return {value:}
+        return {value:''}
         }
     }
 </script>
