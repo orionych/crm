@@ -18,7 +18,9 @@
 	    toggle: function () {
 	      this.$emit('input',  { target: { value: this.value } });
 	    },
-	    updateValue:
+	    updateValue: function (value) {
+	    	this.$emit('input',  value);
+	    }
 	    }
     }
 </script>
