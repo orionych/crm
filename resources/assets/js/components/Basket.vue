@@ -8,7 +8,7 @@
                          <div class="row">
                             <div class='col-lg-6'>
                             <my-input placeholder='Название коммерческого предложения' v-model='name' value='2'  ></my-input>
-                            <my-input placeholder='Компания' name='company' value='1' ></my-input>
+                            <my-input placeholder='Компания' value='1' ></my-input>
                             </div>
                              <div class='col-lg-6'>
                              <span>{{ name }}</span>
