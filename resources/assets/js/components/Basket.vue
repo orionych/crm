@@ -25,7 +25,7 @@
 <script>
     export default {
             data() {
-            return {name: ''null''}
+            return {name: ''}
             },
             ready() {
             console.log('Component ready.')
