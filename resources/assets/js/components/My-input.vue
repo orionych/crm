@@ -16,6 +16,7 @@
         props: ['placeholder','value'],
         methods: {
 	    updateValue: function (value) {
+	    	this.value=value;
 	    	this.$emit('input',  value);
 	    }
 	    }
