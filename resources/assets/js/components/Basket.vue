@@ -25,7 +25,7 @@
 <script>
     export default {
             data() {
-            name: ''
+            return {name: ''}
             }
             ready() {
             console.log('Component ready.')
