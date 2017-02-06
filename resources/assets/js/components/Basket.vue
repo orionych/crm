@@ -24,7 +24,7 @@
 <script>
     export default {
             data() {
-            return {name: '',company:''}
+            return {name: 'new',company:''}
             },
             ready() {
             console.log('Component ready.')
