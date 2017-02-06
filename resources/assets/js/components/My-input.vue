@@ -3,7 +3,7 @@
     	<transition name="fade" mode="out-in">
     	<span v-if=value.length >{{ placeholder }} </span>    	
     	</transition>
-    	<input type='text' :name="name" :value="value" @input=updateValue($event.target.value) :placeholder='placeholder' />
+    	<input type='text' :name="name" :value="value" @change=updateValue($event.target.value) :placeholder='placeholder' />
     	</label>
 </template>
 
