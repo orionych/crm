@@ -15,9 +15,6 @@
         },
         props: ['placeholder','value'],
         methods: {
-	    toggle: function () {
-	      this.$emit('input',  { target: { value: this.value } });
-	    },
 	    updateValue: function (value) {
 	    	this.$emit('input',  value);
 	    }
