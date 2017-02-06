@@ -7,7 +7,7 @@
                     <div class="panel-body">
                          <div class="row">
                             <div class='col-lg-6'>
-                            <my-input placeholder='Название коммерческого предложения' v-model='name' value='2'  ></my-input>
+                            <my-input placeholder='Название коммерческого предложения' v-model='name'  ></my-input>
                             {{ name }}
                             <my-input placeholder='Компания' value='1' ></my-input>
                             </div>
