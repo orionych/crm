@@ -24,6 +24,9 @@
 
 <script>
     export default {
+            data() {
+            name: null;
+            }
             ready() {
             console.log('Component ready.')
         },
