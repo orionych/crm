@@ -8,7 +8,6 @@
                          <div class="row">
                             <div class='col-lg-6'>
                             <my-input placeholder='Название коммерческого предложения' v-model='name'  ></my-input>
-                            {{ name }}
                             <my-input placeholder='Компания' value='1' ></my-input>
                             </div>
                              <div class='col-lg-6'>
