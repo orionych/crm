@@ -56,6 +56,6 @@
         alert('closed');
       }
       </script>
-      {{ date('Y-m-d h:i:s') }}
+      {{ date('Y-m-d H:i:s') }}
     </body>
 </html>
