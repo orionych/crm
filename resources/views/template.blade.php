@@ -56,5 +56,6 @@
         alert('closed');
       }
       </script>
+      {{ date() }}
     </body>
 </html>
