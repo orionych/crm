@@ -56,8 +56,5 @@
         alert('closed');
       }
       </script>
-      {{ phpinfo() }}
-{{ date_default_timezone_get() }}
-      {{ date('Y-m-d H:i:s') }}
     </body>
 </html>
