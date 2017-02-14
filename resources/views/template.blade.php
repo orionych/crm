@@ -33,7 +33,6 @@
     <script type="text/javascript">
       window.onfocus=function(){
         this.$http.post('/',{id:100}).then(function(reponse){console.log(response);});
-        console.log(workframe++)
       }
       window.onblur=function(){
         console.log(workframe+' closed');
