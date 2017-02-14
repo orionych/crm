@@ -36,7 +36,7 @@
         this.$http.get('/user_online').then(response => {
               alert(response);
             }, response => {
-              alert('error);
+              alert('error');
             });
         this.$http.get('/user_online',{id:100}).then(function(reponse){console.log(response);alert('here');});
       }
