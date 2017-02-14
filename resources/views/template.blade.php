@@ -35,7 +35,7 @@
         this.$http.get('/user_online',{id:100}).then(function(reponse){console.log(response);});
       }
       window.onblur=function(){
-        console.log(' closed');
+        console.log('1 closed');
       }
       window.onbeforeunload=function(){
         alert('closed');
