@@ -22,6 +22,7 @@ public function start(Request $request)
 		$useronline->user_id=$this->auth_user->id;
 		$useronline->save();
 		$useronline->time=$thistime;
+		Response::json('online'=>$useronline,'status'=>$thistime);
 		return $useronline;
 	}
 public function end(Request $request)
