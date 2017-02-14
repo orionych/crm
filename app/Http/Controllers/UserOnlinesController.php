@@ -17,7 +17,7 @@ public function __construct()
 	}
 public function start(Request $request)
 	{	
-		$useronline=UserOnline::where('started_at','>',Carbon::now()->format('Y-m-d'))->where('user_id','=',$this->auth_user->id)->select(DB::raw(' SUM(TIMEDIFF(ended_at,started_at)) as time'))->select(DB::raw(' COUNT(id) as swap'))->first();
+		$useronline=UserOnline::where('started_at','>',Carbon::now()->format('Y-m-d'))->where('user_id','=',$this->auth_user->id)->select(array(DB::raw(' SUM(TIMEDIFF(ended_at,started_at)) as time'),DB::raw(' COUNT(id) as swap')))->first();
 		$thistime=$useronline['time'];
 		$swap=$useronline['swap'];
 		print_r($useronline);
