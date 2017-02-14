@@ -18,4 +18,9 @@ public function start()
 		$useronline->save();
 		return $useronline;
 	}
+public function end()
+	{
+		$useronline=UserOnline::get(1);
+		$useronline->ended_at=Carbon::
+	}
 }
