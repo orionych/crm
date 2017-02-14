@@ -35,7 +35,7 @@
       window.onload=function() {
         window.onfocus=function(){
         console.log('started');
-        Vue.http.get('/user_online/creat').then(response => {
+        Vue.http.get('/user_online/create').then(response => {
               useronlineid=response.body.id;
             }, response => {
               alert('error');
