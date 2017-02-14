@@ -10,4 +10,8 @@ public function __construct()
 	{
 		$this->auth_user = \Auth::user();
 	}
+public function create()
+	{
+		
+	}
 }
