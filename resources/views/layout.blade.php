@@ -364,9 +364,12 @@
       <!--main content start-->
       <section id="main-content">
           <section class="wrapper">
+
+          <!-- 
              <router-link to="/foo">Go to Foo</router-link>
             <router-link to="/basket">Go to Basket</router-link>
-            <router-link to="/bar">Go to Bar</router-link>
+            <router-link to="/bar">Go to Bar</router-link> 
+            -->
               <div class="row">
                   <div class="col-lg-12 main-chart">
                     <!-- отображение компонента, для которого совпал путь -->
