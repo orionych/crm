@@ -369,7 +369,7 @@
             <router-link to="/bar">Go to Bar</router-link>
               <div class="row">
                   <div class="col-lg-12 main-chart">
-                   
+                   <router-view></router-view>
                     
                  
                     
