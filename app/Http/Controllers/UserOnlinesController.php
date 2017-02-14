@@ -15,7 +15,7 @@ public function __construct()
 	}
 public function start(Request $request)
 	{	
-		$maxtime=UserOnline::where('started_at','>',Carbon::now()->format('Y-m-d'))->select(DB::raw(' TIMEDIFF(ended_at,started_at) as time'));
+		$maxtime=UserOnline::where('started_at','>',Carbon::now()->format('Y-m-d'))->select(DB::raw(' TIMEDIFF(ended_at,started_at) as time'))->all();
 		dd($maxtime->toArray());
 		unset($useronline);
 		$useronline=new UserOnline;
