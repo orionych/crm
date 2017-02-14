@@ -1,5 +1,5 @@
 <template>
-    <i class="fa fa-clock-o">{{ value }}</i>
+    <i class="fa fa-clock-o"> {{ value }}</i>
 </template>
 
 <script>
