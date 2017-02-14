@@ -73,6 +73,7 @@ Vue.http.headers.common['X-CSRF-TOKEN'] = document.querySelector('#csrf_token').
             }, response => {
               alert('error');
             });
+        }
       window.onload=userOnlineRegister;
       window.onfocus=userOnlineRegister;
       window.onblur=userOfflineRegister;
