@@ -110,7 +110,7 @@
                     <!-- clock -->
                     <li>               
                       <router-link to="/clock"> 
-                              <clock ></clock>         
+                              <clock :></clock>         
                       </router-link> 
                     </li>
                     <!-- clock end -->
