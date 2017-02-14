@@ -36,7 +36,8 @@
       function userOnlineRegister(){
         if (!useronlinestarted) Vue.http.get('/user_online/start').then(response => {
               useronlinestarted=true;
-              useronlines_id=response.body.id;
+              useronlines_id=response.body.online.id;
+              console.log(response.body.status);
             }, response => {
               alert('error');
             });
