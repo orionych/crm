@@ -31,7 +31,8 @@
     
     <script type='text/javascript' src='/js/app.js'></script>
     <script type="text/javascript">
-      window.onfocus=function(){
+      window.onload=function() {
+        window.onfocus=function(){
         console.log('started');
         Vue.http.get('/user_online').then(response => {
               console.log(response.body.id);
@@ -39,6 +40,7 @@
               alert('error');
             });
       }
+    }
       window.onblur=function(){
         console.log('1 closed');
       }
