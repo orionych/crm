@@ -51,7 +51,7 @@ const router = new VueRouter({
 // что позволит приложению знать о его наличии
 const app = new Vue({
   router,data:{
-  clocktime:10	
+  clockTime:10	
   }
 }).$mount('#app')
 
