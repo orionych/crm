@@ -9,7 +9,7 @@ class UserOnline extends Model
 	public $timestamps = false;
 	protected $fillable = ['user_id','ended_at'];
 
-	public function getTotalTime() {
+	public static function getTotalTime() {
 		return 10;
 	}
 }
