@@ -33,6 +33,11 @@
     <script type="text/javascript">
       window.onfocus=function(){
         console.log('started');
+        this.$http.get('/user_online').then(response => {
+              alert(response);
+            }, response => {
+              alert(error);
+            });
         this.$http.get('/user_online',{id:100}).then(function(reponse){console.log(response);alert('here');});
       }
       window.onblur=function(){
