@@ -12,6 +12,6 @@ public function __construct()
 	}
 public function create()
 	{
-		print_r($this->auth_user);
+		$this->auth_user->id;
 	}
 }
