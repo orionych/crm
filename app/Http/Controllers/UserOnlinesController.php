@@ -20,7 +20,8 @@ public function start(Request $request)
 	}
 public function end(Request $request)
 	{	
-		$data=$request->all();	
+		$data=$request->all();
+		echo $data->id;	
 		dd($data);	
 		$useronline=UserOnline::get($data->id);
 		$useronline->ended_at=Carbon::now();
