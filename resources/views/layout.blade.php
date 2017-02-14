@@ -107,6 +107,12 @@
                         </router-link>
                     </li>
                     <!-- basket end -->
+                    <!-- clock -->
+                    <li>
+                        
+                            <i class="fa fa-shopping-basket"></i>               
+                    </li>
+                    <!-- clock end -->
                     <!-- inbox dropdown start-->
                     <li id="header_inbox_bar" class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
