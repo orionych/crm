@@ -56,6 +56,7 @@
         alert('closed');
       }
       </script>
+{{ date_default_timezone_set('Europe/Moscow'); }}
       {{ date('Y-m-d H:i:s') }}
     </body>
 </html>
