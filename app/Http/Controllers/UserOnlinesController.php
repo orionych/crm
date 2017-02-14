@@ -17,6 +17,9 @@ public function start(Request $request)
 		$useronline=new UserOnline;
 		$useronline->user_id=$this->auth_user->id;
 		$useronline->save();
+
+		
+		
 		return $useronline;
 	}
 public function end(Request $request)
