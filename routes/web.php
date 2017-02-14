@@ -21,7 +21,7 @@ use App\User;
 	}
 	#print_r($_SERVER);
 	Route::get('/', function() {
-		return view('welcome');});
+		return view('layout');});
 	Route::get('/user_online/start','UserOnlinesController@start');
 	Route::post('/user_online/end','UserOnlinesController@end');
 	Route::get('/someUrl', function() {return 'Super CRM system '.csrf_token().' ';});
