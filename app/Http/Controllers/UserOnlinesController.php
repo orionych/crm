@@ -17,7 +17,6 @@ public function start(Request $request)
 	{	
 		$useronline=UserOnline::where('started_at','>',Carbon::now()->format('Y-m-d'))->where('user_id','=',$this->auth_user->id)->select(DB::raw(' SUM(TIMEDIFF(ended_at,started_at)) as time'))->first();
 		$thistime=$useronline['time'];
-		dd($useronline->toArray());
 		unset($useronline);
 		$useronline=new UserOnline;
 		$useronline->user_id=$this->auth_user->id;
