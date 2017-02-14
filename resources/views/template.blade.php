@@ -34,7 +34,6 @@
       var useronlineid=0;
       window.onload=function() {
         window.onfocus=function(){
-        console.log('started');
         Vue.http.get('/user_online/start').then(response => {
               useronlineid=response.body.id;
             }, response => {
