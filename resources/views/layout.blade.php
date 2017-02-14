@@ -110,7 +110,7 @@
                     <!-- clock -->
                     <li>               
                       <router-link to="/clock"> 
-                              <clock value="0"></clock>         
+                              <clock value="{{ UserOnlinesController::}}"></clock>         
                       </router-link> 
                     </li>
                     <!-- clock end -->
