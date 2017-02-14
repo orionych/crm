@@ -15,7 +15,7 @@ public function __construct()
 	}
 public function start(Request $request)
 	{	
-		$useronline=UserOnline::where('started_at','>',Carbon::now()->format('Y-m-d'))->select('time',DB::raw(' TIMEDIFF(ended_at,started_at) '))->get();
+		$useronline=UserOnline::where('started_at','>',Carbon::now()->format('Y-m-d'))->select(DB::raw(' TIMEDIFF(ended_at,started_at) as time'))->get();
 		dd($useronline->toArray());
 		unset($useronline);
 		$useronline=new UserOnline;
