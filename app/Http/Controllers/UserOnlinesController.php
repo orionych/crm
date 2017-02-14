@@ -23,7 +23,7 @@ public function end(Request $request)
 		//$data=$request->all();
 		$useronline=UserOnline::get(1);
 		$useronline->ended_at=Carbon::now();
-		$useronline->save();
+		$useronline->update();
 		return $useronline;
 	}
 }
