@@ -13,7 +13,7 @@ public function __construct()
 	}
 public function start(Request $request)
 	{	
-		d($request);
+		dd($request);
 		$useronline=new UserOnline;
 		$useronline->user_id=$this->auth_user->id;
 		$useronline->save();
