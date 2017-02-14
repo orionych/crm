@@ -64,7 +64,7 @@ Vue.http.headers.common['X-CSRF-TOKEN'] = document.querySelector('#csrf_token').
               useronlines_id=response.body.online.id;
               console.log(response.body.status);
             }, response => {
-              alert('error');
+              console.log('error');
             });
       }
       function userOfflineRegister(){
@@ -72,7 +72,7 @@ Vue.http.headers.common['X-CSRF-TOKEN'] = document.querySelector('#csrf_token').
               useronlinestarted=false;
               console.log(response.body);
             }, response => {
-              alert('error');
+              console.log('error');
             });
         }
       window.onload=userOnlineRegister;
