@@ -11,7 +11,7 @@ public function __construct()
 	{
 		$this->auth_user = \Auth::user();
 	}
-public function create()
+public function start()
 	{
 		$useronline=new UserOnline;
 		$useronline->user_id=$this->auth_user->id;
