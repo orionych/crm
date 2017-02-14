@@ -39,7 +39,8 @@
               alert('error');
             });
       }
-      window.onload=userOnlineRegister();
+      // window.onload=userOnlineRegister();
+      window.onfocus=userOnlineRegister();
       
       window.onblur=function(){
         Vue.http.post('/user_online/end',{id: useronlines_id}).then(response => {
