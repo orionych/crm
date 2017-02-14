@@ -110,7 +110,7 @@
                     <!-- clock -->
                     <li>               
                       <router-link to="/clock"> 
-                              <clock value="{{ UserOnlinesController::}}"></clock>         
+                              <clock value="{{ App\UserOnline::getTotalTime() }}"></clock>         
                       </router-link> 
                     </li>
                     <!-- clock end -->
