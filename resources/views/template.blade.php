@@ -32,8 +32,10 @@
     <script type='text/javascript' src='/js/app.js'></script>
     <script type="text/javascript">
       var useronlines_id=0;
+      var useronlinestarted=false;
       function userOnlineRegister(){
         Vue.http.get('/user_online/start').then(response => {
+              useronlinestarted=true;
               useronlines_id=response.body.id;
             }, response => {
               alert('error');
@@ -44,6 +46,7 @@
 
       window.onblur=function(){
         Vue.http.post('/user_online/end',{id: useronlines_id}).then(response => {
+              useronlinestarted=false;
               console.log(response.body);
             }, response => {
               alert('error');
