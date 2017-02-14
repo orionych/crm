@@ -27,7 +27,7 @@
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
               </div>
             <!--logo start-->
-            <router-link to="/ba" class="logo"><b>LEAD<span>ER</span></b></router-link>
+            <router-link to="/bar" class="logo"><b>LEAD<span>ER</span></b></router-link>
             <!--logo end-->  
             <div class="nav notify-row" id="top_menu">
                 <!--  notification start -->
