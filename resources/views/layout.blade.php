@@ -102,10 +102,10 @@
                     <!-- settings end -->
                     <!-- basket -->
                     <li class="dropdown">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                        <router-link to="/basket" data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
                             <i class="fa fa-shopping-basket"></i>
                             
-                        </a>
+                        </router-link>
                     </li>
                     <!-- basket end -->
                     <!-- inbox dropdown start-->
