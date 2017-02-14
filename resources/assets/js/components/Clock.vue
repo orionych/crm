@@ -5,7 +5,7 @@
 <script>
     export default {
         mounted() {
-            console.log('Component clock mounted.'+value);
+            console.log('Component clock mounted.'+this.value);
         },
         props: ['value']
     }
