@@ -102,7 +102,7 @@
                     <!-- settings end -->
                     <!-- basket -->
                     <li class="dropdown">
-                        <router-link to="/basket" data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                        <router-link to="/basket" data-toggle="dropdown" class="dropdown-toggle">
                             <i class="fa fa-shopping-basket"></i>
                             
                         </router-link>
