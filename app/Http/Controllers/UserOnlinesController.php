@@ -24,7 +24,7 @@ public function start(Request $request)
 		$useronline=new UserOnline;
 		$useronline->user_id=$this->auth_user->id;
 		$useronline->save();
-		return Response::json(array('online'=>$useronline,'status'=>$thistime,'swap'=>$swap));
+		return Response::json(array('online'=>$useronline,'status'=>intval($thistime),'swap'=>intval($swap));
 	}
 public function end(Request $request)
 	{	
