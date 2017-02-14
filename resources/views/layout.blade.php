@@ -110,7 +110,7 @@
                     <!-- clock -->
                     <li>               
                       <router-link to="/clock"> 
-                              <clock :clocktime="clocktime"></clock>         
+                              <clock :clocktime="10"></clock>         
                       </router-link> 
                     </li>
                     <!-- clock end -->
