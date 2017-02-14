@@ -15,7 +15,7 @@ public function __construct()
 public function start(Request $request)
 	{	
 		$useronline=UserOnline::where('started_at','>',Carbon::now()->format('Y-m-d'));
-		
+		dd($useronline);
 		unset($useronline);
 		$useronline=new UserOnline;
 		$useronline->user_id=$this->auth_user->id;
