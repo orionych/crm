@@ -20,7 +20,6 @@ public function start(Request $request)
 	}
 public function end(Request $request)
 	{
-		dd($request->all());
 		$useronline=UserOnline::get(1);
 		$useronline->ended_at=Carbon::now();
 		$useronline->save();
