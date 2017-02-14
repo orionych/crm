@@ -50,7 +50,9 @@ const router = new VueRouter({
 // Удостоверьтесь, что передали инстанс роутера в опции `router`,
 // что позволит приложению знать о его наличии
 const app = new Vue({
-  router
+  router,data:{
+  clocktime:10	
+  }
 }).$mount('#app')
 
 
