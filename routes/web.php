@@ -23,7 +23,7 @@ use App\User;
 	Route::get('/', function() {
 		return view('template');});
 	Route::get('/user_online/start','UserOnlinesController@start');
-	Route::get('/user_online/end','UserOnlinesController@end');
+	Route::post('/user_online/end','UserOnlinesController@end');
 	Route::get('/someUrl', function() {return 'Super CRM system '.csrf_token().' ';});
 	//Route::get('/someUrl', function() {return Response::error('404');});
 
