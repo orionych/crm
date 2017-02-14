@@ -108,7 +108,7 @@
                     </li>
                     <!-- basket end -->
                     <!-- clock -->
-                    <li>                     
+                    <li>                
                             <i class="fa fa-clock-o"></i> 24           
                     </li>
                     <!-- clock end -->
