@@ -19,8 +19,10 @@ public function start(Request $request)
 		return $useronline;
 	}
 public function end(Request $request)
-	{
-		$useronline=UserOnline::get(1);
+	{	
+		$data=$request->all();
+		
+		$useronline=UserOnline::get($data->id);
 		$useronline->ended_at=Carbon::now();
 		$useronline->save();
 	}
