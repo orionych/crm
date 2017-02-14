@@ -110,7 +110,7 @@
                     <!-- clock -->
                     <li>
                         
-                            <i class="fa fa-shopping-basket"></i>               
+                            <i class="fa fa-clock-o"></i>               
                     </li>
                     <!-- clock end -->
                     <!-- inbox dropdown start-->
