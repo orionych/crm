@@ -22,7 +22,7 @@
       window.onblur=function(){
         console.log(workframe+' closed');
       }
-      window.onclose=function(){
+      window.onbeforeunload=function(){
         alert('closed');
       }
     </script>
