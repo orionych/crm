@@ -14,6 +14,9 @@
    <link href="/css/font-awesome.css" rel="stylesheet">
 </head>
     <body>
+    <script type="text/javascript">
+      
+    </script>
        <div id="app">
           <h1>Hello App!</h1>
           <p>
