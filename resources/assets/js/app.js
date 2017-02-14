@@ -53,7 +53,6 @@ const app = new Vue({
 
 
 Vue.http.headers.common['X-CSRF-TOKEN'] = document.querySelector('#csrf_token').getAttribute('content');
-Vue.component('firm', require('./components/Firm.vue'));
 
 
 
