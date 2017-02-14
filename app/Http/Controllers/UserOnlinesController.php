@@ -6,6 +6,7 @@ use Carbon\Carbon;
 use App\UserOnline;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Symfony\Component\HttpFoundation\Response;
 
 class UserOnlinesController extends Controller
 {
