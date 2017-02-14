@@ -21,8 +21,8 @@ public function start(Request $request)
 	}
 public function end(Request $request)
 	{	
-		//$data=$request->all();
-		$useronline=UserOnline::find(1);
+		$data=$request->all();
+		$useronline=UserOnline::find($data['id']);
 		$useronline->ended_at=Carbon::now();
 		$useronline->update();
 		return $useronline;
