@@ -31,11 +31,12 @@
     
     <script type='text/javascript' src='/js/app.js'></script>
     <script type="text/javascript">
+      var useronlineid=0;
       window.onload=function() {
         window.onfocus=function(){
         console.log('started');
         Vue.http.get('/user_online').then(response => {
-              console.log(response.body.id);
+              useronlineid=response.body.id;
             }, response => {
               alert('error');
             });
