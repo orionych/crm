@@ -14,18 +14,6 @@
    <link href="/css/font-awesome.css" rel="stylesheet">
 </head>
     <body>
-    <script type="text/javascript">
-    var workframe=1;
-      window.onfocus=function(){
-        console.log(workframe++)
-      }
-      window.onblur=function(){
-        console.log(workframe+' closed');
-      }
-      window.onbeforeunload=function(){
-        alert('closed');
-      }
-    </script>
        <div id="app">
           <h1>Hello App!</h1>
           <p>
@@ -42,5 +30,17 @@
 </div>
     
     <script type='text/javascript' src='/js/app.js'></script>
+    <script type="text/javascript">
+    var workframe=1;
+      window.onfocus=function(){
+        console.log(workframe++)
+      }
+      window.onblur=function(){
+        console.log(workframe+' closed');
+      }
+      window.onbeforeunload=function(){
+        alert('closed');
+      }
+      </script>
     </body>
 </html>
