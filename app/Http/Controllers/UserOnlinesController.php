@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\UserOnline;
 use Illuminate\Http\Request;
 
 class UserOnlinesController extends Controller
