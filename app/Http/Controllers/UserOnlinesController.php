@@ -23,6 +23,5 @@ public function end()
 		$useronline=UserOnline::get(1);
 		$useronline->ended_at=Carbon::now();
 		$useronline->save();
-
 	}
 }
