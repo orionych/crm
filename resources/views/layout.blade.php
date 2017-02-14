@@ -108,9 +108,10 @@
                     </li>
                     <!-- basket end -->
                     <!-- clock -->
-                    <li>                 <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#"> 
-                            <i class="fa fa-clock-o"></i> 24          
-                            </a> 
+                    <li>               
+                      <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#"> 
+                              <i class="fa fa-clock-o"></i> 24          
+                      </a> 
                     </li>
                     <!-- clock end -->
                     <!-- inbox dropdown start-->
