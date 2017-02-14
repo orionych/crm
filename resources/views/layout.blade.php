@@ -362,7 +362,7 @@
       MAIN CONTENT
       *********************************************************************************************************************************************************** -->
       <!--main content start-->
-      <section id="app">
+      <section id="main-content">
           <section class="wrapper">
 
               <div class="row">
