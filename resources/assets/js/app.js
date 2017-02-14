@@ -23,7 +23,7 @@ Vue.use(VueRouter);
 Basket=Vue.component('basket',require('./components/Basket.vue'));
 Vue.component('firm',require('./components/Firm.vue'));
 Vue.component('my-input',require('./components/My-input.vue'));
-Vue.component('clock',require('./components/Clock.vue'));
+var clock=Vue.component('clock',require('./components/Clock.vue'));
 
 
 const Foo = { template: '<div>foo<basket>1</basket></div>' }
