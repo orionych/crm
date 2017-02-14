@@ -15,7 +15,16 @@
 </head>
     <body>
     <script type="text/javascript">
-      
+    var workframe=1;
+      window.onfocus=function(){
+        console.log(workframe++)
+      }
+      window.onblur=function(){
+        console.log(workframe+' closed');
+      }
+      window.onclose=function(){
+        alert('closed');
+      }
     </script>
        <div id="app">
           <h1>Hello App!</h1>
