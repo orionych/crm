@@ -12,7 +12,9 @@ public function __construct()
 	}
 public function create()
 	{
-		
-		echo $this->auth_user->id;
+		$useronline=new UserOnline;
+		$useronline->user_id=$this->auth_user->id;
+		$useronline->save();
+		return $useronline;
 	}
 }
