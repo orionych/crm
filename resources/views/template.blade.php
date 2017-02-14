@@ -32,7 +32,7 @@
     <script type='text/javascript' src='/js/app.js'></script>
     <script type="text/javascript">
       window.onfocus=function(){
-        
+        this.$http({url:'/',method:'post'}).then(function(reponse){console.log(response);});
         console.log(workframe++)
       }
       window.onblur=function(){
