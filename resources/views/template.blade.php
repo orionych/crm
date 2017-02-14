@@ -34,7 +34,7 @@
       var useronlines_id=0;
       var useronlinestarted=false;
       function userOnlineRegister(){
-        Vue.http.get('/user_online/start').then(response => {
+        if (!useronlinestarted) Vue.http.get('/user_online/start').then(response => {
               useronlinestarted=true;
               useronlines_id=response.body.id;
             }, response => {
