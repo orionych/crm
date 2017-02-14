@@ -21,7 +21,7 @@ public function start(Request $request)
 	}
 public function end(Request $request)
 	{
-		$request
+		dd($request);
 		$useronline=UserOnline::get(1);
 		$useronline->ended_at=Carbon::now();
 		$useronline->save();
