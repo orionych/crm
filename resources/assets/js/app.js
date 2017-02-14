@@ -19,8 +19,8 @@ Vue.use(VueRouter);
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */ 
- Vue.component('firm',require('./components/Firm.vue'));
 Basket=Vue.component('basket',require('./components/Basket.vue'));
+ Vue.component('firm',require('./components/Firm.vue'));
 Vue.component('my-input',require('./components/My-input.vue'));
 
 
