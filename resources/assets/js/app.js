@@ -62,6 +62,7 @@ Vue.http.headers.common['X-CSRF-TOKEN'] = document.querySelector('#csrf_token').
         if (!useronlinestarted) Vue.http.get('/user_online/start').then(response => {
               useronlinestarted=true;
               useronlines_id=response.body.online.id;
+              Clock.value=response.body.status;
               console.log(response.body.status);
             }, response => {
               console.log('error');
