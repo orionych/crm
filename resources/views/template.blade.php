@@ -39,7 +39,7 @@
               alert('error');
             });
       }
-      // window.onload=userOnlineRegister();
+      window.onload=userOnlineRegister;
       window.onfocus=userOnlineRegister;
 
       window.onblur=function(){
