@@ -15,7 +15,9 @@ class CreateUserOnlinesTable extends Migration
     {
         Schema::create('user_onlines', function (Blueprint $table) {
             $table->increments('id');
-
+            $table->integer('user_id')->index();
+            $table->boolean('mobile')->default(false)->index();
+            
             $table->timestamp('started_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('ended_at')->default(DB::raw('CURRENT_TIMESTAMP'));
         });
