@@ -11,10 +11,9 @@ class UserOnline extends Model
 	protected $fillable = ['user_id','ended_at'];
 	function __construct()
 	{
-		$this->
+		$this->user=\Auth::user();
 	}
 	public function getTotalTime() {
-
-		
+		return 10;
 	}
 }
