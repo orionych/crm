@@ -33,7 +33,6 @@
     <script type="text/javascript">
       var useronlines_id=0;
       function userOnlineRegister(){
-        alert('here');
         Vue.http.get('/user_online/start').then(response => {
               useronlines_id=response.body.id;
             }, response => {
