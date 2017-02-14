@@ -12,6 +12,7 @@ public function __construct()
 	}
 public function create()
 	{
+		
 		echo $this->auth_user->id;
 	}
 }
