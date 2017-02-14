@@ -14,12 +14,11 @@ public function __construct()
 	}
 public function start(Request $request)
 	{	
+		UserOnline::where('started_at','>',Carbon::now())
 		$useronline=new UserOnline;
 		$useronline->user_id=$this->auth_user->id;
 		$useronline->save();
 
-		
-		
 		return $useronline;
 	}
 public function end(Request $request)
