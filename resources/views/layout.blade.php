@@ -109,9 +109,9 @@
                     <!-- basket end -->
                     <!-- clock -->
                     <li>               
-                      <a href="index.html#"> 
+                      <router-link to="/clock"> 
                               <i class="fa fa-clock-o"></i> 04:12:21         
-                      </a> 
+                      </router-link> 
                     </li>
                     <!-- clock end -->
                     <!-- inbox dropdown start-->
