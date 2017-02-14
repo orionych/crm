@@ -16,13 +16,13 @@ public function __construct()
 public function start(Request $request)
 	{	
 		$useronline=UserOnline::where('started_at','>',Carbon::now()->format('Y-m-d'))->where('user_id','=',$this->auth_user->id)->select(DB::raw(' SUM(TIMEDIFF(ended_at,started_at)) as time'))->first();
-		echo $useronline['time'];
+		$thistime=$useronline['time'];
 		dd($useronline->toArray());
 		unset($useronline);
 		$useronline=new UserOnline;
 		$useronline->user_id=$this->auth_user->id;
 		$useronline->save();
-
+		$useronline->time=$thistime;
 		return $useronline;
 	}
 public function end(Request $request)
