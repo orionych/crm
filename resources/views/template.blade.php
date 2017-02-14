@@ -42,7 +42,11 @@
       }
     }
       window.onblur=function(){
-        console.log('1 closed');
+        Vue.http.get('/user_online/start').then(response => {
+              useronlines_id=response.body.id;
+            }, response => {
+              alert('error');
+            });
       }
       window.onbeforeunload=function(){
         alert('closed');
