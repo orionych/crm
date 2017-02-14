@@ -33,6 +33,7 @@
     <script type="text/javascript">
       var useronlines_id=0;
       window.onload=function() {
+        alert('loaded');
         window.onfocus=function(){
         Vue.http.get('/user_online/start').then(response => {
               useronlines_id=response.body.id;
