@@ -109,7 +109,7 @@
                     <!-- basket end -->
                     <!-- clock -->
                     <li>                     
-                            <i class="fa fa-clock-o"></i>               
+                            <i class="fa fa-clock-o"></i> 24           
                     </li>
                     <!-- clock end -->
                     <!-- inbox dropdown start-->
