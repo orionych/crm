@@ -33,6 +33,7 @@
     <script type="text/javascript">
       var useronlines_id=0;
       function userOnlineRegister(){
+        alert('here');
         Vue.http.get('/user_online/start').then(response => {
               useronlines_id=response.body.id;
             }, response => {
@@ -41,7 +42,7 @@
       }
       // window.onload=userOnlineRegister();
       window.onfocus=userOnlineRegister();
-      
+
       window.onblur=function(){
         Vue.http.post('/user_online/end',{id: useronlines_id}).then(response => {
               console.log(response.body);
