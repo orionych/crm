@@ -42,8 +42,8 @@
       }
     }
       window.onblur=function(){
-        Vue.http.get('/user_online/start').then(response => {
-              useronlines_id=response.body.id;
+        Vue.http.post('/user_online/end',{id: useronlines_id}).then(response => {
+              console.log('finished');
             }, response => {
               alert('error');
             });
