@@ -34,7 +34,7 @@
       window.onfocus=function(){
         console.log('started');
         Vue.http.get('/user_online').then(response => {
-              console.log(response);
+              console.log(response.body);
             }, response => {
               alert('error');
             });
