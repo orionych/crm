@@ -367,56 +367,20 @@
 
               <div class="row">
                   <div class="col-lg-12 main-chart">
-                      
-                      <div class="row mt">
-                      <!-- SERVER STATUS PANELS -->
-                        <div class="col-md-6 col-sm-6 mb">
-                            <div class="grey-panel pn donut-chart">
-                                <div class="grey-header">
-                                    <h5>SERVER LOAD</h5>
-                                </div>                                
-                                <div class="row">
-                                    <div class="col-sm-6 col-xs-6 goleft">
-                                        <p>Usage<br/>Increase:</p>
-                                    </div>
-                                     <div class="col-sm-6 col-xs-6">
-                                        <h2>21%</h2>
-                                     </div>
-                                </div>
-                            </div><! --/grey-panel -->
-                        </div><!-- /col-md-4-->
-                        
-
-                        <div class="col-md-6 col-sm-6 mb">
-                            <div class="darkblue-panel pn">
-                                <div class="darkblue-header">
-                                    <h5>DROPBOX STATICS</h5>
-                                </div>
-                               
-                                <p>April 17, 2014</p>
-                                <footer>
-                                    <div class="pull-left">
-                                        <h5><i class="fa fa-hdd-o"></i> 17 GB</h5>
-                                    </div>
-                                    <div class="pull-right">
-                                        <h5>60% Used</h5>
-                                    </div>
-                                </footer>
-                            </div><! -- /darkblue panel -->
-                        </div>
-                        
-                    </div>                        
-                
+                   
                     
                  
                     
-                  </div><!-- /col-lg-9 END SECTION MIDDLE -->
+                  </div>
+            </div>
                   
   
           </section>
       </section>
 
-      <!--main content end-->
+     <!-- **********************************************************************************************************************************************************
+      MAIN CONTENT END
+      *********************************************************************************************************************************************************** -->
       <!--footer start-->
       <footer class="site-footer">
           <div class="text-center">
