@@ -14,7 +14,7 @@ public function __construct()
 	}
 public function start(Request $request)
 	{	
-		$useronline=UserOnline::where('started_at','>',Carbon::now()->format('Y-m-d'))->find();
+		$useronline=UserOnline::where('started_at','>',Carbon::now()->format('Y-m-d'))->get();
 		dd($useronline->toArray());
 		unset($useronline);
 		$useronline=new UserOnline;
