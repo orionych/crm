@@ -20,7 +20,7 @@ Vue.use(VueRouter);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */ 
 Basket=Vue.component('basket',require('./components/Basket.vue'));
- Vue.component('firm',require('./components/Firm.vue'));
+Vue.component('firm',require('./components/Firm.vue'));
 Vue.component('my-input',require('./components/My-input.vue'));
 
 
