@@ -110,7 +110,7 @@
                     <!-- clock -->
                     <li>               
                       <a href="index.html#"> 
-                              <i class="fa fa-clock-o"></i> 24          
+                              <i class="fa fa-clock-o"></i> 04:12:21         
                       </a> 
                     </li>
                     <!-- clock end -->
