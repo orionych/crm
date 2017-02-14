@@ -110,7 +110,7 @@
                     <!-- clock -->
                     <li>               
                       <router-link to="/clock"> 
-                              <i class="fa fa-clock-o"> 24:12:21</i><clock></clock>         
+                              <clock :value='24:12:21'></clock>         
                       </router-link> 
                     </li>
                     <!-- clock end -->
