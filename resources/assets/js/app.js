@@ -29,7 +29,16 @@ var clock=Vue.component('clock',require('./components/Clock.vue'));
 
 const Foo = { template: '<div>foo<basket>1</basket></div>' }
 const Bar = { template: '<div>bar</div>' }
-
+const store = new Vuex.Store({
+  state: {
+    count: 0
+  },
+  mutations: {
+    increment (state) {
+      state.count++
+    }
+  }
+})
 // 2. Определение путей
 // Каждый путь должен указывать на компонент
 // "Компонентом" может быть как созданный через Vue.extend()
