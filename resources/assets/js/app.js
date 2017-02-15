@@ -58,7 +58,7 @@ const app = new Vue({
 
 
 Vue.http.headers.common['X-CSRF-TOKEN'] = document.querySelector('#csrf_token').getAttribute('content');
-
+Vue.use(Vuex);
       var useronlines_id=0;
       var clocktime=10;
       var useronlinestarted=false;
