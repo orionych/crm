@@ -19,7 +19,7 @@ class CreateCitiesTable extends Migration
             $table->integer('country_id')->default(0);
             $table->integer('population')->default(0);
             $table->text('area');
-            $table->string('code')->default();            
+            $table->string('code')->default('');            
         });
     }
 
