@@ -22,7 +22,7 @@ class CountriesSeeder extends Seeder
         	$country=Country::create([
         		'id'=>intval(str_replace('"','',$data[1])),
         		'code2'=>$data[6],
-        		'code3'=>$data[2],
+        		'code3'=>$data[3],
         		'name'=>iconv('WINOWS-1251','UTF-8',$data[4])
         		]);
 
