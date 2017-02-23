@@ -16,5 +16,8 @@ class CitiesSeeder extends Seeder
 	DB::table('cities')->truncate();
    	DB::statement("SET FOREIGN_KEY_CHECKS=1");
     	Eloquent::unguard();   
+    	foreach ($cities as $firm)
+    	{
+    	}
     }
 }
