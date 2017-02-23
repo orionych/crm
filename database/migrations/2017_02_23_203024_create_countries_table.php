@@ -20,7 +20,6 @@ class CreateCountriesTable extends Migration
             $table->string('name')->default();
             $table->string('telephone')->default();
             $table->boolean('enabled')->default(false);
-
         });
     }
 
