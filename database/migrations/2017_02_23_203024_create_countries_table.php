@@ -19,6 +19,7 @@ class CreateCountriesTable extends Migration
             $table->string('code3')->default();
             $table->string('name')->default();
             $table->string('telephone')->default();
+            $table->boolean('enabled')->default(false);
 
         });
     }
