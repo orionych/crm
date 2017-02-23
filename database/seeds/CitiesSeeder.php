@@ -24,7 +24,7 @@ class CitiesSeeder extends Seeder
     			'name'		=> iconv('KOI8-R','UTF-8',$city->cityname),
     			'country_id'	=> 643,
     			'population'	=> $city->population,
-    			'area'		=> $city->regiongeo,
+    			'area'		=> strval($city->regiongeo),
     			'code'		=> str_pad($city->regioncode,2,'0',STR_PAD_LEFT)
     			]);
     	}
