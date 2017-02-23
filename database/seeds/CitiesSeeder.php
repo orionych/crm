@@ -19,7 +19,6 @@ class CitiesSeeder extends Seeder
     	Eloquent::unguard();   
     	foreach ($cities as $city)
     	{
-    		try {
     		City::create([
     			'id'		=> $city->id,
     			'name'		=> iconv('KOI8-R','UTF-8',$city->cityname),
@@ -28,7 +27,6 @@ class CitiesSeeder extends Seeder
     			'area'		=> $city->regiongeo,
     			'code'		=> str_pad($city->regioncode,2,'0',STR_PAD_LEFT)
     			]);
-    	} catch (Exception $e)  { print_r($e);}
     	}
     }
 }
