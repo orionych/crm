@@ -27,7 +27,9 @@ class CountriesSeeder extends Seeder
         		'name'=>iconv('WINDOWS-1251','UTF-8',$data[4])
         		]);
         	}   catch(PDOException $e)
-
+        	  {
+	        echo "error";                           // catch this error
+	        }
         }
     }
 }
