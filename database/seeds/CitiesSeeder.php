@@ -1,5 +1,6 @@
 <?php
 
+use App\City;
 use Illuminate\Database\Seeder;
 
 class CitiesSeeder extends Seeder
@@ -16,8 +17,16 @@ class CitiesSeeder extends Seeder
 	DB::table('cities')->truncate();
    	DB::statement("SET FOREIGN_KEY_CHECKS=1");
     	Eloquent::unguard();   
-    	foreach ($cities as $firm)
+    	foreach ($cities as $city)
     	{
+    		City::create([
+    			'id'		=> $city->id,
+    			'name'		=> iconv('KOI8-R','UTF-8',$city->cityname),
+    			'country_id'	=> 643,
+    			'population'	=> $city->population,
+    			'area'		=> $city->regiongeo,
+    			'code'		=> $city->regioncode
+    			]);
     	}
     }
 }
