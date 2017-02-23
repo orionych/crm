@@ -15,6 +15,7 @@ class CountriesSeeder extends Seeder
         $arrays=explode("\n",$countries);
         foreach ($arrays as $key=>$value)
         {
+        	if ($key==0) {continue;}
         	
         }
     }
