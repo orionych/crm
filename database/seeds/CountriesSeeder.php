@@ -20,7 +20,7 @@ class CountriesSeeder extends Seeder
         	$data=explode(";",$value);
         	if (count($data)==0) {continue;}
         	$country=Country::create([
-        		'id'=>$data[1],
+        		'id'=>intval($data[1]),
         		'code2'=>$data[6],
         		'code3'=>$data[2],
         		'name'=>$data[4]
