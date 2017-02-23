@@ -1,5 +1,6 @@
 <?php
 
+use App\Country;
 use Illuminate\Database\Seeder;
 
 class CountriesSeeder extends Seeder
@@ -18,7 +19,7 @@ class CountriesSeeder extends Seeder
         	if ($key==0) {continue;}
         	$data=explode(";",$value);
         	if (count($data)==0) {continue;}
-        	
+        	$country=Country::
         }
     }
 }
