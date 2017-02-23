@@ -25,7 +25,7 @@ class CitiesSeeder extends Seeder
     			'country_id'	=> 643,
     			'population'	=> $city->population,
     			'area'		=> $city->regiongeo,
-    			'code'		=> $city->regioncode
+    			'code'		=> str_pad($city->regioncode,2,'0',STR_PAD_LEFT)
     			]);
     	}
     }
