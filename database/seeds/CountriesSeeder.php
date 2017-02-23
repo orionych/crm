@@ -10,6 +10,11 @@ class CountriesSeeder extends Seeder
      *
      * @return void
      */
+     private function mb_ucfirst($string) {  
+          $string = mb_ereg_replace("^[\ ]+","", $string);  
+          $string = mb_strtoupper(mb_substr($string, 0, 1, "UTF-8"), "UTF-8").mb_substr($string, 1, mb_strlen($string), "UTF-8" );  
+          return $string;  
+     }  
     public function run()
     {
     	setlocale(LC_CTYPE, "ru_RU.UTF-8");
