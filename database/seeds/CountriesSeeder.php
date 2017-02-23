@@ -19,7 +19,11 @@ class CountriesSeeder extends Seeder
         	if ($key==0) {continue;}
         	$data=explode(";",$value);
         	if (count($data)==0) {continue;}
-        	$country=Country::
+        	$country=Country::create([
+        		'id'=>$data[1],
+        		'code2'=>$data[2]
+        		]);
+
         }
     }
 }
