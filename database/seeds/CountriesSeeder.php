@@ -12,6 +12,7 @@ class CountriesSeeder extends Seeder
      */
     public function run()
     {
+    	setlocale(LC_CTYPE, "ru_RU.UTF-8");
         $countries=trim(File::get(base_path().'/database/seeds/countries.csv'));
         $arrays=explode("\n",$countries);
         foreach ($arrays as $key=>$value)
