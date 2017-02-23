@@ -17,6 +17,7 @@ class CreateCountriesTable extends Migration
             $table->integer('id')->primary();
             $table->string('code2')->default();
             $table->string('code3')->default();
+            $table->string('name')->default();
 
         });
     }
