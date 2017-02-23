@@ -30,7 +30,7 @@ class CountriesSeeder extends Seeder
         		'id'=>intval(str_replace('"','',$data[1])),
         		'code2'=>iconv('WINDOWS-1251','UTF-8',str_replace('"','',$data[6])),
         		'code3'=>iconv('WINDOWS-1251','UTF-8',str_replace('"','',$data[3])),
-        		'name'=>ucfirst(mb_strtolower(iconv('WINDOWS-1251','UTF-8',str_replace('"','',$data[4]))))
+        		'name'=>$this->mb_ucfirst(mb_strtolower(iconv('WINDOWS-1251','UTF-8',str_replace('"','',$data[4]))))
         		]);
         	}   catch(PDOException $e)
         	  {
