@@ -21,8 +21,8 @@ class CountriesSeeder extends Seeder
         	if (count($data)==0) {continue;}
         	$country=Country::create([
         		'id'=>intval(str_replace('"','',$data[1])),
-        		'code2'=>$data[6],
-        		'code3'=>$data[3],
+        		'code2'=>iconv('WINDOWS-1251','UTF-8',$data[6]),
+        		'code3'=>iconv('WINDOWS-1251','UTF-8',$data[3]),
         		'name'=>iconv('WINDOWS-1251','UTF-8',$data[4])
         		]);
 
