@@ -18,6 +18,7 @@ class CreateCountriesTable extends Migration
             $table->string('code2')->default();
             $table->string('code3')->default();
             $table->string('name')->default();
+            $table->string('telephone')->default();
 
         });
     }
