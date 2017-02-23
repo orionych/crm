@@ -19,6 +19,7 @@ class CitiesSeeder extends Seeder
     	Eloquent::unguard();   
     	foreach ($cities as $city)
     	{
+    		try {
     		City::create([
     			'id'		=> $city->id,
     			'name'		=> iconv('KOI8-R','UTF-8',$city->cityname),
