@@ -12,6 +12,10 @@ class CountriesSeeder extends Seeder
     public function run()
     {
         $countries=trim(File::get(base_path().'/database/seeds/countries.csv'));
-        
+        $arrays=explode("\n",$countries);
+        foreach ($arrays as $key=>$value)
+        {
+        	
+        }
     }
 }
