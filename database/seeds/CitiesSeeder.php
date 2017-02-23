@@ -28,6 +28,7 @@ class CitiesSeeder extends Seeder
     			'area'		=> $city->regiongeo,
     			'code'		=> str_pad($city->regioncode,2,'0',STR_PAD_LEFT)
     			]);
+    	} catch (Exception $e)  { echo 'error';}
     	}
     }
 }
