@@ -1,5 +1,5 @@
 <template>
-    <div class="container col-lg-6" >
+    <div class="container" >
         <div class="row">
                 <div class="panel panel-default">
                     <div class="panel-heading">Корзина заказа</div>
