@@ -34,7 +34,7 @@
                 <ul class="nav top-menu">
                     <!-- settings start -->
                     <li>
-                        <router-link to=router.go(-1)>
+                        <router-link :to=router.go(-1)>
                             <i class="fa fa-arrow-left"></i>                            
                         </router-link>
                     </li> 
