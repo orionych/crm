@@ -14,16 +14,17 @@ class FirmDetailsSeeder extends Seeder
 	$o=FirmDetail::create([
     			'id'		=>1,
     			'firm_type_id'	=>0,
-    			'name'	=>'ИНН',
+    			'name'	=>'ИНН'
     			]);
 	$o=FirmDetail::create([
     			'id'		=>2,
-    			'firm_type_id'	=>0,
-    			'name'	=>'Индивидуальный предприниматель',
+    			'firm_type_id'	=>1,
+    			'name'	=>'КПП'
     			]);
 	$o=FirmDetail::create([
     			'id'		=>3,
-    			'name'	=>'Физическое лицо',
+    			'firm_type_id'	=>1,
+    			'name'	=>'ОГРН'
     			]);
     }
 }
