@@ -107,6 +107,13 @@
                         </router-link>
                     </li>
                     <!-- basket end -->
+                    <!-- request add -->
+                    <li>
+                        <router-link to="/addrequest" data-toggle="dropdown" class="dropdown-toggle">
+                            <i class="fa fa-plus"></i>                            
+                        </router-link>
+                    </li>
+                    <!-- basket end -->
                     <!-- clock -->
                     <li>               
                       <router-link to="/clock"> 
