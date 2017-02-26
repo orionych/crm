@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCountryFirmDetailsTable extends Migration
+class CreateCountryFirmDetailTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateCountryFirmDetailsTable extends Migration
      */
     public function up()
     {
-        Schema::create('country_firm_details', function (Blueprint $table) {
+        Schema::create('country_firm_detail', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('country_id')->default(0);
             $table->integer('firm_detail_id')->default(0);
