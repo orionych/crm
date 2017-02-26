@@ -22,7 +22,7 @@ class FirmTypesSeeder extends Seeder
     			]);
 	$o=FirmType::create([
     			'id'		=>2,
-    			'name'	=>'Индивидуальный предприниматель',
+    			'name'	=>'Физическое лицо',
     			]);
     }
 }
