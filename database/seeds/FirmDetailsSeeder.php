@@ -25,5 +25,4 @@ class FirmDetailsSeeder extends Seeder
     			'name'	=>'Физическое лицо',
     			]);
     }
-    }
 }
