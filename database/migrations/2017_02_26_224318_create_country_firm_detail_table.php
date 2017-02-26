@@ -15,8 +15,8 @@ class CreateCountryFirmDetailTable extends Migration
     {
         Schema::create('country_firm_detail', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('country_id')->default(0);
-            $table->integer('firm_detail_id')->default(0);
+            $table->integer('country_id')->index()->default(0);
+            $table->integer('firm_detail_id')->index()->default(0);
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
