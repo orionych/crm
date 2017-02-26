@@ -16,12 +16,6 @@ Vue.use(VueRouter);
 Vue.use(Vuex);
 //... some vue component imports ...
 
-// var Vue=require('vue');
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */ 
 Basket=Vue.component('basket',require('./components/Basket.vue'));
 Vue.component('firm',require('./components/Firm.vue'));
 Vue.component('my-input',require('./components/My-input.vue'));
