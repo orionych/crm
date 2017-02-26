@@ -19,10 +19,10 @@
             return {code: 'new'}
             },
             ready() {
-            console.log('Component ready.')
+            console.log('Price-list ready.')
         },
         mounted() {
-            console.log('Component basket mounted.')
+            console.log('Component price-list mounted.')
         }
     }
 </script>
