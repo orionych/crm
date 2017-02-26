@@ -16,7 +16,6 @@ class CreateFirmTypesTable extends Migration
         Schema::create('firm_types', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->timestamps();
         });
     }
 
