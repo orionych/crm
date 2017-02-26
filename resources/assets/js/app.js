@@ -13,6 +13,7 @@ var VueRouter = require('vue-router');
 var Vuex = require('vuex');
 Vue.use(VueResource);
 Vue.use(VueRouter);
+Vue.use(Vuex);
 //... some vue component imports ...
 
 // var Vue=require('vue');
@@ -67,7 +68,7 @@ const app = new Vue({
 
 
 Vue.http.headers.common['X-CSRF-TOKEN'] = document.querySelector('#csrf_token').getAttribute('content');
-Vue.use(Vuex);
+
       var useronlines_id=0;
       var clocktime=10;
       var useronlinestarted=false;
