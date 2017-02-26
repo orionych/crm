@@ -9,6 +9,6 @@ class Country extends Model
 	public $timestamps = false;
 	public $incrementing = false;
 	public function firm_details() {
-		return $this->belongsToMany('App\FirmDetails');		
+		return $this->belongsToMany('App\FirmDetail');		
 	}
 }
