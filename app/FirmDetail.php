@@ -10,5 +10,8 @@ class FirmDetail extends Model
 	public function countries() {
 		return $this->belongsToMany('App\Country');		
 	}
+	public function firm_types() {
+		return $this->belongsToMany('App\FirmType');		
+	}
 
 }
