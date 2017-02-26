@@ -1,6 +1,7 @@
 <?php
 
 use App\Country;
+use App\FirmDetail;
 use Illuminate\Database\Seeder;
 
 class FirmDetailsSeeder extends Seeder
