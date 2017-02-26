@@ -19,6 +19,7 @@ class FirmDetailsSeeder extends Seeder
     			'id'		=>1,
     			'name'	=>'ИНН'
     			]);
+	$country->firm
 	$o=FirmDetail::create([
     			'id'		=>2,
     			'name'	=>'КПП'
