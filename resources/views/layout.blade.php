@@ -33,6 +33,11 @@
                 <!--  notification start -->
                 <ul class="nav top-menu">
                     <!-- settings start -->
+                    <li>
+                        <router-link to=router.go(-1)>
+                            <i class="fa fa-plus"></i>                            
+                        </router-link>
+                    </li> 
                     <li class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
                             <i class="fa fa-money"></i>
