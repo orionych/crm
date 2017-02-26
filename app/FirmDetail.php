@@ -8,7 +8,7 @@ class FirmDetail extends Model
 {
 	public $timestamps = false;
 	public function countries() {
-		return $this->belongsToMany('App\Countries');		
+		return $this->belongsToMany('App\Country');		
 	}
 
 }
