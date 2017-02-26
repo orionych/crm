@@ -18,6 +18,7 @@ class FirmDetailsSeeder extends Seeder
     			]);
 	$o=FirmDetail::create([
     			'id'		=>2,
+    			'firm_type_id'	=>0,
     			'name'	=>'Индивидуальный предприниматель',
     			]);
 	$o=FirmDetail::create([
