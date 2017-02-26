@@ -19,7 +19,7 @@ Vue.use(Vuex);
 Vue.component('basket',require('./components/Basket.vue'));
 Vue.component('firm',require('./components/Firm.vue'));
 Vue.component('my-input',require('./components/My-input.vue'));
-Vue.component('pr-input',require('./components/My-input.vue'));
+Vue.component('price-list',require('./components/Price-list.vue'));
 var clock=Vue.component('clock',require('./components/Clock.vue'));
 
 
