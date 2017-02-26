@@ -38,6 +38,7 @@ class CreateFirmTable extends Migration
             $table->string('bik')->default();
             $table->string('rasschet')->default();
             $table->string('korschet')->default();
+            
             $table->string('bank')->default();
             $table->double('geox',17,4)->default(0);
             $table->double('geoy',17,4)->default(0);
