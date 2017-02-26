@@ -41,7 +41,6 @@ const store = new Vuex.Store({
 // полноценный конструктор, так и просто объект с настройками компонента
 // Вложенные пути будут рассмотрены далее.
 const routes = [
-  { path: '/foo', component: Foo },
   { path: '/basket', component: Basket },
   { path: '/bar', component: Bar }
 ]
