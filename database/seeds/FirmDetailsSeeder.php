@@ -13,8 +13,10 @@ class FirmDetailsSeeder extends Seeder
      */
     public function run()
     {
-
+	DB::statement("SET FOREIGN_KEY_CHECKS=0");
   	DB::table('firm_details')->truncate();
+   	DB::statement("SET FOREIGN_KEY_CHECKS=1");
+    	Eloquent::unguard(); 
   	$country=Country::find(643);
 	$o=FirmDetail::create([
     			'id'		=>1,
