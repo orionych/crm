@@ -109,7 +109,7 @@
                     <!-- basket end -->
                     <!-- request add -->
                     <li>
-                        <router-link to="/addrequest" data-toggle="dropdown" class="dropdown-toggle">
+                        <router-link to="/addrequest" >
                             <i class="fa fa-plus"></i>                            
                         </router-link>
                     </li>
