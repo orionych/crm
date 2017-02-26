@@ -13,11 +13,15 @@ class FirmTypesSeeder extends Seeder
     public function run()
     {
 	$o=FirmType::create([
-    			'id'		=>$offer->id,
+    			'id'		=>1,
     			'name'	=>'Юридическое лицо',
     			]);
 	$o=FirmType::create([
-    			'id'		=>$offer->id,
+    			'id'		=>2,
+    			'name'	=>'Индивидуальный предприниматель',
+    			]);
+	$o=FirmType::create([
+    			'id'		=>2,
     			'name'	=>'Индивидуальный предприниматель',
     			]);
     }
