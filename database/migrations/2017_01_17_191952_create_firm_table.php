@@ -17,6 +17,7 @@ class CreateFirmTable extends Migration
             $table->increments('id');
             $table->string('name')->default();
             $table->string('fullname')->default();
+            $table->integer('firm_type_id')->default(1);
             $table->boolean('competitor')->default(false);
             $table->boolean('supplier')->default(false);
             $table->string('okved_id',10)->index()->default();
