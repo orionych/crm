@@ -1,5 +1,6 @@
 <?php
 
+use App\Country;
 use Illuminate\Database\Seeder;
 
 class FirmDetailsSeeder extends Seeder
@@ -13,6 +14,7 @@ class FirmDetailsSeeder extends Seeder
     {
 
   	DB::table('firm_details')->truncate();
+  	$country=Country::find(643);
 	$o=FirmDetail::create([
     			'id'		=>1,
     			'name'	=>'ИНН'
