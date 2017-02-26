@@ -23,7 +23,7 @@ Vue.component('price-list',require('./components/Price-list.vue'));
 var clock=Vue.component('clock',require('./components/Clock.vue'));
 
 
-const Basket = { template: '<div class="row"><div class='lg-6'><basket>1</basket></div><div class='lg-6'><price-list></price-list></div></div>' }
+const Basket = { template: '<div class="row"><div class='col-lg-6'><basket>1</basket></div><div class='col-lg-6'><price-list></price-list></div></div>' }
 const Bar = { template: '<div>bar</div>' }
 const store = new Vuex.Store({
   state: {
