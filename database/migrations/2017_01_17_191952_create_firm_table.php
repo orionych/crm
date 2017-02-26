@@ -23,9 +23,9 @@ class CreateFirmTable extends Migration
             $table->integer('power')->default(0);            
             $table->integer('stars')->default(0);    
             $table->integer('city_id')->default(0);
+            $table->integer('holding_id')->default(0);  
             $table->string('okved_id',10)->index()->default();
-            $table->integer('fizlico')->default(0);
-            $table->integer('holding_id')->default(0);            
+            $table->integer('fizlico')->default(0);          
             $table->string('inn')->default();        
             $table->string('kpp')->default();
             $table->string('ogrn')->default();
