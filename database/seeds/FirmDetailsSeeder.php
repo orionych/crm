@@ -35,25 +35,30 @@ class FirmDetailsSeeder extends Seeder
     			'name'	=>'КПП'
     			]);
 	$o->countries()->save($country);
+	$o->firm_types()->save($firm1);
 	$o=FirmDetail::create([
     			'id'		=>3,
     			'name'	=>'ОГРН'
     			]);
 	$o->countries()->save($country);
+	$o->firm_types()->save($firm1);
 	$o=FirmDetail::create([
     			'id'		=>4,
     			'name'	=>'Юридический адрес'
     			]);
 	$o->countries()->save($country);
+	$o->firm_types()->save($firm1);
 	$o=FirmDetail::create([
     			'id'		=>5,
     			'name'	=>'Фактический адрес'
     			]);
 	$o->countries()->save($country);
+	$o->firm_types()->save($firm1);
 	$o=FirmDetail::create([
     			'id'		=>6,
     			'name'	=>'Почтовый адрес'
     			]);
 	$o->countries()->save($country);
+	$o->firm_types()->save($firm1);
     }
 }
