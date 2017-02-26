@@ -16,13 +16,13 @@ Vue.use(VueRouter);
 Vue.use(Vuex);
 //... some vue component imports ...
 
-Basket=Vue.component('basket',require('./components/Basket.vue'));
+Vue.component('basket',require('./components/Basket.vue'));
 Vue.component('firm',require('./components/Firm.vue'));
 Vue.component('my-input',require('./components/My-input.vue'));
 var clock=Vue.component('clock',require('./components/Clock.vue'));
 
 
-const Foo = { template: '<div>foo<basket>1</basket></div>' }
+const Basket = { template: '<div class="row"><div class='lg-6'><basket>1</basket></div><div class='lg-6'><price-list></price-list></div></div>' }
 const Bar = { template: '<div>bar</div>' }
 const store = new Vuex.Store({
   state: {
