@@ -17,6 +17,7 @@ class CreateFirmBanksTable extends Migration
             $table->increments('id');
             $table->integer('firm_id');
             $table->boolean('enabled')->default(true);
+            $table->boolean('default')->default(true);
             $table->timestamps();
         });
     }
