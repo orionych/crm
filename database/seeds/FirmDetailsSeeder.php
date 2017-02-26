@@ -24,21 +24,26 @@ class FirmDetailsSeeder extends Seeder
     			'id'		=>2,
     			'name'	=>'КПП'
     			]);
+	$o->countries()->associate($country);
 	$o=FirmDetail::create([
     			'id'		=>3,
     			'name'	=>'ОГРН'
     			]);
+	$o->countries()->associate($country);
 	$o=FirmDetail::create([
     			'id'		=>4,
     			'name'	=>'Юридический адрес'
     			]);
+	$o->countries()->associate($country);
 	$o=FirmDetail::create([
     			'id'		=>5,
     			'name'	=>'Фактический адрес'
     			]);
+	$o->countries()->associate($country);
 	$o=FirmDetail::create([
     			'id'		=>6,
     			'name'	=>'Почтовый адрес'
     			]);
+	$o->countries()->associate($country);
     }
 }
