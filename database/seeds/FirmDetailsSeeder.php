@@ -27,9 +27,19 @@ class FirmDetailsSeeder extends Seeder
     			'name'	=>'ОГРН'
     			]);
 	$o=FirmDetail::create([
-    			'id'		=>3,
+    			'id'		=>4,
     			'firm_type_id'	=>1,
-    			'name'	=>'ОГРН'
+    			'name'	=>'Юридический адрес'
+    			]);
+	$o=FirmDetail::create([
+    			'id'		=>5,
+    			'firm_type_id'	=>1,
+    			'name'	=>'Фактический адрес'
+    			]);
+	$o=FirmDetail::create([
+    			'id'		=>6,
+    			'firm_type_id'	=>1,
+    			'name'	=>'Почтовый адрес'
     			]);
     }
 }
