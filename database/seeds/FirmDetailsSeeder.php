@@ -11,6 +11,8 @@ class FirmDetailsSeeder extends Seeder
      */
     public function run()
     {
+
+  	DB::table('firm_details')->truncate();
 	$o=FirmDetail::create([
     			'id'		=>1,
     			'name'	=>'ИНН'
