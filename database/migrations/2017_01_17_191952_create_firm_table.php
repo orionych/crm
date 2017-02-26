@@ -30,11 +30,11 @@ class CreateFirmTable extends Migration
             $table->string('ogrn')->default();
             $table->string('telephone')->default();
             $table->string('uraddress')->default();
-            $table->string('faktaddress')->default();
-            $table->string('director')->default();
-            $table->string('director-r')->default();
-            $table->string('director-position')->default();
-            $table->string('osnovanie')->default();
+            // $table->string('faktaddress')->default();
+            // $table->string('director')->default();
+            // $table->string('director-r')->default();
+            // $table->string('director-position')->default();
+            // $table->string('osnovanie')->default();
             $table->string('bik')->default();
             $table->string('rasschet')->default();
             $table->string('korschet')->default();
