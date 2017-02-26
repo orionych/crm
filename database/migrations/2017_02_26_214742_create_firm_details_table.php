@@ -15,7 +15,7 @@ class CreateFirmDetailsTable extends Migration
     {
         Schema::create('firm_details', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('firm_type_id');
+            $table->integer('firm_type_id')-;
             $table->string('name')->default();
         });
     }
