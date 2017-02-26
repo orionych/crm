@@ -35,7 +35,7 @@
                     <!-- settings start -->
                     <li>
                         <router-link to=router.go(-1)>
-                            <i class="fa fa-plus"></i>                            
+                            <i class="fa fa-arrow-left"></i>                            
                         </router-link>
                     </li> 
                     <li class="dropdown">
