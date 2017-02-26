@@ -28,6 +28,6 @@ class CreateCountryFirmDetailTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('country_firm_details');
+        Schema::dropIfExists('country_firm_detail');
     }
 }
