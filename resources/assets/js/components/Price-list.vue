@@ -12,3 +12,17 @@
         </div>
     </div>
 </template>
+
+<script>
+    export default {
+            data() {
+            return {code: 'new'}
+            },
+            ready() {
+            console.log('Component ready.')
+        },
+        mounted() {
+            console.log('Component basket mounted.')
+        }
+    }
+</script>
