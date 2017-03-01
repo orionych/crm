@@ -8,7 +8,6 @@ class WorkingDay extends Model
 {
 public $timestamps = false;
 public static function work($day) {
-	
 	// Проверяем день недели
 	$day=date("w",strtotime($day));
 	if (($day==0)||($day==6)) {return false;}
