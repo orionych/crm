@@ -13,7 +13,7 @@ var VueRouter = require('vue-router');
 var Vuex = require('vuex');
 Vue.use(VueResource);
 Vue.use(VueRouter);
-Vue.use(Vuex);
+// Vue.use(Vuex);
 //... some vue component imports ...
 
 Vue.component('basket',require('./components/Basket.vue'));
