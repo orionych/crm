@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Todo extends Model
 {
-public function users() {
-	$this->belongsTo('App\User');
-}
+	public function users() {
+		$this->belongsTo('App\User');
+	}
 }
