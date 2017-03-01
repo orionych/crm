@@ -8,7 +8,8 @@ class WorkingDay extends Model
 {
 	public $timestamps = false;
 	public function __constructor($day) {
-				
+	$day=date("w",strtotime($day));
+	return $day;		
 	}
     //
 }
