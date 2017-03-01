@@ -14,6 +14,6 @@ class Firm extends Model
 	        return $this->hasMany('App\Client');
 	}
 	public function requests() {
-		return $this->hasManyThrough('App\Client', 'App\Request');
+		return $this->hasManyThrough( 'App\Request','App\Client');
 	}
 }
