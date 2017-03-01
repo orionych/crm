@@ -11,3 +11,17 @@
 		</div>
 	</div>
 </template>
+
+<script>
+    export default {
+            data() {
+            return {avatar:''}
+            },
+            ready() {
+            console.log('Avatar ready.')
+        },
+        mounted() {
+            console.log('Component avatar mounted.')
+        }
+    }
+</script>
