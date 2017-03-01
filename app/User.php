@@ -37,6 +37,6 @@ class User extends Authenticatable
     }
     public function getAvatar()
     {
-        return preg_replace('/(\w)\w+ (\w)\w+ (\w)\w+/iu', '$1$2$3', $this->name);
+        return '<i class="fa fa-male"></i>';
     }
 }
