@@ -190,7 +190,7 @@
               <ul class="sidebar-menu" id="nav-accordion">
               
 
-                  <p class="centered">{{ Auth::user()->getAvatar() }}</p>
+                  <p class="centered"><route-link to='/profile'>{{ Auth::user()->getAvatar() }}</route-link></p>
                   <h5 class="centered">{{ Auth::user()->getOfficalName() }}</h5>
                     
                   <li class="mt">
