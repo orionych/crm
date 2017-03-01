@@ -15,6 +15,8 @@ class CreateWorkingDaysTable extends Migration
     {
         Schema::create('working_days', function (Blueprint $table) {
             $table->increments('id');
+            $table->date('date');
+            $table->boolean('work')->default(false);
         });
     }
 
