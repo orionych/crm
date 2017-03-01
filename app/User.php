@@ -20,6 +20,10 @@ class User extends Authenticatable
     {
         return $this->belongsToMany('App\Permission');
     }
+    public function files()
+    {
+        return $this->morphMany('App\File', 'fileable');
+    }
     public function getNameAttribute($name) {
           return $name;
     }
