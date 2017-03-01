@@ -18,7 +18,8 @@ class CreateFirmBanksTable extends Migration
             $table->integer('firm_id');
             $table->boolean('enabled')->default(true);
             $table->boolean('default')->default(true);
-            $table->timestamps();
+            $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
     }
 
