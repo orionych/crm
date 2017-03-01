@@ -37,6 +37,6 @@ class User extends Authenticatable
     }
     public function getAvatar()
     {
-        return '<i class="fa fa-male"></i>';
+        echo '<i class="fa fa-male"></i>';
     }
 }
