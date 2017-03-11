@@ -59,10 +59,7 @@ const router = new VueRouter({
 const app = new Vue({
   router,data:{
   clocktimer:15	
-  },http: {
-            emulateJSON: true,
-            emulateHTTP: true
-    }
+  }
 }).$mount('#app')
 
 
