@@ -2,7 +2,7 @@
     <div class="container" style='width:100%'>
         <div class="row">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Прайс-лист: <input type='text' v-model='newcode'  /> {{ newcode }}</div>
+                    <div class="panel-heading">Прайс-лист: <input type='text' v-model='code'  /> {{ code }}</div>
                     <div class="panel-body">
                          <div class="row">
                          here new values
@@ -16,7 +16,7 @@
 <script>
     export default {
             data() {
-            return {newcode: 'new'}
+            return {code: 'new'}
             },
             ready() {
             console.log('Price-list ready.')
