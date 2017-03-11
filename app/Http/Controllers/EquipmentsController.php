@@ -9,6 +9,6 @@ class EquipmentsController extends Controller
 {
     public function index(Request $request) {
     	$equipments=Equipment::where('text','like','%v2fs%')->limit(50)->get();
-    	return $equipments;
+    	return $equipments->toArray();
     }
 }
