@@ -25,7 +25,7 @@
             priceLoad: _.debounce(function() {
                 this.typing=true;
                 this.state='loading';
-                Vue.http.post('/equipment/',{id: useronlines_id}).then(response => {
+                Vue.http.post('/equipment/',{code: this.code}).then(response => {
                   useronlinestarted=false;
                   console.log(response.body);
                 }, response => {
