@@ -21,7 +21,7 @@
             ready() {
             console.log('Price-list ready.')
         },
-        methods: {
+        methods() {
             searchQuery: function(event) {
             alert('here');
             }
