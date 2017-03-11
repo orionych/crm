@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class EquipmentsController extends Controller
 {
     public function index(Request $request) {
-    	return $request;
+    	return $request->all();
     }
 }
