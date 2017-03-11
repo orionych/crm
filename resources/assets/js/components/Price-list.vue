@@ -16,7 +16,7 @@
 <script>
     export default {
             data() {
-            return {code: 'new'}
+            return {code: 'new',delay:500}
             },
             ready() {
             console.log('Price-list ready.')
