@@ -22,10 +22,15 @@
             console.log('Price-list ready.')
         },
         methods: {
-            priceLoad: function() {
+            priceLoad: _debounce(function() {
                 this.typing=true;
-                
-            }
+                Vue.http.post('/user_online/end',{id: useronlines_id}).then(response => {
+                      useronlinestarted=false;
+                      console.log(response.body);
+                    }, response => {
+                      console.log('error');
+                    });
+            },500)
         },
         mounted() {
             console.log('Component price-list mounted.')
