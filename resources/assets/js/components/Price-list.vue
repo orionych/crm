@@ -21,7 +21,6 @@
             ready() {
             console.log('Price-list ready.')
         },
-
         mounted() {
             console.log('Component price-list mounted.')
         }
