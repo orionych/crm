@@ -16,15 +16,14 @@
 <script>
     export default {
             data() {
-            return {code: 'new',typing:false,state:'waiting'}
+            return {code: 'new',loading:false}
             },
             ready() {
             console.log('Price-list ready.')
         },
         methods: {
             priceLoad: _.debounce(function() {
-                this.typing=true;
-                this.state='loading';
+                this.loading=true;
                 Vue.http.post('/equipment/',{code: this.code}).then(response => {
                   useronlinestarted=false;
                   console.log(response.body);
