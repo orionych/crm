@@ -23,7 +23,8 @@
         },
         methods: {
             priceLoad: function() {
-                this.code='not new';
+                this.typing=true;
+                
             }
         },
         mounted() {
