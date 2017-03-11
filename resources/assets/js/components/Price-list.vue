@@ -16,7 +16,7 @@
 <script>
     export default {
             data() {
-            return {code: 'new',state:'waiting'}
+            return {code: 'new',typing:false,state:'waiting'}
             },
             ready() {
             console.log('Price-list ready.')
