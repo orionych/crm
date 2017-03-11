@@ -25,7 +25,7 @@
             priceLoad: _.debounce(function() {
                 this.loading=true;
                 Vue.http.post('/equipment/list',{code: this.code}).then(response => {
-                  console.log(response.body);
+                  console.log(response.data);
                 }, response => {
                   console.log('error loading price list');
                 });
