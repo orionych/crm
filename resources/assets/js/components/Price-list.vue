@@ -25,7 +25,6 @@
             priceLoad: _.debounce(function() {
                 this.typing=true;
                 this.state='loading';
-
             },500)
         },
         mounted() {
