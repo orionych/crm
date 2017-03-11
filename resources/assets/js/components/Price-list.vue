@@ -22,7 +22,7 @@
             console.log('Price-list ready.')
         },
         method() {
-            this.onInput:debounce(function() {state='loading';},500);
+            onInput:debounce(function() {state='loading';},500);
         },
         mounted() {
             console.log('Component price-list mounted.')
