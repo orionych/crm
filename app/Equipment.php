@@ -11,6 +11,6 @@ class Equipment extends Model
 		return $this->belongsToMany('App\OfferVersion')->withPivot('count', 'price','time');		
 	}
 	public function equipment_names() {
-		
+		return $this->hasMany('App\EquipmentName');
 	}
 }
