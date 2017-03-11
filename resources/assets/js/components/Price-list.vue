@@ -25,7 +25,7 @@
             searchQuery: function(event) {
                 state='type';
             }
-        }
+        },
         mounted() {
             console.log('Component price-list mounted.')
         }
