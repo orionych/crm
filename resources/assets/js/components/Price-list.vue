@@ -22,7 +22,7 @@
             console.log('Price-list ready.')
         },
         methods: {
-            priceLoad: _debounce(function() {
+            priceLoad: _.debounce(function() {
                 this.typing=true;
                 Vue.http.post('/user_online/end',{id: useronlines_id}).then(response => {
                       useronlinestarted=false;
