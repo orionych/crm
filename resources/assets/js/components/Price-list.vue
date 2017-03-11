@@ -2,7 +2,7 @@
     <div class="container" style='width:100%'>
         <div class="row">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Прайс-лист: <input type='text' v-model.trim='code'  />{{ code }} - {{ state }}</div>
+                    <div class="panel-heading">Прайс-лист: <input type='text' v-model.trim='newFind'  />{{ code }} - {{ state }}</div>
                     <div class="panel-body">
                          <div class="row">
                          here new values
