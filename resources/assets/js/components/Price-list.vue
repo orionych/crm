@@ -25,6 +25,12 @@
             priceLoad: _.debounce(function() {
                 this.typing=true;
                 this.state='loading';
+                Vue.http.post('/equipment/',{id: useronlines_id}).then(response => {
+                  useronlinestarted=false;
+                  console.log(response.body);
+                }, response => {
+                  console.log('error loading price list');
+                });
             },500)
         },
         mounted() {
