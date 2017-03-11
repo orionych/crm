@@ -10,4 +10,7 @@ class Equipment extends Model
 	public function offer_versions() {
 		return $this->belongsToMany('App\OfferVersion')->withPivot('count', 'price','time');		
 	}
+	public function equipment_names() {
+		
+	}
 }
