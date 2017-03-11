@@ -23,7 +23,7 @@
         },
         methods: {
             searchQuery: function(event) {
-                state='type';
+            alert('here');
             }
         },
         mounted() {
