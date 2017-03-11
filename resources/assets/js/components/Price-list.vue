@@ -22,9 +22,9 @@
             console.log('Price-list ready.')
         },
         methods: {
-        newFind: function() {
-            this.code='not new';
-        }
+            newFind: function() {
+                this.code='not new';
+            }
         },
         mounted() {
             console.log('Component price-list mounted.')
