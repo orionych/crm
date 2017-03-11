@@ -23,7 +23,7 @@
         },
         methods: {
         newFind: function() {
-        this.code='not new';
+         this.code='not new';
         }
         },
         mounted() {
