@@ -24,12 +24,8 @@
         methods: {
             priceLoad: _.debounce(function() {
                 this.typing=true;
-                Vue.http.post('/user_online/end',{id: useronlines_id}).then(response => {
-                      useronlinestarted=false;
-                      console.log(response.body);
-                    }, response => {
-                      console.log('error');
-                    });
+                this.state='loading';
+
             },500)
         },
         mounted() {
