@@ -22,8 +22,10 @@
             console.log('Price-list ready.')
         },
         methods() {
+        return {
             searchQuery: function(event) {
             alert('here');
+            }
             }
         },
         mounted() {
