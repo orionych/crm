@@ -21,13 +21,11 @@
             ready() {
             console.log('Price-list ready.')
         },
-        watch() {
-            return {
-            searchQuery: function() {
+        methods: {
+            searchQuery: function(event) {
                 state='type';
             }
-            }
-        },
+        }
         mounted() {
             console.log('Component price-list mounted.')
         }
