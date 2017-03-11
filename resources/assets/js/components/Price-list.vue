@@ -21,7 +21,7 @@
             ready() {
             console.log('Price-list ready.')
         },
-        method() {
+        methods: {
             onInput:debounce(function() {state='loading';},500);
         },
         mounted() {
