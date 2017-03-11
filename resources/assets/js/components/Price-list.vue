@@ -5,7 +5,9 @@
                     <div class="panel-heading">Прайс-лист: <input type='text' v-model='code' @keyup='priceLoad'  />{{ code }} - {{ loading }} - {{ equipments.length }} </div>
                     <div class="panel-body">
                          <div class="row">
-                         here new values
+                         <ul v-if=equipments.length>
+                            <li v-for='equipment in equipments'>{{ equipment.text }}</li>
+                         </ul>
                          </div>
                     </div>
                 </div>
