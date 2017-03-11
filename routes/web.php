@@ -24,7 +24,7 @@ use App\User;
 		return view('layout');});
 	Route::get('/user_online/start','UserOnlinesController@start');
 	Route::post('/user_online/end','UserOnlinesController@end');
-	Route::post('/equipment/','EquipmentsController@end');
+	Route::post('/equipment/','EquipmentsController@index');
 	Route::get('/someUrl', function() {return 'Super CRM system '.csrf_token().' ';});
 	//Route::get('/someUrl', function() {return Response::error('404');});
 
