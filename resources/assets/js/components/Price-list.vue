@@ -18,6 +18,9 @@
             data() {
             return {code: 'new',delay:500}
             },
+            created() {
+            this.onInput=debounce(this.onInput(),this.delay);
+            },
             ready() {
             console.log('Price-list ready.')
         },
