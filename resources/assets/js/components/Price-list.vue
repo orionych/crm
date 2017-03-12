@@ -25,13 +25,14 @@
         },
         methods: {
             priceLoad: _.debounce(function() {
+            if (this.code.length>2) {
                 Vue.http.post('/equipment/list',{code: this.code}).then(response => {
                 this.equipments=response.data;
                 this.loading=false;
                   console.log(response.data);
                 }, response => {
                   console.log('error loading price list');
-                });
+                });}
             },500)
         },
         mounted() {
