@@ -5,10 +5,8 @@
                         <span v-if='equipments.length>0,!loading, code.length>2'>Результатов - {{ equipments.length }}</span>
                     </div>
                     <div class="panel-body">
-                         <div class="row">
-                         <ul v-if=equipments.length class='nav nav-pills nav-stacked'>
-                            <li v-for='equipment in equipments'>{{ equipment.text }}</li>
-                         </ul>
+                         <div class="row" v-if=equipments.length>                       
+                            <div class="showback" v-for='equipment in equipments'>{{ equipment.text }}</div class="showback">
                          </div>
                     </div>
                 </div> 
