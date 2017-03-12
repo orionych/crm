@@ -13,7 +13,7 @@ class EquipmentsController extends Controller
     $query->where('name','like','%'.$code.'%');
 })
 // ..или оборудование без в которых может вообще не быть связей
-->orWhere('text','like','%'.$code.'%')->limit(50)->toSql();
+->orWhere('text','like','%'.$code.'%')->limit(50)->get();
     	return $equipments;
     }
 }
