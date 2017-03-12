@@ -25,7 +25,6 @@
         },
         methods: {
             priceLoad: _.debounce(function() {
-            alert(this.code.length);
             if (this.code.length>2) {
                 Vue.http.post('/equipment/list',{code: this.code}).then(response => {
                 this.equipments=response.data;
