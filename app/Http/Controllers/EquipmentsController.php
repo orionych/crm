@@ -9,7 +9,7 @@ class EquipmentsController extends Controller
 {
     public function index(Request $request) {
     	$code=$request->input('code');
-	$equipments=Equipment::with('equipment_names','equipment_name_type')->whereHas('equipment_names', function ($query) use ($code) {
+	$equipments=Equipment::with('equipment_names','equipment_name_types')->whereHas('equipment_names', function ($query) use ($code) {
     $query->where('name','like','%'.$code.'%');
 })
 // ..или оборудование без в которых может вообще не быть связей
