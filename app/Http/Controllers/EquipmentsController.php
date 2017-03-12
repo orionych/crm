@@ -11,9 +11,7 @@ class EquipmentsController extends Controller
     	$code=$request->input('code');
 	$equipments=Equipment::with(['equipment_names'=>function ($query) use ($code) {
 	    $query->where('name','like','%'.$code.'%');            
-	}])->whereHas('equipment_names', function ($query) use ($code) {
-    $query->where('name','like','%'.$code.'%');
-})
+	}])
 // ..или оборудование без в которых может вообще не быть связей
 ->orWhere('text','like','%'.$code.'%')->limit(50)->toSql();
     	return $equipments;
