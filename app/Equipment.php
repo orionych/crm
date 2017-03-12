@@ -13,4 +13,7 @@ class Equipment extends Model
 	public function equipment_names() {
 		return $this->hasMany('App\EquipmentName');
 	}
+	public function equipment_name_type() {
+		return $this->hasOneThrough( 'App\EquipmentNameType','App\EquipmentName');
+	}
 }
