@@ -13,7 +13,7 @@ class Equipment extends Model
 	public function equipment_names() {
 		return $this->hasMany('App\EquipmentName');
 	}
-	public function equipment_names() {
+	public function prices() {
 		return $this->hasMany('App\Price');
 	}
 	// public function equipment_name_types() {
