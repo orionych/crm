@@ -10,7 +10,7 @@ class EquipmentsController extends Controller
     public function index(Request $request) {
     	$code=$request->input('code');
 	$equipments=Equipment::with(['equipment_names'=>function ($query) use ($code) {
-	    $query->where('name','like','%'.$code.'%')->where('some_field', 'blabla');            
+	    $query->where('name','like','%'.$code.'%');            
 	}])->whereHas('equipment_names', function ($query) use ($code) {
     $query->where('name','like','%'.$code.'%');
 })
