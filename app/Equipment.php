@@ -13,6 +13,9 @@ class Equipment extends Model
 	public function equipment_names() {
 		return $this->hasMany('App\EquipmentName');
 	}
+	public function equipment_names() {
+		return $this->hasMany('App\Price');
+	}
 	// public function equipment_name_types() {
 	// 	return $this->hasManyThrough( 'App\EquipmentNameType','App\EquipmentName','equipment_id','equipment_name_type_id');
 	// }
