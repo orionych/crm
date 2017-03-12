@@ -32,7 +32,8 @@
                 }, response => {
                   console.log('error loading price list');
                 });
-            },500)
+            },500),
+            loading: function() {this.loading=true;}
         },
         mounted() {
             console.log('Component price-list mounted.')
