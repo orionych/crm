@@ -1,6 +1,5 @@
 <template>
     <div class="container row" style='width:100%'>
-        <div class="row">
                 <div class="panel panel-default">
                     <div class="panel-heading">Прайс-лист: <input size=40 type='text' v-model='code' @keyup='priceLoad(), loading=true'  /> <i v-if='loading' class="fa fa-spinner fa-spin fa-fw"></i><span v-if='equipments.length&!loading'>Результатов - {{ equipments.length }}</span></div>
                     <div class="panel-body">
@@ -11,7 +10,6 @@
                          </div>
                     </div>
                 </div> 
-        </div>
     </div>
 </template>
 
