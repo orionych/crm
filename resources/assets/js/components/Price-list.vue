@@ -2,7 +2,6 @@
     <div class="container row" style='width:100%'>
                 <div class="panel panel-default">
                     <div class="panel-heading">Прайс-лист: <input size=40 type='text' v-model.trim='code' @keyup='priceLoad(), loading=true'  /> <i v-show='loading' class="fa fa-spinner fa-spin fa-fw"></i> 
-                        {{ equipments.length }} {{ loading }}
                         <span v-if='equipments.length>0,!loading'>Результатов - {{ equipments.length }}</span>
                     </div>
                     <div class="panel-body">
