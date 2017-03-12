@@ -32,7 +32,7 @@
                   console.log(response.data);
                 }, response => {
                   console.log('error loading price list');
-                });} else {this.loading=false;}
+                });} else {this.loading=false;equipments.length=0;}
             },500)
         },
         mounted() {
