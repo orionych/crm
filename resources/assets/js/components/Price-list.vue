@@ -18,7 +18,7 @@
 <script>
     export default {
             data() {
-            return {code: 'new',loading:false,equipments:[]}
+            return {code: '',loading:false,equipments:[]}
             },
             ready() {
             console.log('Price-list ready.')
