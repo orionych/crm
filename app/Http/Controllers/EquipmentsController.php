@@ -9,9 +9,13 @@ class EquipmentsController extends Controller
 {
     public function index(Request $request) {
     	$code=$request->input('code');
-    	$equipments=Equipment::with(['equipment_names'=>function ($query) use ($code) {
-    		return $query->where('name','like','%'.$code.'%');    		
-    	}])->limit(50)->toSql();
+	$equipments=Equipment::with(['equipment_names'=>function ($query) use ($code) {
+	    $query->where('name','like','%'.$code.'%')->where('some_field', 'blabla');            
+	}])->whereHas('equipment_names', function ($query) use ($code) {
+    $query->where('name','like','%'.$code.'%');
+})
+// ..или оборудование без в которых может вообще не быть связей
+->orWhere('text','like','%'.$code.'%')->limit(50)->get();
     	return $equipments;
     }
 }
