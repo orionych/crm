@@ -11,7 +11,7 @@ class EquipmentsController extends Controller
     	$code=$request->input('code');
     	$equipments=Equipment::with(['equipment_names'=>function ($query) use ($code) {
     		return $query->where('name','like','%'.$code.'%');    		
-    	}])->limit(50)->get();
+    	}])->limit(50)->toSql();
     	return $equipments;
     }
 }
