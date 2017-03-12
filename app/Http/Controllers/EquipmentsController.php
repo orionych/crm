@@ -10,7 +10,7 @@ class EquipmentsController extends Controller
     public function index(Request $request) {
     	$code=$request->input('code');
     	$equipments=Equipment::with(['equipment_names'=>function ($query) use ($code) {
-    		return $query->whereHa('name','like','%ES2190600%');    		
+    		return $query->whereHas('name','like','%ES2190600%');    		
     	}])->limit(50)->get();
     	return $equipments;
     }
