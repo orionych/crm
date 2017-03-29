@@ -25,7 +25,9 @@
             <router-link to="/bar">Go to Bar</router-link>
         </p>
         <!-- отображение компонента, для которого совпал путь -->
+        <keep-alive include="basket">
         <router-view></router-view>
+        </keep-alive>
     </div>
 </div>
     
