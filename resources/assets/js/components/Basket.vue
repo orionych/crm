@@ -7,6 +7,8 @@
                          <div class="row">
                             <div class='col-lg-6'>
                                 <my-input placeholder='Название коммерческого предложения' v-model='name'  ></my-input>
+                                <label>Срок</label><input type='text' v-model='weeks' /><input type='radio' name='weeksshift' value='1' /> +1 <input type='radio' name='weeksshift' value='2' /> +2 <input type='radio' name='weeksshift' value='3' /> +3
+                                {{ weeks }} + {{ weeksshift }}
                             </div>
                              <div class='col-lg-6'>
                              <span>{{ name }}</span>
@@ -21,7 +23,7 @@
 <script>
     export default {
             data() {
-            return {name: '',company:''}
+            return {name: '',company:'',weeks:0,weeksshift:0}
             },
             ready() {
             console.log('Component ready.')
