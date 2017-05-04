@@ -22,7 +22,7 @@
 <script>
     export default {
             data() {
-            return {name: 'new',company:''}
+            return {name: '',company:''}
             },
             ready() {
             console.log('Component ready.')
