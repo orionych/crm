@@ -7,8 +7,8 @@
                          <div class="row">
                             <div class='col-lg-6'>
                                 <my-input placeholder='Название коммерческого предложения' v-model='name'  ></my-input>
-                                Срок: <input type='text' v-model='weeks' /><input type='radio' v-model='weeksshift' value='1' /> +1 <input type='radio' v-model='weeksshift' value='2' /> +2 <input type='radio' v-model='weeksshift' value='3' /> +3
-                                {{ weeks }} + {{ weeksshift }}
+                                Срок поставки: <input type='text' v-model='weeks' /><input type='radio' v-model='weeksshift' value='1' /> +1 <input type='radio' v-model='weeksshift' value='2' /> +2 <input type='radio' v-model='weeksshift' value='3' /> +3
+                               
                             </div>
                              <div class='col-lg-6'>
                              <span>{{ name }}</span>
